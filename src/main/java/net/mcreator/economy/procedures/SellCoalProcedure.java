@@ -18,7 +18,17 @@ public class SellCoalProcedure {
 			return;
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
-			_setstack.setCount((int) (EconomyModVariables.MapVariables.get(world).CoalCost * new Object() {
+			_setstack.setCount((int) (new Object() {
+				public int getAmount(int sltid) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+							&& _current.get() instanceof Map _slots) {
+						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+						if (stack != null)
+							return stack.getCount();
+					}
+					return 0;
+				}
+			}.getAmount(3) + EconomyModVariables.MapVariables.get(world).CoalCost * new Object() {
 				public int getAmount(int sltid) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
