@@ -22,6 +22,8 @@ public class DiamondPressedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player)
+			_player.giveExperiencePoints(5);
+		if (entity instanceof Player _player)
 			_player.closeContainer();
 		{
 			if (entity instanceof ServerPlayer _ent) {
