@@ -11,6 +11,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
+import net.mcreator.economy.network.EconomyModVariables;
 import net.mcreator.economy.network.DiamondShopButtonMessage;
 import net.mcreator.economy.EconomyMod;
 
@@ -72,6 +73,8 @@ public class DiamondShopScreen extends AbstractContainerScreen<DiamondShopMenu> 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "Diamonds", 67, 6, -12829636);
+		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).orebuy) + "", 148, 27, -12829636);
+		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).oresell) + "", 148, 59, -12829636);
 	}
 
 	@Override

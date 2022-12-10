@@ -1,4 +1,5 @@
 {
+  "block.economy.test": "Test",
   "item.economy.ore_trader_spawn_egg": "Ore Trader Spawn Egg",
   "entity.economy.ore_trader": "Ore Trader",
   "item.economy.gold_coin": "Gold Coin"

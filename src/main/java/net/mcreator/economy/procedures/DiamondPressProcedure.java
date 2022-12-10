@@ -12,15 +12,22 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.gui.components.EditBox;
 
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
+
+import java.util.HashMap;
 
 import io.netty.buffer.Unpooled;
 
 public class DiamondPressProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, HashMap guistate) {
+		if (entity == null || guistate == null)
 			return;
+		if (guistate.get("text:TextFieldName") instanceof EditBox _tf)
+			_tf.setValue("Text");
+		if (guistate.get("text:TextFieldName2") instanceof EditBox _tf)
+			_tf.setValue("Text");
 		{
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = new BlockPos(x, y, z);

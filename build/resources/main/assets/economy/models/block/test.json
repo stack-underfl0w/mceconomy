@@ -1,0 +1,15 @@
+{
+  "parent": "forge:item/default",
+  "loader": "forge:composite",
+  "children": {
+    "part1": {
+      "loader": "forge:obj",
+      "model": "economy:models/item/till_shop_mk2.obj",
+      "emissive_ambient": true
+    }
+  },
+  "textures": {
+    "particle": "economy:blocks/ore_till"
+  },
+  "render_type": "solid"
+}

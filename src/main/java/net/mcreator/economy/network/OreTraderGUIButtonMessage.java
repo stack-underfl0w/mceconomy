@@ -64,7 +64,7 @@ public class OreTraderGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			DiamondPressProcedure.execute(world, x, y, z, entity);
+			DiamondPressProcedure.execute(world, x, y, z, entity, guistate);
 		}
 	}
 

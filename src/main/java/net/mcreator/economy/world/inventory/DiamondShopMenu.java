@@ -4,6 +4,9 @@ package net.mcreator.economy.world.inventory;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -19,7 +22,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.economy.procedures.DiamondCheckerProcedure;
+import net.mcreator.economy.procedures.DiamondPreviewProcedure;
 import net.mcreator.economy.init.EconomyModMenus;
 import net.mcreator.economy.init.EconomyModItems;
 
@@ -27,6 +30,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+@Mod.EventBusSubscriber
 public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -78,25 +82,25 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 24) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 29, 24) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (EconomyModItems.GOLD_COIN.get() == stack.getItem());
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 56) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 29, 56) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (Items.DIAMOND == stack.getItem());
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 24) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 128, 24) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 56) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 128, 56) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
@@ -225,7 +229,6 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		DiamondCheckerProcedure.execute();
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
@@ -241,5 +244,17 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
+	}
+
+	@SubscribeEvent
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		Player entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof DiamondShopMenu) {
+			Level world = entity.level;
+			double x = entity.getX();
+			double y = entity.getY();
+			double z = entity.getZ();
+			DiamondPreviewProcedure.execute(world, entity);
+		}
 	}
 }

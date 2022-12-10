@@ -1,0 +1,211 @@
+{
+  "mod_elements": [
+    {
+      "name": "OreTrader",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_trader",
+      "path": "~/Trader Entities/Traders"
+    },
+    {
+      "name": "OreTraderGUI",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_trader_gui",
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "DiamondShop",
+      "type": "gui",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_shop",
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "DiamondPress",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Diamond"
+    },
+    {
+      "name": "BuyDiamond",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_diamond",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Diamond"
+    },
+    {
+      "name": "SellDiamond",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_diamond",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Diamond"
+    },
+    {
+      "name": "GoldCoin",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_coin",
+      "path": "~/Items"
+    },
+    {
+      "name": "BuyDiamondPreview",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_diamond_preview",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Diamond"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "DiamondCost",
+      "type": "number",
+      "scope": "map",
+      "value": "5.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.economy.ore_trader_spawn_egg": "Ore Trader Spawn Egg",
+      "entity.economy.ore_trader": "Ore Trader",
+      "item.economy.gold_coin": "Gold Coin"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Trader Entities",
+        "children": [
+          {
+            "name": "Traders",
+            "children": []
+          },
+          {
+            "name": "TraderGUIs",
+            "children": [
+              {
+                "name": "Ore Trader",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "GUI Procedures",
+        "children": [
+          {
+            "name": "Diamond",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "economy",
+    "modName": "economy",
+    "version": "1.0.0",
+    "author": "Nauman, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.economy",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}
