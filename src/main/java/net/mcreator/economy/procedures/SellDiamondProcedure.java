@@ -1,13 +1,13 @@
 package net.mcreator.economy.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
 import net.mcreator.economy.network.EconomyModVariables;
+import net.mcreator.economy.init.EconomyModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -17,7 +17,7 @@ public class SellDiamondProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			ItemStack _setstack = new ItemStack(Items.GOLD_NUGGET);
+			ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
 			_setstack.setCount((int) (EconomyModVariables.MapVariables.get(world).DiamondCost * new Object() {
 				public int getAmount(int sltid) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current

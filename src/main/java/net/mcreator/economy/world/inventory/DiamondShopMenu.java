@@ -19,7 +19,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.economy.procedures.DiamondCheckerProcedure;
 import net.mcreator.economy.init.EconomyModMenus;
+import net.mcreator.economy.init.EconomyModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -79,7 +81,7 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 24) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (Items.GOLD_NUGGET == stack.getItem());
+				return (EconomyModItems.GOLD_COIN.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 56) {
@@ -95,6 +97,10 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 56) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -219,6 +225,7 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		DiamondCheckerProcedure.execute();
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

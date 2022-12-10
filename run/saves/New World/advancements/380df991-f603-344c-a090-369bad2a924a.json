@@ -1,4 +1,10 @@
 {
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2022-12-10 18:16:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
       "has_diamond": "2022-12-10 16:57:20 +0000"

@@ -27,7 +27,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Items.GOLD_NUGGET"
+            "value": "CUSTOM:GoldCoin"
           },
           "id": 0,
           "disableStackInteraction": false,
@@ -91,11 +91,8 @@
         }
       },
       {
-        "type": "inputslot",
+        "type": "outputslot",
         "data": {
-          "inputLimit": {
-            "value": ""
-          },
           "id": 3,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
@@ -105,6 +102,9 @@
         }
       }
     ],
+    "onClosed": {
+      "name": "DiamondChecker"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
