@@ -4,9 +4,6 @@ package net.mcreator.economy.world.inventory;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -22,15 +19,15 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.economy.procedures.DiamondPreviewProcedure;
+import net.mcreator.economy.network.DiamondShopSlotMessage;
 import net.mcreator.economy.init.EconomyModMenus;
 import net.mcreator.economy.init.EconomyModItems;
+import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@Mod.EventBusSubscriber
 public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -84,11 +81,47 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 29, 24) {
 			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(0, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(0, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(0, 2, b.getCount() - a.getCount());
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (EconomyModItems.GOLD_COIN.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 29, 56) {
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(1, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(1, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(1, 2, b.getCount() - a.getCount());
+			}
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return (Items.DIAMOND == stack.getItem());
@@ -242,19 +275,14 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 		}
 	}
 
-	public Map<Integer, Slot> get() {
-		return customSlots;
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			EconomyMod.PACKET_HANDLER.sendToServer(new DiamondShopSlotMessage(slotid, x, y, z, ctype, meta));
+			DiamondShopSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
+		}
 	}
 
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		Player entity = event.player;
-		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof DiamondShopMenu) {
-			Level world = entity.level;
-			double x = entity.getX();
-			double y = entity.getY();
-			double z = entity.getZ();
-			DiamondPreviewProcedure.execute(world, entity);
-		}
+	public Map<Integer, Slot> get() {
+		return customSlots;
 	}
 }

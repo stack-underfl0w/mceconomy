@@ -32,7 +32,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.economy.init.EconomyModMenus;
 import net.mcreator.economy.init.EconomyModItems;
 import net.mcreator.economy.init.EconomyModEntities;
-import net.mcreator.economy.init.EconomyModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -51,7 +50,6 @@ public class EconomyMod {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		EconomyModBlocks.REGISTRY.register(bus);
 		EconomyModItems.REGISTRY.register(bus);
 		EconomyModEntities.REGISTRY.register(bus);
 

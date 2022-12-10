@@ -32,6 +32,15 @@
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "DiamondPreview"
+          },
+          "onTakenFromSlot": {
+            "name": "DiamondPreview"
+          },
+          "onStackTransfer": {
+            "name": "DiamondPreview"
+          },
           "name": "Slot #0",
           "x": 154,
           "y": 60
@@ -60,6 +69,15 @@
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "DiamondPreview"
+          },
+          "onTakenFromSlot": {
+            "name": "DiamondPreview"
+          },
+          "onStackTransfer": {
+            "name": "DiamondPreview"
+          },
           "name": "Slot #1",
           "x": 154,
           "y": 92
@@ -104,33 +122,30 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:orebuy>",
+          "text": "<VAR:buy>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:orebuy>",
-          "x": 274,
+          "name": "<VAR:buy>",
+          "x": 272,
           "y": 64
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<VAR:oresell>",
+          "text": "<VAR:integer:sell>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:oresell>",
-          "x": 274,
+          "name": "<VAR:integer:sell>",
+          "x": 272,
           "y": 96
         }
       }
     ],
-    "onTick": {
-      "name": "DiamondPreview"
-    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

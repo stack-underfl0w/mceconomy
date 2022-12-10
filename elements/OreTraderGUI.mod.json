@@ -52,6 +52,9 @@
         "type": "button",
         "data": {
           "text": "Coal",
+          "onClick": {
+            "name": "CoalPress"
+          },
           "width": 46,
           "height": 20,
           "name": "Coal",
