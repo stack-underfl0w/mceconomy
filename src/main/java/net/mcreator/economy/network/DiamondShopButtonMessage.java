@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
+import net.mcreator.economy.procedures.SellDiamondProcedure;
 import net.mcreator.economy.procedures.BuyDiamondProcedure;
 import net.mcreator.economy.EconomyMod;
 
@@ -65,6 +66,10 @@ public class DiamondShopButtonMessage {
 		if (buttonID == 0) {
 
 			BuyDiamondProcedure.execute(world, entity);
+		}
+		if (buttonID == 1) {
+
+			SellDiamondProcedure.execute(world, entity);
 		}
 	}
 

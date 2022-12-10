@@ -91,6 +91,10 @@ public class DiamondShopScreen extends AbstractContainerScreen<DiamondShopMenu> 
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 64, this.topPos + 54, 46, 20, Component.literal("Sell"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new DiamondShopButtonMessage(1, x, y, z));
+				DiamondShopButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}));
 	}
 }
