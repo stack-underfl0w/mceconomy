@@ -1,0 +1,46 @@
+{
+  "mod_elements": [
+    {
+      "name": "CustomDiamond",
+      "type": "villagertrade",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_diamond"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "diamondcost",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "economy",
+    "modName": "economy",
+    "version": "1.0.0",
+    "author": "Nauman, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.economy",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

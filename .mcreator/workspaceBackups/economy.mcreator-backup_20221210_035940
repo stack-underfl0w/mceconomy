@@ -1,0 +1,84 @@
+{
+  "mod_elements": [
+    {
+      "name": "CustomDiamond",
+      "type": "villagertrade",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_diamond"
+    },
+    {
+      "name": "DiamondTrader",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_trader"
+    },
+    {
+      "name": "TradingGUI",
+      "type": "gui",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trading_gui"
+    },
+    {
+      "name": "TradingGUI2",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trading_gui_2"
+    },
+    {
+      "name": "DiamondPressed",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_pressed",
+      "metadata": {
+        "dependencies": []
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "diamondcost",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.economy.diamond_trader_spawn_egg": "Diamond Trader Spawn Egg",
+      "entity.economy.diamond_trader": "Diamond Trader"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "economy",
+    "modName": "economy",
+    "version": "1.0.0",
+    "author": "Nauman, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.economy",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

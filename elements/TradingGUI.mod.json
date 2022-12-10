@@ -1,0 +1,60 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 190,
+    "height": 170,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "shop",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "shop",
+          "x": 204,
+          "y": 41
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Diamonds",
+          "onClick": {
+            "name": "DiamondPressed"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Diamonds",
+          "x": 131,
+          "y": 61
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Iron",
+          "width": 46,
+          "height": 20,
+          "name": "Iron",
+          "x": 131,
+          "y": 87
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
