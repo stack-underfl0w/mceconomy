@@ -1,4 +1,4 @@
 {
-  "item.economy.diamond_trader_spawn_egg": "Diamond Trader Spawn Egg",
-  "entity.economy.diamond_trader": "Diamond Trader"
+  "item.economy.ore_trader_spawn_egg": "Ore Trader Spawn Egg",
+  "entity.economy.ore_trader": "Ore Trader"
 }

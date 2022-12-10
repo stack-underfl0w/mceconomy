@@ -16,15 +16,15 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.economy.entity.DiamondTraderEntity;
+import net.mcreator.economy.entity.OreTraderEntity;
 import net.mcreator.economy.EconomyMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class EconomyModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, EconomyMod.MODID);
-	public static final RegistryObject<EntityType<DiamondTraderEntity>> DIAMOND_TRADER = register("diamond_trader",
-			EntityType.Builder.<DiamondTraderEntity>of(DiamondTraderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DiamondTraderEntity::new).fireImmune().sized(0.6f, 1.95f));
+	public static final RegistryObject<EntityType<OreTraderEntity>> ORE_TRADER = register("ore_trader",
+			EntityType.Builder.<OreTraderEntity>of(OreTraderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(OreTraderEntity::new).fireImmune().sized(0.6f, 1.95f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -33,12 +33,12 @@ public class EconomyModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			DiamondTraderEntity.init();
+			OreTraderEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(DIAMOND_TRADER.get(), DiamondTraderEntity.createAttributes().build());
+		event.put(ORE_TRADER.get(), OreTraderEntity.createAttributes().build());
 	}
 }

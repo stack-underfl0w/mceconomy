@@ -1,0 +1,120 @@
+{
+  "mod_elements": [
+    {
+      "name": "DiamondPressed",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OreTrader",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_trader"
+    },
+    {
+      "name": "OreMenuGUI",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ore_menu_gui"
+    },
+    {
+      "name": "DiamondPurchaseGUI",
+      "type": "gui",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_purchase_gui"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "diamondcost",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "testprice",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.economy.ore_trader_spawn_egg": "Ore Trader Spawn Egg",
+      "entity.economy.ore_trader": "Ore Trader"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "economy",
+    "modName": "economy",
+    "version": "1.0.0",
+    "author": "Nauman, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.economy",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

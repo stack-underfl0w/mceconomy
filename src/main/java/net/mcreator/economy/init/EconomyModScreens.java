@@ -11,16 +11,16 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
-import net.mcreator.economy.client.gui.TradingGUIScreen;
-import net.mcreator.economy.client.gui.TradingGUI2Screen;
+import net.mcreator.economy.client.gui.OreTraderGUIScreen;
+import net.mcreator.economy.client.gui.DiamondShopScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class EconomyModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(EconomyModMenus.TRADING_GUI.get(), TradingGUIScreen::new);
-			MenuScreens.register(EconomyModMenus.TRADING_GUI_2.get(), TradingGUI2Screen::new);
+			MenuScreens.register(EconomyModMenus.ORE_TRADER_GUI.get(), OreTraderGUIScreen::new);
+			MenuScreens.register(EconomyModMenus.DIAMOND_SHOP.get(), DiamondShopScreen::new);
 		});
 	}
 }
