@@ -100,10 +100,13 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "onRightClickedOn": {
-      "name": "OpenShop"
+      "name": "Test"
     },
     "onPlayerCollidesWith": {
-      "name": "OpenShop"
+      "name": "Test"
+    },
+    "onInitialSpawn": {
+      "name": "Test"
     },
     "hasAI": true,
     "aiBase": "(none)",

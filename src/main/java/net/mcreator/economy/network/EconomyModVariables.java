@@ -92,6 +92,7 @@ public class EconomyModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "economy_mapvars";
 		public double diamondcost = 0;
+		public double testprice = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -101,11 +102,13 @@ public class EconomyModVariables {
 
 		public void read(CompoundTag nbt) {
 			diamondcost = nbt.getDouble("diamondcost");
+			testprice = nbt.getDouble("testprice");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("diamondcost", diamondcost);
+			nbt.putDouble("testprice", testprice);
 			return nbt;
 		}
 

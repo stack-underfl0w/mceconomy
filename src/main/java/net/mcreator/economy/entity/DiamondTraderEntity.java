@@ -12,6 +12,7 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
@@ -27,8 +28,10 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
@@ -38,6 +41,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -49,7 +53,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 
 import net.mcreator.economy.world.inventory.TradingGUIMenu;
-import net.mcreator.economy.procedures.OpenShopProcedure;
+import net.mcreator.economy.procedures.TestProcedure;
 import net.mcreator.economy.init.EconomyModEntities;
 
 import javax.annotation.Nullable;
@@ -140,6 +144,14 @@ public class DiamondTraderEntity extends PathfinderMob {
 		return super.hurt(source, amount);
 	}
 
+	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason,
+			@Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
+		TestProcedure.execute(this);
+		return retval;
+	}
+
 	private final ItemStackHandler inventory = new ItemStackHandler(9) {
 		@Override
 		public int getSlotLimit(int slot) {
@@ -212,14 +224,14 @@ public class DiamondTraderEntity extends PathfinderMob {
 		Entity entity = this;
 		Level world = this.level;
 
-		OpenShopProcedure.execute(world, x, y, z, entity);
+		TestProcedure.execute(entity);
 		return retval;
 	}
 
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		OpenShopProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		TestProcedure.execute(this);
 	}
 
 	public static void init() {
