@@ -28,7 +28,17 @@ public class SellDiamondProcedure {
 					}
 					return 0;
 				}
-			}.getAmount(1)));
+			}.getAmount(1) + new Object() {
+				public int getAmount(int sltid) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+							&& _current.get() instanceof Map _slots) {
+						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+						if (stack != null)
+							return stack.getCount();
+					}
+					return 0;
+				}
+			}.getAmount(3)));
 			((Slot) _slots.get(3)).set(_setstack);
 			_player.containerMenu.broadcastChanges();
 		}

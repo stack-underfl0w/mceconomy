@@ -112,15 +112,6 @@
       "path": "~/Items"
     },
     {
-      "name": "Test",
-      "type": "block",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "path": "~/Trader Entities/Traders"
-    },
-    {
       "name": "DiamondPreview",
       "type": "procedure",
       "sortid": 19,
@@ -341,6 +332,27 @@
       "locked_code": false,
       "registry_name": "coal_shop",
       "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Coal"
     }
   ],
   "variable_elements": [
@@ -367,12 +379,17 @@
       "type": "number",
       "scope": "map",
       "value": "2.0"
+    },
+    {
+      "name": "InventoryCoins",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.economy.test": "Test",
       "item.economy.ore_trader_spawn_egg": "Ore Trader Spawn Egg",
       "entity.economy.ore_trader": "Ore Trader",
       "item.economy.gold_coin": "Gold Coin"
