@@ -1,0 +1,139 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 252,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:GoldCoin"
+          },
+          "id": 0,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 138,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:GoldCoin"
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #1",
+          "x": 135,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Store",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Store",
+          "x": 103,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Withdraw",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Withdraw",
+          "x": 100,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Storage",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Storage",
+          "x": 98,
+          "y": 96
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 120,
+          "height": 20,
+          "name": "withdraw",
+          "x": 147,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Confirm",
+          "onClick": {
+            "name": "StoreBaseCash"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Confirm",
+          "x": 270,
+          "y": 43
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Confirm",
+          "onClick": {
+            "name": "WithdrawBaseCash"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Confirm",
+          "x": 270,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Confirm",
+          "width": 61,
+          "height": 20,
+          "name": "Confirm",
+          "x": 270,
+          "y": 94
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

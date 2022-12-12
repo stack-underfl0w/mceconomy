@@ -13,6 +13,7 @@ import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.economy.world.inventory.OreTraderGUIMenu;
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
+import net.mcreator.economy.world.inventory.CoinstorageMenu;
 import net.mcreator.economy.world.inventory.CoalShopMenu;
 import net.mcreator.economy.EconomyMod;
 
@@ -24,4 +25,6 @@ public class EconomyModMenus {
 			() -> IForgeMenuType.create(DiamondShopMenu::new));
 	public static final RegistryObject<MenuType<CoalShopMenu>> COAL_SHOP = REGISTRY.register("coal_shop",
 			() -> IForgeMenuType.create(CoalShopMenu::new));
+	public static final RegistryObject<MenuType<CoinstorageMenu>> COINSTORAGE = REGISTRY.register("coinstorage",
+			() -> IForgeMenuType.create(CoinstorageMenu::new));
 }
