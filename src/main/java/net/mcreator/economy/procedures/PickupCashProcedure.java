@@ -39,7 +39,7 @@ public class PickupCashProcedure {
 						return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 					return 0;
 				}
-			}.getScore("actualcash", entity) >= new Object() {
+			}.getScore("actualcash", entity) > new Object() {
 				public int getScore(String score, Entity _ent) {
 					Scoreboard _sc = _ent.getLevel().getScoreboard();
 					Objective _so = _sc.getObjective(score);
@@ -63,7 +63,7 @@ public class PickupCashProcedure {
 								return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 							return 0;
 						}
-					}.getScore("inventorycash", entity));
+					}.getScore("actualcash", entity));
 				}
 			}
 		});
