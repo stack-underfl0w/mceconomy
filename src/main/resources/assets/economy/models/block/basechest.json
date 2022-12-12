@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "economy:blocks/rem_1",
+    "up": "economy:blocks/rem_1",
+    "north": "economy:blocks/rem_1",
+    "east": "economy:blocks/rem_1",
+    "south": "economy:blocks/rem_1",
+    "west": "economy:blocks/rem_1",
+    "particle": "economy:blocks/rem_1"
+  },
+  "render_type": "solid"
+}
