@@ -221,15 +221,11 @@ public class CoinstorageMenu extends AbstractContainerMenu implements Supplier<M
 				for (int j = 0; j < internal.getSlots(); ++j) {
 					if (j == 0)
 						continue;
-					if (j == 1)
-						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
 					if (i == 0)
-						continue;
-					if (i == 1)
 						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}

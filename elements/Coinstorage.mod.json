@@ -32,7 +32,7 @@
           },
           "id": 1,
           "disableStackInteraction": false,
-          "dropItemsWhenNotBound": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #1",
           "x": 135,
           "y": 45
@@ -114,17 +114,6 @@
           "name": "Confirm",
           "x": 270,
           "y": 68
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Confirm",
-          "width": 61,
-          "height": 20,
-          "name": "Confirm",
-          "x": 270,
-          "y": 94
         }
       }
     ],

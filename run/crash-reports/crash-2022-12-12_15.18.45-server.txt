@@ -1,0 +1,110 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 2022-12-12 15:18:45
+Description: Exception in server tick loop
+
+net.minecraftforge.fml.config.ConfigFileTypeHandler$ConfigLoadingException: Failed loading config file forge-server.toml of type SERVER for modid forge
+	at net.minecraftforge.fml.config.ConfigFileTypeHandler.lambda$reader$1(ConfigFileTypeHandler.java:47) ~[fmlcore-1.19.2-43.1.7.jar%23187!/:?] {}
+	at net.minecraftforge.fml.config.ConfigTracker.openConfig(ConfigTracker.java:60) ~[fmlcore-1.19.2-43.1.7.jar%23187!/:?] {}
+	at net.minecraftforge.fml.config.ConfigTracker.lambda$loadConfigs$1(ConfigTracker.java:50) ~[fmlcore-1.19.2-43.1.7.jar%23187!/:?] {}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {}
+	at java.util.Collections$SynchronizedCollection.forEach(Collections.java:2131) ~[?:?] {}
+	at net.minecraftforge.fml.config.ConfigTracker.loadConfigs(ConfigTracker.java:50) ~[fmlcore-1.19.2-43.1.7.jar%23187!/:?] {}
+	at net.minecraftforge.server.ServerLifecycleHooks.handleServerAboutToStart(ServerLifecycleHooks.java:90) ~[forge-1.19.2-43.1.7_mapped_official_1.19.2-recomp.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraft.client.server.IntegratedServer.initServer(IntegratedServer.java:61) ~[forge-1.19.2-43.1.7_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:625) ~[forge-1.19.2-43.1.7_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.7_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+Caused by: com.electronwill.nightconfig.core.io.ParsingException: Not enough data available
+	at com.electronwill.nightconfig.core.io.ParsingException.notEnoughData(ParsingException.java:22) ~[core-3.6.4.jar%23114!/:?] {}
+	at com.electronwill.nightconfig.core.io.ReaderInput.directReadChar(ReaderInput.java:36) ~[core-3.6.4.jar%23114!/:?] {}
+	at com.electronwill.nightconfig.core.io.AbstractInput.readChar(AbstractInput.java:49) ~[core-3.6.4.jar%23114!/:?] {}
+	at com.electronwill.nightconfig.core.io.AbstractInput.readCharsUntil(AbstractInput.java:123) ~[core-3.6.4.jar%23114!/:?] {}
+	at com.electronwill.nightconfig.toml.TableParser.parseKey(TableParser.java:166) ~[toml-3.6.4.jar%23113!/:?] {}
+	at com.electronwill.nightconfig.toml.TableParser.parseDottedKey(TableParser.java:145) ~[toml-3.6.4.jar%23113!/:?] {}
+	at com.electronwill.nightconfig.toml.TableParser.parseNormal(TableParser.java:55) ~[toml-3.6.4.jar%23113!/:?] {}
+	at com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:44) ~[toml-3.6.4.jar%23113!/:?] {}
+	at com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:37) ~[toml-3.6.4.jar%23113!/:?] {}
+	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:113) ~[core-3.6.4.jar%23114!/:?] {}
+	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:219) ~[core-3.6.4.jar%23114!/:?] {}
+	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:202) ~[core-3.6.4.jar%23114!/:?] {}
+	at com.electronwill.nightconfig.core.file.WriteSyncFileConfig.load(WriteSyncFileConfig.java:73) ~[core-3.6.4.jar%23114!/:?] {}
+	at com.electronwill.nightconfig.core.file.AutosaveCommentedFileConfig.load(AutosaveCommentedFileConfig.java:85) ~[core-3.6.4.jar%23114!/:?] {}
+	at net.minecraftforge.fml.config.ConfigFileTypeHandler.lambda$reader$1(ConfigFileTypeHandler.java:43) ~[fmlcore-1.19.2-43.1.7.jar%23187!/:?] {}
+	... 10 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.3, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 269139040 bytes (256 MiB) / 595591168 bytes (568 MiB) up to 4123000832 bytes (3932 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 5600H with Radeon Graphics         
+	Identifier: AuthenticAMD Family 25 Model 80 Stepping 0
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.29
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 512.00
+	Graphics card #0 deviceId: 0x1638
+	Graphics card #0 versionInfo: DriverVersion=27.20.14032.15001
+	Graphics card #1 name: NVIDIA GeForce RTX 3060 Laptop GPU
+	Graphics card #1 vendor: NVIDIA (0x10de)
+	Graphics card #1 VRAM (MB): 4095.00
+	Graphics card #1 deviceId: 0x2520
+	Graphics card #1 versionInfo: DriverVersion=31.0.15.1640
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 22124.06
+	Virtual memory used (MB): 10734.56
+	Swap memory total (MB): 6400.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 0 / 8; []
+	Data Packs: vanilla, mod:forge, mod:economy
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.7.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.7.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.7.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.7.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.7.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19.2-43.1.7_mapped_official_1.19.2-recomp.|Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |43.1.7              |DONE      |Manifest: NOSIGNATURE
+		main                                              |economy                       |economy                       |1.0.0               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 0dc72783-9987-4332-af50-fe4b25704eb2
+	FML: 43.1
+	Forge: net.minecraftforge:43.1.7

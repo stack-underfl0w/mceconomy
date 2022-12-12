@@ -108,7 +108,5 @@ public class CoinstorageScreen extends AbstractContainerScreen<CoinstorageMenu> 
 				CoinstorageButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 182, this.topPos + 57, 61, 20, Component.literal("Confirm"), e -> {
-		}));
 	}
 }

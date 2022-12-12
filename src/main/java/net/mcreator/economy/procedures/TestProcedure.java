@@ -58,6 +58,14 @@ public class TestProcedure {
 			if (_so == null)
 				_so = _sc.addObjective("inventorycash", ObjectiveCriteria.DUMMY, Component.literal("inventorycash"),
 						ObjectiveCriteria.RenderType.INTEGER);
+			_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore((int) diamonds);
+		}
+		{
+			Entity _ent = entity;
+			Scoreboard _sc = _ent.getLevel().getScoreboard();
+			Objective _so = _sc.getObjective("actualcash");
+			if (_so == null)
+				_so = _sc.addObjective("actualcash", ObjectiveCriteria.DUMMY, Component.literal("actualcash"), ObjectiveCriteria.RenderType.INTEGER);
 			_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore((int) (diamonds + new Object() {
 				public int getScore(String score, Entity _ent) {
 					Scoreboard _sc = _ent.getLevel().getScoreboard();
