@@ -112,27 +112,6 @@
       "path": "~/Items"
     },
     {
-      "name": "DiamondPreview",
-      "type": "procedure",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_preview",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI Procedures/Ore Trader/Diamond"
-    },
-    {
       "name": "Dropexecute",
       "type": "procedure",
       "sortid": 30,
@@ -400,6 +379,48 @@
           }
         ]
       }
+    },
+    {
+      "name": "SellDiamondPreview",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_diamond_preview",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "BuyDiamondPreview",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_diamond_preview",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
     }
   ],
   "variable_elements": [
@@ -408,12 +429,6 @@
       "type": "number",
       "scope": "map",
       "value": "128.0"
-    },
-    {
-      "name": "buy",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0.0"
     },
     {
       "name": "CoalCost",
@@ -429,6 +444,36 @@
     },
     {
       "name": "sell",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "Value",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SellGold",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SellSilver",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SellBronze",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "buy",
       "type": "string",
       "scope": "map",
       "value": "\"\""
