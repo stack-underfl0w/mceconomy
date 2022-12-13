@@ -1,5 +1,7 @@
 package net.mcreator.economy.network;
 
+import org.objectweb.asm.tree.analysis.Value;
+
 import net.minecraftforge.network.PacketDistributor;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -79,8 +81,10 @@ public class EconomyModVariables {
 					.orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new PlayerVariables()));
-			clone.buy = original.buy;
-			clone.sell = original.sell;
+			clone.Value = original.Value;
+			clone.SellGold = original.SellGold;
+			clone.SellSilver = original.SellSilver;
+			clone.SellBronze = original.SellBronze;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -146,9 +150,11 @@ public class EconomyModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "economy_mapvars";
-		public double DiamondCost = 42.8;
-		public double CoalCost = 2.0;
+		public double DiamondCost = 128.0;
+		public double CoalCost = 0.0;
 		public double InventoryCoins = 0;
+		public String sell = "\"\"";
+		public String buy = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -160,6 +166,8 @@ public class EconomyModVariables {
 			DiamondCost = nbt.getDouble("DiamondCost");
 			CoalCost = nbt.getDouble("CoalCost");
 			InventoryCoins = nbt.getDouble("InventoryCoins");
+			sell = nbt.getString("sell");
+			buy = nbt.getString("buy");
 		}
 
 		@Override
@@ -167,6 +175,8 @@ public class EconomyModVariables {
 			nbt.putDouble("DiamondCost", DiamondCost);
 			nbt.putDouble("CoalCost", CoalCost);
 			nbt.putDouble("InventoryCoins", InventoryCoins);
+			nbt.putString("sell", sell);
+			nbt.putString("buy", buy);
 			return nbt;
 		}
 
@@ -256,8 +266,10 @@ public class EconomyModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double buy = 0.0;
-		public double sell = 0.0;
+		public double Value = 0;
+		public double SellGold = 0;
+		public double SellSilver = 0;
+		public double SellBronze = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -266,15 +278,19 @@ public class EconomyModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("buy", buy);
-			nbt.putDouble("sell", sell);
+			nbt.putDouble("Value", Value);
+			nbt.putDouble("SellGold", SellGold);
+			nbt.putDouble("SellSilver", SellSilver);
+			nbt.putDouble("SellBronze", SellBronze);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			buy = nbt.getDouble("buy");
-			sell = nbt.getDouble("sell");
+			Value = nbt.getDouble("Value");
+			SellGold = nbt.getDouble("SellGold");
+			SellSilver = nbt.getDouble("SellSilver");
+			SellBronze = nbt.getDouble("SellBronze");
 		}
 	}
 
@@ -300,8 +316,10 @@ public class EconomyModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
-					variables.buy = message.data.buy;
-					variables.sell = message.data.sell;
+					variables.Value = message.data.Value;
+					variables.SellGold = message.data.SellGold;
+					variables.SellSilver = message.data.SellSilver;
+					variables.SellBronze = message.data.SellBronze;
 				}
 			});
 			context.setPacketHandled(true);

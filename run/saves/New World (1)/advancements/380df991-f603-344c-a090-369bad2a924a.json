@@ -211,7 +211,8 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
-      "minecraft:creeper": "2022-12-12 20:08:01 +0000"
+      "minecraft:creeper": "2022-12-12 20:08:01 +0000",
+      "minecraft:husk": "2022-12-13 16:11:31 +0000"
     },
     "done": false
   },

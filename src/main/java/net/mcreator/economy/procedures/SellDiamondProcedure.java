@@ -1,5 +1,7 @@
 package net.mcreator.economy.procedures;
 
+import org.objectweb.asm.tree.analysis.Value;
+
 import net.minecraft.world.scores.criteria.ObjectiveCriteria;
 import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.Objective;
@@ -20,34 +22,96 @@ public class SellDiamondProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
+		double Value = 0;
+		double PreGold = 0;
+		double PreSilver = 0;
+		double PreBronze = 0;
+		PreGold = new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+						&& _current.get() instanceof Map _slots) {
+					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+					if (stack != null)
+						return stack.getCount();
+				}
+				return 0;
+			}
+		}.getAmount(3);
+		PreSilver = new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+						&& _current.get() instanceof Map _slots) {
+					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+					if (stack != null)
+						return stack.getCount();
+				}
+				return 0;
+			}
+		}.getAmount(7);
+		PreBronze = new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+						&& _current.get() instanceof Map _slots) {
+					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+					if (stack != null)
+						return stack.getCount();
+				}
+				return 0;
+			}
+		}.getAmount(6);
+		Value = EconomyModVariables.MapVariables.get(world).DiamondCost * new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+						&& _current.get() instanceof Map _slots) {
+					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+					if (stack != null)
+						return stack.getCount();
+				}
+				return 0;
+			}
+		}.getAmount(1);
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
-			_setstack.setCount((int) (EconomyModVariables.MapVariables.get(world).DiamondCost * new Object() {
-				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
-						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-						if (stack != null)
-							return stack.getCount();
-					}
-					return 0;
-				}
-			}.getAmount(1) + new Object() {
-				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
-						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-						if (stack != null)
-							return stack.getCount();
-					}
-					return 0;
-				}
-			}.getAmount(3)));
+			_setstack.setCount((int) (Value / 4096 + PreGold));
 			((Slot) _slots.get(3)).set(_setstack);
 			_player.containerMenu.broadcastChanges();
 		}
+		Value = Value - (new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+						&& _current.get() instanceof Map _slots) {
+					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+					if (stack != null)
+						return stack.getCount();
+				}
+				return 0;
+			}
+		}.getAmount(3) - PreGold) * 4096;
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get(1)).remove((int) (new Object() {
+			ItemStack _setstack = new ItemStack(EconomyModItems.SILVER_COIN.get());
+			_setstack.setCount((int) (Value / 64 + PreSilver));
+			((Slot) _slots.get(7)).set(_setstack);
+			_player.containerMenu.broadcastChanges();
+		}
+		Value = Value - (new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+						&& _current.get() instanceof Map _slots) {
+					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+					if (stack != null)
+						return stack.getCount();
+				}
+				return 0;
+			}
+		}.getAmount(7) - PreSilver) * 64;
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			ItemStack _setstack = new ItemStack(EconomyModItems.BRONZE_COIN.get());
+			_setstack.setCount((int) (Value + PreBronze));
+			((Slot) _slots.get(6)).set(_setstack);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(1)).remove(new Object() {
 				public int getAmount(int sltid) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
@@ -57,8 +121,76 @@ public class SellDiamondProcedure {
 					}
 					return 0;
 				}
-			}.getAmount(3) / EconomyModVariables.MapVariables.get(world).DiamondCost));
+			}.getAmount(1));
 			_player.containerMenu.broadcastChanges();
+		}
+		if (new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+						&& _current.get() instanceof Map _slots) {
+					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+					if (stack != null)
+						return stack.getCount();
+				}
+				return 0;
+			}
+		}.getAmount(6) >= 64) {
+			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+					&& _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(6)).remove(64);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+					&& _current.get() instanceof Map _slots) {
+				ItemStack _setstack = new ItemStack(EconomyModItems.SILVER_COIN.get());
+				_setstack.setCount((int) (new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+								&& _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(7) + 1));
+				((Slot) _slots.get(7)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
+			}
+		}
+		if (new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+						&& _current.get() instanceof Map _slots) {
+					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+					if (stack != null)
+						return stack.getCount();
+				}
+				return 0;
+			}
+		}.getAmount(7) >= 64) {
+			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+					&& _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(7)).remove(64);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+					&& _current.get() instanceof Map _slots) {
+				ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
+				_setstack.setCount((int) (new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+								&& _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(3) + 1));
+				((Slot) _slots.get(3)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
+			}
 		}
 		{
 			Entity _ent = entity;

@@ -12,7 +12,8 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
-import net.mcreator.economy.procedures.DiamondPreviewProcedure;
+import net.mcreator.economy.procedures.SellDiamondPreviewProcedure;
+import net.mcreator.economy.procedures.BuyDiamondPreviewProcedure;
 import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
@@ -72,55 +73,55 @@ public class DiamondShopSlotMessage {
 			return;
 		if (slotID == 0 && changeType == 0) {
 
-			DiamondPreviewProcedure.execute(world, entity);
+			BuyDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 0 && changeType == 1) {
 
-			DiamondPreviewProcedure.execute(world, entity);
+			BuyDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 0 && changeType == 2) {
 			int amount = meta;
 
-			DiamondPreviewProcedure.execute(world, entity);
+			BuyDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 0) {
 
-			DiamondPreviewProcedure.execute(world, entity);
+			SellDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 1) {
 
-			DiamondPreviewProcedure.execute(world, entity);
+			SellDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 2) {
 			int amount = meta;
 
-			DiamondPreviewProcedure.execute(world, entity);
+			SellDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 4 && changeType == 0) {
 
-			DiamondPreviewProcedure.execute(world, entity);
+			BuyDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 4 && changeType == 1) {
 
-			DiamondPreviewProcedure.execute(world, entity);
+			BuyDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 4 && changeType == 2) {
 			int amount = meta;
 
-			DiamondPreviewProcedure.execute(world, entity);
+			BuyDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 5 && changeType == 0) {
 
-			DiamondPreviewProcedure.execute(world, entity);
+			BuyDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 5 && changeType == 1) {
 
-			DiamondPreviewProcedure.execute(world, entity);
+			BuyDiamondPreviewProcedure.execute(world, entity);
 		}
 		if (slotID == 5 && changeType == 2) {
 			int amount = meta;
 
-			DiamondPreviewProcedure.execute(world, entity);
+			BuyDiamondPreviewProcedure.execute(world, entity);
 		}
 	}
 

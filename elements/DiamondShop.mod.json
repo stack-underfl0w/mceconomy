@@ -33,13 +33,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "DiamondPreview"
+            "name": "BuyDiamondPreview"
           },
           "onTakenFromSlot": {
-            "name": "DiamondPreview"
+            "name": "BuyDiamondPreview"
           },
           "onStackTransfer": {
-            "name": "DiamondPreview"
+            "name": "BuyDiamondPreview"
           },
           "name": "Slot #0",
           "x": 132,
@@ -70,13 +70,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "DiamondPreview"
+            "name": "SellDiamondPreview"
           },
           "onTakenFromSlot": {
-            "name": "DiamondPreview"
+            "name": "SellDiamondPreview"
           },
           "onStackTransfer": {
-            "name": "DiamondPreview"
+            "name": "SellDiamondPreview"
           },
           "name": "Slot #1",
           "x": 132,
@@ -135,12 +135,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:integer:sell>",
+          "text": "<VAR:sell>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<VAR:integer:sell>",
+          "name": "<VAR:sell>",
           "x": 153,
           "y": 97
         }
@@ -155,13 +155,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "DiamondPreview"
+            "name": "BuyDiamondPreview"
           },
           "onTakenFromSlot": {
-            "name": "DiamondPreview"
+            "name": "BuyDiamondPreview"
           },
           "onStackTransfer": {
-            "name": "DiamondPreview"
+            "name": "BuyDiamondPreview"
           },
           "name": "Slot #4",
           "x": 150,
@@ -178,13 +178,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "DiamondPreview"
+            "name": "BuyDiamondPreview"
           },
           "onTakenFromSlot": {
-            "name": "DiamondPreview"
+            "name": "BuyDiamondPreview"
           },
           "onStackTransfer": {
-            "name": "DiamondPreview"
+            "name": "BuyDiamondPreview"
           },
           "name": "Slot #5",
           "x": 168,
