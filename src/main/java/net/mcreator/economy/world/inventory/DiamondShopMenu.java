@@ -41,7 +41,7 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 		super(EconomyModMenus.DIAMOND_SHOP.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(4);
+		this.internal = new ItemStackHandler(8);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -79,7 +79,7 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 29, 24) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 24) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -103,7 +103,7 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 				return (EconomyModItems.GOLD_COIN.get() == stack.getItem());
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 29, 56) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 7, 56) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -127,13 +127,73 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 				return (Items.DIAMOND == stack.getItem());
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 128, 24) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 151, 24) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 128, 56) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 115, 56) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 25, 24) {
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(4, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(4, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(4, 2, b.getCount() - a.getCount());
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (EconomyModItems.SILVER_COIN.get() == stack.getItem());
+			}
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 43, 24) {
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(5, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(5, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(5, 2, b.getCount() - a.getCount());
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (EconomyModItems.BRONZE_COIN.get() == stack.getItem());
+			}
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 151, 56) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 56) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
@@ -158,16 +218,16 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 4) {
-				if (!this.moveItemStackTo(itemstack1, 4, this.slots.size(), true))
+			if (index < 8) {
+				if (!this.moveItemStackTo(itemstack1, 8, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 4, false)) {
-				if (index < 4 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 4 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 8, false)) {
+				if (index < 8 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 8 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 4, 4 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 8, 8 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

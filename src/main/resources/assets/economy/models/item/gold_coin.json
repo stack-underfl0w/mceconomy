@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "economy:items/64_mcc_ii"
+    "layer0": "economy:items/goldcoin2"
   }
 }

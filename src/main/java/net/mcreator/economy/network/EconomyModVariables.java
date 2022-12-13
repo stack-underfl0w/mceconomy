@@ -146,7 +146,7 @@ public class EconomyModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "economy_mapvars";
-		public double DiamondCost = 5.0;
+		public double DiamondCost = 42.8;
 		public double CoalCost = 2.0;
 		public double InventoryCoins = 0;
 

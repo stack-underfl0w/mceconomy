@@ -42,7 +42,7 @@
             "name": "DiamondPreview"
           },
           "name": "Slot #0",
-          "x": 154,
+          "x": 132,
           "y": 60
         }
       },
@@ -79,7 +79,7 @@
             "name": "DiamondPreview"
           },
           "name": "Slot #1",
-          "x": 154,
+          "x": 132,
           "y": 92
         }
       },
@@ -104,7 +104,7 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #2",
-          "x": 253,
+          "x": 276,
           "y": 60
         }
       },
@@ -115,7 +115,7 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #3",
-          "x": 253,
+          "x": 240,
           "y": 92
         }
       },
@@ -128,8 +128,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:buy>",
-          "x": 272,
-          "y": 64
+          "x": 237,
+          "y": 65
         }
       },
       {
@@ -141,8 +141,76 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:sell>",
-          "x": 272,
-          "y": 96
+          "x": 153,
+          "y": 97
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:SilverCoin"
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "DiamondPreview"
+          },
+          "onTakenFromSlot": {
+            "name": "DiamondPreview"
+          },
+          "onStackTransfer": {
+            "name": "DiamondPreview"
+          },
+          "name": "Slot #4",
+          "x": 150,
+          "y": 60
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:BronzeCoin"
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "DiamondPreview"
+          },
+          "onTakenFromSlot": {
+            "name": "DiamondPreview"
+          },
+          "onStackTransfer": {
+            "name": "DiamondPreview"
+          },
+          "name": "Slot #5",
+          "x": 168,
+          "y": 60
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 276,
+          "y": 92
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 258,
+          "y": 92
         }
       }
     ],

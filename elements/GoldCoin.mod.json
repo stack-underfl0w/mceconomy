@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "64_mcc_ii",
+    "texture": "goldcoin2",
     "customModelName": "Normal",
     "name": "Gold Coin",
     "rarity": "COMMON",
@@ -28,7 +28,7 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 30,
+    "inventoryStackSize": 64,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

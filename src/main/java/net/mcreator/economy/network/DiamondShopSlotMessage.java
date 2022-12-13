@@ -96,6 +96,32 @@ public class DiamondShopSlotMessage {
 
 			DiamondPreviewProcedure.execute(world, entity);
 		}
+		if (slotID == 4 && changeType == 0) {
+
+			DiamondPreviewProcedure.execute(world, entity);
+		}
+		if (slotID == 4 && changeType == 1) {
+
+			DiamondPreviewProcedure.execute(world, entity);
+		}
+		if (slotID == 4 && changeType == 2) {
+			int amount = meta;
+
+			DiamondPreviewProcedure.execute(world, entity);
+		}
+		if (slotID == 5 && changeType == 0) {
+
+			DiamondPreviewProcedure.execute(world, entity);
+		}
+		if (slotID == 5 && changeType == 1) {
+
+			DiamondPreviewProcedure.execute(world, entity);
+		}
+		if (slotID == 5 && changeType == 2) {
+			int amount = meta;
+
+			DiamondPreviewProcedure.execute(world, entity);
+		}
 	}
 
 	@SubscribeEvent

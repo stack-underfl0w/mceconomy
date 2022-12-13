@@ -10,6 +10,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.economy.init.EconomyModItems;
 import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
@@ -45,6 +46,33 @@ public class StoreBaseCashProcedure {
 						return 0;
 					}
 				}.getAmount(1)));
+			}
+			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+					&& _current.get() instanceof Map _slots) {
+				ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
+				_setstack.setCount((int) (new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+								&& _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(0) + new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+								&& _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(1)));
+				((Slot) _slots.get(0)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {

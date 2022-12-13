@@ -50,7 +50,7 @@ public class OpenCoinStorageProcedure {
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
-				_setstack.setCount(new Object() {
+				_setstack.setCount((int) (new Object() {
 					public int getScore(String score, Entity _ent) {
 						Scoreboard _sc = _ent.getLevel().getScoreboard();
 						Objective _so = _sc.getObjective(score);
@@ -58,7 +58,17 @@ public class OpenCoinStorageProcedure {
 							return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 						return 0;
 					}
-				}.getScore("basecash", entity));
+				}.getScore("basecash", entity) + new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+								&& _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(0)));
 				((Slot) _slots.get(0)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
