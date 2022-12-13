@@ -433,6 +433,17 @@
         "dependencies": []
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "Test3",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_3",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
