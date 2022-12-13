@@ -421,40 +421,6 @@
         ]
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
-    },
-    {
-      "name": "Test",
-      "type": "procedure",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "dependencies": []
-      },
-      "path": "~/GUI Procedures/Ore Trader/Diamond"
-    },
-    {
-      "name": "Test3",
-      "type": "procedure",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_3",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
-      "name": "Test4",
-      "type": "procedure",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_4",
-      "metadata": {
-        "dependencies": []
-      }
     }
   ],
   "variable_elements": [
