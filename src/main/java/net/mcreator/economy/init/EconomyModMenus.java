@@ -11,6 +11,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.economy.world.inventory.TestGUIMenu;
 import net.mcreator.economy.world.inventory.OreTraderGUIMenu;
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
 import net.mcreator.economy.world.inventory.CoinstorageMenu;
@@ -27,4 +28,5 @@ public class EconomyModMenus {
 			() -> IForgeMenuType.create(CoinstorageMenu::new));
 	public static final RegistryObject<MenuType<ATMScreenMenu>> ATM_SCREEN = REGISTRY.register("atm_screen",
 			() -> IForgeMenuType.create(ATMScreenMenu::new));
+	public static final RegistryObject<MenuType<TestGUIMenu>> TEST_GUI = REGISTRY.register("test_gui", () -> IForgeMenuType.create(TestGUIMenu::new));
 }

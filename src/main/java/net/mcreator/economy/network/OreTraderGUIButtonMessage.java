@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.OreTraderGUIMenu;
+import net.mcreator.economy.procedures.OpenTestGUIProcedure;
 import net.mcreator.economy.procedures.DiamondPressProcedure;
 import net.mcreator.economy.EconomyMod;
 
@@ -65,6 +66,10 @@ public class OreTraderGUIButtonMessage {
 		if (buttonID == 0) {
 
 			DiamondPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			OpenTestGUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
