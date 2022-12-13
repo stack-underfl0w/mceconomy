@@ -444,6 +444,17 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "Test4",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_4",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
