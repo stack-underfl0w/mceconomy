@@ -91,10 +91,6 @@ public class OreTraderGUIScreen extends AbstractContainerScreen<OreTraderGUIMenu
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 96, this.topPos + 21, 66, 20, Component.literal("Iron"), e -> {
-			if (true) {
-				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(1, x, y, z));
-				OreTraderGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 9, this.topPos + 47, 46, 20, Component.literal("Coal"), e -> {
 		}));

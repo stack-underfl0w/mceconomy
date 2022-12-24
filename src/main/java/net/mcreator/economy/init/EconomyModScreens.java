@@ -11,7 +11,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
-import net.mcreator.economy.client.gui.TestGUIScreen;
 import net.mcreator.economy.client.gui.OreTraderGUIScreen;
 import net.mcreator.economy.client.gui.DiamondShopScreen;
 import net.mcreator.economy.client.gui.CoinstorageScreen;
@@ -26,7 +25,6 @@ public class EconomyModScreens {
 			MenuScreens.register(EconomyModMenus.DIAMOND_SHOP.get(), DiamondShopScreen::new);
 			MenuScreens.register(EconomyModMenus.COINSTORAGE.get(), CoinstorageScreen::new);
 			MenuScreens.register(EconomyModMenus.ATM_SCREEN.get(), ATMScreenScreen::new);
-			MenuScreens.register(EconomyModMenus.TEST_GUI.get(), TestGUIScreen::new);
 		});
 	}
 }

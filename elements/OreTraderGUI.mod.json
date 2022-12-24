@@ -41,9 +41,6 @@
         "type": "button",
         "data": {
           "text": "Iron",
-          "onClick": {
-            "name": "OpenTestGUI"
-          },
           "width": 66,
           "height": 20,
           "name": "Iron",
