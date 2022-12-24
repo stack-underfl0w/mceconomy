@@ -91,8 +91,16 @@ public class ATMScreenScreen extends AbstractContainerScreen<ATMScreenMenu> {
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 39, 72, 20, Component.literal("To Silver"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new ATMScreenButtonMessage(1, x, y, z));
+				ATMScreenButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 60, 72, 20, Component.literal("To Bronze"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new ATMScreenButtonMessage(2, x, y, z));
+				ATMScreenButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
 	}
 }

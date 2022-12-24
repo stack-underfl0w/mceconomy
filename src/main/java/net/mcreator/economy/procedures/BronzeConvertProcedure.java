@@ -50,63 +50,23 @@ public class BronzeConvertProcedure {
 				return 0;
 			}
 		}.getAmount(2);
-		if (BronzeNum < 64) {
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(EconomyModItems.BRONZE_COIN.get());
-				_setstack.setCount((int) BronzeNum);
-				((Slot) _slots.get(5)).set(_setstack);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(2)).remove((int) BronzeNum);
-				_player.containerMenu.broadcastChanges();
-			}
-		} else {
-			SilverNum = SilverNum + BronzeNum / 64;
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(2)).remove((int) BronzeNum);
-				_player.containerMenu.broadcastChanges();
-			}
-		}
-		if (SilverNum < 64) {
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(EconomyModItems.SILVER_COIN.get());
-				_setstack.setCount((int) SilverNum);
-				((Slot) _slots.get(4)).set(_setstack);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(1)).remove((int) SilverNum);
-				_player.containerMenu.broadcastChanges();
-			}
-		} else if (SilverNum >= 64) {
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(EconomyModItems.SILVER_COIN.get());
-				_setstack.setCount((int) (SilverNum - 64));
-				((Slot) _slots.get(4)).set(_setstack);
-				_player.containerMenu.broadcastChanges();
-			}
-			GoldNum = GoldNum + SilverNum / 64;
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(1)).remove((int) SilverNum);
-				_player.containerMenu.broadcastChanges();
-			}
-		}
+		BronzeNum = BronzeNum + SilverNum * 64 + GoldNum * 4096;
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
-			_setstack.setCount((int) GoldNum);
-			((Slot) _slots.get(3)).set(_setstack);
+			((Slot) _slots.get(0)).set(ItemStack.EMPTY);
 			_player.containerMenu.broadcastChanges();
 		}
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get(0)).remove((int) GoldNum);
+			((Slot) _slots.get(1)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(2)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			ItemStack _setstack = new ItemStack(EconomyModItems.BRONZE_COIN.get());
+			_setstack.setCount((int) BronzeNum);
+			((Slot) _slots.get(5)).set(_setstack);
 			_player.containerMenu.broadcastChanges();
 		}
 	}

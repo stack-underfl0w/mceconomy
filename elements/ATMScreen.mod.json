@@ -83,6 +83,9 @@
         "type": "button",
         "data": {
           "text": "To Silver",
+          "onClick": {
+            "name": "SilverConvert"
+          },
           "width": 72,
           "height": 20,
           "name": "To Silver",
@@ -94,6 +97,9 @@
         "type": "button",
         "data": {
           "text": "To Bronze",
+          "onClick": {
+            "name": "BronzeConvert"
+          },
           "width": 72,
           "height": 20,
           "name": "To Bronze",

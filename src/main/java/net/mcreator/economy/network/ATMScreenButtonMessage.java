@@ -12,7 +12,9 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.ATMScreenMenu;
+import net.mcreator.economy.procedures.SilverConvertProcedure;
 import net.mcreator.economy.procedures.GoldConvertProcedure;
+import net.mcreator.economy.procedures.BronzeConvertProcedure;
 import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
@@ -65,6 +67,14 @@ public class ATMScreenButtonMessage {
 		if (buttonID == 0) {
 
 			GoldConvertProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			SilverConvertProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			BronzeConvertProcedure.execute(entity);
 		}
 	}
 
