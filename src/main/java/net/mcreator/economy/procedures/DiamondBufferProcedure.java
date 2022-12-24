@@ -10,7 +10,7 @@ public class DiamondBufferProcedure {
 		if (entity == null)
 			return;
 		EconomyMod.queueServerWork(1, () -> {
-			BuyDiamondPreviewProcedure.execute(world, entity);
+			SellDiamondPreviewProcedure.execute(world, entity);
 		});
 	}
 }

@@ -12,23 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-import net.mcreator.economy.procedures.DiamondSellBufferProcedure;
-import net.mcreator.economy.procedures.BuyDiamondPreviewProcedure;
-=======
-import net.mcreator.economy.procedures.SellDiamondPreviewProcedure;
 import net.mcreator.economy.procedures.DiamondBufferProcedure;
->>>>>>> Stashed changes
-=======
-import net.mcreator.economy.procedures.SellDiamondPreviewProcedure;
-import net.mcreator.economy.procedures.DiamondBufferProcedure;
->>>>>>> Stashed changes
-=======
-import net.mcreator.economy.procedures.SellDiamondPreviewProcedure;
-import net.mcreator.economy.procedures.DiamondBufferProcedure;
->>>>>>> Stashed changes
 import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
@@ -101,16 +85,16 @@ public class DiamondShopSlotMessage {
 		}
 		if (slotID == 1 && changeType == 0) {
 
-			DiamondSellBufferProcedure.execute(world, entity);
+			DiamondBufferProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 1) {
 
-			DiamondSellBufferProcedure.execute(world, entity);
+			DiamondBufferProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 2) {
 			int amount = meta;
 
-			DiamondSellBufferProcedure.execute(world, entity);
+			DiamondBufferProcedure.execute(world, entity);
 		}
 		if (slotID == 4 && changeType == 0) {
 

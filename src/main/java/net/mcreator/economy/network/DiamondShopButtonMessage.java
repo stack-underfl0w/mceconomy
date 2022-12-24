@@ -69,7 +69,7 @@ public class DiamondShopButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			SellDiamondProcedure.execute(world, entity);
+			SellDiamondProcedure.execute();
 		}
 	}
 

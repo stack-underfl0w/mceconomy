@@ -70,13 +70,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "DiamondSellBuffer"
+            "name": "DiamondBuffer"
           },
           "onTakenFromSlot": {
-            "name": "DiamondSellBuffer"
+            "name": "DiamondBuffer"
           },
           "onStackTransfer": {
-            "name": "DiamondSellBuffer"
+            "name": "DiamondBuffer"
           },
           "name": "Slot #1",
           "x": 132,

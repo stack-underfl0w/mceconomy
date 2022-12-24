@@ -89,16 +89,7 @@
       "locked_code": false,
       "registry_name": "sell_diamond",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
