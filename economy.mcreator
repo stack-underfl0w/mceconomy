@@ -488,6 +488,17 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "Rehtrs",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rehtrs",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
