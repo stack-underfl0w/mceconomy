@@ -443,12 +443,12 @@
       }
     },
     {
-      "name": "DiamondSellBuffer",
+      "name": "DiamondBuffer",
       "type": "procedure",
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "diamond_sell_buffer",
+      "registry_name": "diamond_buffer",
       "metadata": {
         "dependencies": [
           {
@@ -526,10 +526,22 @@
       "value": "0.0"
     },
     {
-      "name": "SellBoolean",
+      "name": "Charge",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "BuyBoolean",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "ItemNum",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
