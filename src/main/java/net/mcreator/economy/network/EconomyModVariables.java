@@ -85,6 +85,8 @@ public class EconomyModVariables {
 			clone.SellGold = original.SellGold;
 			clone.SellSilver = original.SellSilver;
 			clone.SellBronze = original.SellBronze;
+			clone.Charge = original.Charge;
+			clone.BuyBoolean = original.BuyBoolean;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -156,7 +158,11 @@ public class EconomyModVariables {
 		public String sell = "\"\"";
 		public String buy = "\"\"";
 		public double DiamondX = 0.0;
+<<<<<<< Updated upstream
 		public boolean SellBoolean = false;
+=======
+		public double ItemNum = 0;
+>>>>>>> Stashed changes
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -171,7 +177,11 @@ public class EconomyModVariables {
 			sell = nbt.getString("sell");
 			buy = nbt.getString("buy");
 			DiamondX = nbt.getDouble("DiamondX");
+<<<<<<< Updated upstream
 			SellBoolean = nbt.getBoolean("SellBoolean");
+=======
+			ItemNum = nbt.getDouble("ItemNum");
+>>>>>>> Stashed changes
 		}
 
 		@Override
@@ -182,7 +192,11 @@ public class EconomyModVariables {
 			nbt.putString("sell", sell);
 			nbt.putString("buy", buy);
 			nbt.putDouble("DiamondX", DiamondX);
+<<<<<<< Updated upstream
 			nbt.putBoolean("SellBoolean", SellBoolean);
+=======
+			nbt.putDouble("ItemNum", ItemNum);
+>>>>>>> Stashed changes
 			return nbt;
 		}
 
@@ -276,6 +290,8 @@ public class EconomyModVariables {
 		public double SellGold = 0;
 		public double SellSilver = 0;
 		public double SellBronze = 0;
+		public double Charge = 0;
+		public boolean BuyBoolean = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -288,6 +304,8 @@ public class EconomyModVariables {
 			nbt.putDouble("SellGold", SellGold);
 			nbt.putDouble("SellSilver", SellSilver);
 			nbt.putDouble("SellBronze", SellBronze);
+			nbt.putDouble("Charge", Charge);
+			nbt.putBoolean("BuyBoolean", BuyBoolean);
 			return nbt;
 		}
 
@@ -297,6 +315,8 @@ public class EconomyModVariables {
 			SellGold = nbt.getDouble("SellGold");
 			SellSilver = nbt.getDouble("SellSilver");
 			SellBronze = nbt.getDouble("SellBronze");
+			Charge = nbt.getDouble("Charge");
+			BuyBoolean = nbt.getBoolean("BuyBoolean");
 		}
 	}
 
@@ -326,6 +346,8 @@ public class EconomyModVariables {
 					variables.SellGold = message.data.SellGold;
 					variables.SellSilver = message.data.SellSilver;
 					variables.SellBronze = message.data.SellBronze;
+					variables.Charge = message.data.Charge;
+					variables.BuyBoolean = message.data.BuyBoolean;
 				}
 			});
 			context.setPacketHandled(true);
