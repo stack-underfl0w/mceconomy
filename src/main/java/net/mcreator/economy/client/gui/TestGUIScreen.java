@@ -93,7 +93,7 @@ public class TestGUIScreen extends AbstractContainerScreen<TestGUIMenu> {
 			}
 		}));*/
 
-			this.addRenderableWidget(new ImageButton(this.leftPos + 64, this.topPos + 69, 24, 26, 0, 0, 0, MYIMAGE, e -> {
+			this.addRenderableWidget(new ImageButton(this.leftPos + 64, this.topPos + 69, 26, 26, 0, 0, 0, MYIMAGE, e -> {
 			if (true) {
 				EconomyMod.PACKET_HANDLER.sendToServer(new TestGUIButtonMessage(0, x, y, z));
 				TestGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
