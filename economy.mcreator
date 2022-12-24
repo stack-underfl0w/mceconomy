@@ -477,28 +477,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Idrtxcxcxcxcxcxc",
-      "type": "procedure",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "idrtxcxcxcxcxcxc",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
-      "name": "Rehtrs",
-      "type": "procedure",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rehtrs",
-      "metadata": {
-        "dependencies": []
-      }
     }
   ],
   "variable_elements": [
