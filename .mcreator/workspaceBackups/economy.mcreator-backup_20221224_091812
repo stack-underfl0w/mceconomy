@@ -80,7 +80,20 @@
       "locked_code": false,
       "registry_name": "sell_diamond",
       "metadata": {
+<<<<<<< Updated upstream
         "dependencies": []
+=======
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+>>>>>>> Stashed changes
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
@@ -425,7 +438,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092559
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_094259
+>>>>>>> Stashed changes
       "name": "DiamondSellBuffer",
 =======
       "name": "DiamondBuffer",
@@ -434,7 +451,11 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092559
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_094259
+>>>>>>> Stashed changes
       "registry_name": "diamond_sell_buffer",
 =======
       "registry_name": "diamond_buffer",
@@ -516,7 +537,11 @@
       "value": "0.0"
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092559
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_094259
+>>>>>>> Stashed changes
       "name": "SellBoolean",
       "type": "logic",
       "scope": "map",

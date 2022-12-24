@@ -443,7 +443,11 @@
       }
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093759
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095530
+>>>>>>> Stashed changes
       "name": "DiamondSellBuffer",
 =======
       "name": "DiamondBuffer",
@@ -452,7 +456,11 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093759
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095530
+>>>>>>> Stashed changes
       "registry_name": "diamond_sell_buffer",
 =======
       "registry_name": "diamond_buffer",
@@ -534,7 +542,11 @@
       "value": "0.0"
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093759
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095530
+>>>>>>> Stashed changes
       "name": "SellBoolean",
       "type": "logic",
       "scope": "map",
