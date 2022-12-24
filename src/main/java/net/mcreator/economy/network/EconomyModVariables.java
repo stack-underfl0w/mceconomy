@@ -155,6 +155,7 @@ public class EconomyModVariables {
 		public double InventoryCoins = 0;
 		public String sell = "\"\"";
 		public String buy = "\"\"";
+		public double DiamondX = 0.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -168,6 +169,7 @@ public class EconomyModVariables {
 			InventoryCoins = nbt.getDouble("InventoryCoins");
 			sell = nbt.getString("sell");
 			buy = nbt.getString("buy");
+			DiamondX = nbt.getDouble("DiamondX");
 		}
 
 		@Override
@@ -177,6 +179,7 @@ public class EconomyModVariables {
 			nbt.putDouble("InventoryCoins", InventoryCoins);
 			nbt.putString("sell", sell);
 			nbt.putString("buy", buy);
+			nbt.putDouble("DiamondX", DiamondX);
 			return nbt;
 		}
 

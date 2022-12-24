@@ -423,70 +423,19 @@
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
-      "name": "Bruh",
+      "name": "SetDiamondCost",
       "type": "procedure",
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bruh",
+      "registry_name": "set_diamond_cost",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "TestGUI",
-      "type": "gui",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "test_gui"
-    },
-    {
-      "name": "OpenTestGUI",
-      "type": "procedure",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_test_gui",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
           {
             "name": "world",
             "type": "world"
           }
         ]
-      }
-    },
-    {
-      "name": "Jam",
-      "type": "procedure",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jam",
-      "metadata": {
-        "dependencies": []
       }
     }
   ],
@@ -544,6 +493,12 @@
       "type": "string",
       "scope": "map",
       "value": "\"\""
+    },
+    {
+      "name": "DiamondX",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
     }
   ],
   "sound_elements": [],

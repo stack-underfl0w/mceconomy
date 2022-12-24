@@ -212,6 +212,32 @@
           "x": 258,
           "y": 92
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:DiamondCost>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:DiamondCost>",
+          "x": 235,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:DiamondX>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:DiamondX>",
+          "x": 123,
+          "y": 40
+        }
       }
     ],
     "gridSettings": {

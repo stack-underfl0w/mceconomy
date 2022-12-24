@@ -183,5 +183,8 @@ public class BuyDiamondProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 		}
+		EconomyModVariables.MapVariables.get(world).DiamondX = EconomyModVariables.MapVariables.get(world).DiamondX - 1;
+		EconomyModVariables.MapVariables.get(world).syncData(world);
+		SetDiamondCostProcedure.execute(world, entity);
 	}
 }

@@ -75,6 +75,8 @@ public class DiamondShopScreen extends AbstractContainerScreen<DiamondShopMenu> 
 		this.font.draw(poseStack, "Diamonds", 67, 6, -12829636);
 		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).buy) + "", 111, 28, -12829636);
 		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).sell) + "", 27, 60, -12829636);
+		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).DiamondCost) + "", 109, 3, -12829636);
+		this.font.draw(poseStack, "" + (int) (EconomyModVariables.MapVariables.get(world).DiamondX) + "", -2, 3, -12829636);
 	}
 
 	@Override
