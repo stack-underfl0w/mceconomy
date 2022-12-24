@@ -526,7 +526,15 @@
       "value": "0.0"
     },
     {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093942
       "name": "Charge",
+=======
+      "name": "Buffer",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
+=======
+      "name": "Charge",
+>>>>>>> Stashed changes
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -536,12 +544,21 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093942
+=======
+>>>>>>> Stashed changes
     },
     {
       "name": "ItemNum",
       "type": "number",
       "scope": "map",
       "value": "0"
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
+=======
+>>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],

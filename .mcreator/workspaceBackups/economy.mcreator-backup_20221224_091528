@@ -68,16 +68,7 @@
       "locked_code": false,
       "registry_name": "buy_diamond",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
@@ -443,12 +434,20 @@
       }
     },
     {
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091528
       "name": "DiamondSellBuffer",
+=======
+      "name": "DiamondBuffer",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091812
       "type": "procedure",
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091528
       "registry_name": "diamond_sell_buffer",
+=======
+      "registry_name": "diamond_buffer",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091812
       "metadata": {
         "dependencies": [
           {
@@ -461,7 +460,11 @@
           }
         ]
       },
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091528
       "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+=======
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091812
     }
   ],
   "variable_elements": [
@@ -526,10 +529,23 @@
       "value": "0.0"
     },
     {
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091528
       "name": "SellBoolean",
       "type": "number",
       "scope": "map",
       "value": "0"
+=======
+      "name": "Buffer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "BuyBoolean",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091812
     }
   ],
   "sound_elements": [],

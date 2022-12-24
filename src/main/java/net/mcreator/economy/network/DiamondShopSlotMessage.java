@@ -14,8 +14,13 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import net.mcreator.economy.procedures.DiamondSellBufferProcedure;
 import net.mcreator.economy.procedures.BuyDiamondPreviewProcedure;
+=======
+import net.mcreator.economy.procedures.SellDiamondPreviewProcedure;
+import net.mcreator.economy.procedures.DiamondBufferProcedure;
+>>>>>>> Stashed changes
 =======
 import net.mcreator.economy.procedures.SellDiamondPreviewProcedure;
 import net.mcreator.economy.procedures.DiamondBufferProcedure;

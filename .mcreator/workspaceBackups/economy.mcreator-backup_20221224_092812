@@ -435,9 +435,13 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091258
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_094829
+>>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092158
 >>>>>>> Stashed changes
       "name": "DiamondSellBuffer",
 =======
@@ -448,9 +452,13 @@
       "compiles": true,
       "locked_code": false,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091258
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_094829
+>>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092158
 >>>>>>> Stashed changes
       "registry_name": "diamond_sell_buffer",
 =======
@@ -469,13 +477,20 @@
         ]
       },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091258
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092158
+>>>>>>> Stashed changes
       "path": "~/Trader Entities/TraderGUIs/Ore Trader"
 =======
       "path": "~/GUI Procedures/Ore Trader/Diamond"
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092812
+<<<<<<< Updated upstream
 =======
       "path": "~/GUI Procedures/Ore Trader/Diamond"
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
   ],
@@ -542,11 +557,18 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_094829
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092158
+>>>>>>> Stashed changes
       "name": "SellBoolean",
       "type": "logic",
       "scope": "map",
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       "name": "Buffer",
@@ -559,6 +581,10 @@
       "type": "logic",
       "scope": "player_persistent",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092812
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092812
 >>>>>>> Stashed changes

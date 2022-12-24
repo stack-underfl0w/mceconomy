@@ -81,8 +81,11 @@
       "registry_name": "sell_diamond",
       "metadata": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "dependencies": []
 =======
+=======
+>>>>>>> Stashed changes
         "dependencies": [
           {
             "name": "entity",
@@ -93,6 +96,9 @@
             "type": "world"
           }
         ]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
@@ -439,9 +445,13 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092559
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_094259
+>>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091528
 >>>>>>> Stashed changes
       "name": "DiamondSellBuffer",
 =======
@@ -452,9 +462,13 @@
       "compiles": true,
       "locked_code": false,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092559
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_094259
+>>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091528
 >>>>>>> Stashed changes
       "registry_name": "diamond_sell_buffer",
 =======
@@ -472,7 +486,15 @@
           }
         ]
       },
+<<<<<<< Updated upstream
       "path": "~/GUI Procedures/Ore Trader/Diamond"
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091528
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+=======
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091812
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [
@@ -538,6 +560,7 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092559
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_094259
@@ -545,6 +568,13 @@
       "name": "SellBoolean",
       "type": "logic",
       "scope": "map",
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091528
+      "name": "SellBoolean",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+>>>>>>> Stashed changes
 =======
       "name": "Buffer",
       "type": "number",
@@ -555,8 +585,13 @@
       "name": "BuyBoolean",
       "type": "logic",
       "scope": "player_persistent",
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091812
       "value": "false"
+=======
+      "value": "false"
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091812
+>>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],
