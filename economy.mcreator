@@ -89,7 +89,16 @@
       "locked_code": false,
       "registry_name": "sell_diamond",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
@@ -440,6 +449,23 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_buffer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "DiamondSellBuffer",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_sell_buffer",
       "metadata": {
         "dependencies": [
           {
