@@ -2,8 +2,6 @@ package net.mcreator.economy.procedures;
 
 import net.minecraftforge.network.NetworkHooks;
 
-import net.minecraft.world.scores.Scoreboard;
-import net.minecraft.world.scores.Objective;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -18,6 +16,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.CoinstorageMenu;
+import net.mcreator.economy.network.EconomyModVariables;
 import net.mcreator.economy.init.EconomyModItems;
 import net.mcreator.economy.EconomyMod;
 
@@ -50,25 +49,8 @@ public class OpenCoinStorageProcedure {
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
-				_setstack.setCount((int) (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.getLevel().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
-						return 0;
-					}
-				}.getScore("basecash", entity) + new Object() {
-					public int getAmount(int sltid) {
-						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-								&& _current.get() instanceof Map _slots) {
-							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-							if (stack != null)
-								return stack.getCount();
-						}
-						return 0;
-					}
-				}.getAmount(0)));
+				_setstack.setCount((int) (entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new EconomyModVariables.PlayerVariables())).baseCash);
 				((Slot) _slots.get(0)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}

@@ -88,6 +88,7 @@ public class EconomyModVariables {
 			clone.Charge = original.Charge;
 			clone.BuyBoolean = original.BuyBoolean;
 			if (!event.isWasDeath()) {
+				clone.baseCash = original.baseCash;
 			}
 		}
 
@@ -280,6 +281,7 @@ public class EconomyModVariables {
 		public double SellBronze = 0;
 		public double Charge = 0;
 		public boolean BuyBoolean = false;
+		public double baseCash = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -294,6 +296,7 @@ public class EconomyModVariables {
 			nbt.putDouble("SellBronze", SellBronze);
 			nbt.putDouble("Charge", Charge);
 			nbt.putBoolean("BuyBoolean", BuyBoolean);
+			nbt.putDouble("baseCash", baseCash);
 			return nbt;
 		}
 
@@ -305,6 +308,7 @@ public class EconomyModVariables {
 			SellBronze = nbt.getDouble("SellBronze");
 			Charge = nbt.getDouble("Charge");
 			BuyBoolean = nbt.getBoolean("BuyBoolean");
+			baseCash = nbt.getDouble("baseCash");
 		}
 	}
 
@@ -336,6 +340,7 @@ public class EconomyModVariables {
 					variables.SellBronze = message.data.SellBronze;
 					variables.Charge = message.data.Charge;
 					variables.BuyBoolean = message.data.BuyBoolean;
+					variables.baseCash = message.data.baseCash;
 				}
 			});
 			context.setPacketHandled(true);

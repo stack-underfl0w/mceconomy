@@ -10,6 +10,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.economy.network.EconomyModVariables;
 import net.mcreator.economy.init.EconomyModItems;
 import net.mcreator.economy.EconomyMod;
 
@@ -22,30 +23,32 @@ public class StoreBaseCashProcedure {
 			return;
 		EconomyMod.queueServerWork(2, () -> {
 			{
+				double _setval = (entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new EconomyModVariables.PlayerVariables())).baseCash + new Object() {
+							public int getAmount(int sltid) {
+								if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
+										&& _current.get() instanceof Map _slots) {
+									ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(1);
+				entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.baseCash = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
 				Entity _ent = entity;
 				Scoreboard _sc = _ent.getLevel().getScoreboard();
 				Objective _so = _sc.getObjective("basecash");
 				if (_so == null)
 					_so = _sc.addObjective("basecash", ObjectiveCriteria.DUMMY, Component.literal("basecash"), ObjectiveCriteria.RenderType.INTEGER);
-				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore((int) (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.getLevel().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
-						return 0;
-					}
-				}.getScore("basecash", entity) + new Object() {
-					public int getAmount(int sltid) {
-						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-								&& _current.get() instanceof Map _slots) {
-							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-							if (stack != null)
-								return stack.getCount();
-						}
-						return 0;
-					}
-				}.getAmount(1)));
+				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so)
+						.setScore((int) (entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new EconomyModVariables.PlayerVariables())).baseCash);
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {

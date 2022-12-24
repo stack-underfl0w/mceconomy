@@ -15,6 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.components.EditBox;
 
+import net.mcreator.economy.network.EconomyModVariables;
 import net.mcreator.economy.init.EconomyModItems;
 
 import java.util.function.Supplier;
@@ -25,38 +26,8 @@ public class WithdrawBaseCashProcedure {
 	public static void execute(Entity entity, HashMap guistate) {
 		if (entity == null || guistate == null)
 			return;
-		if (new Object() {
-			public int getScore(String score, Entity _ent) {
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective(score);
-				if (_so != null)
-					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
-				return 0;
-			}
-		}.getScore("basecash", entity) >= new Object() {
-			double convert(String s) {
-				try {
-					return Double.parseDouble(s.trim());
-				} catch (Exception e) {
-				}
-				return 0;
-			}
-		}.convert(guistate.containsKey("text:withdraw") ? ((EditBox) guistate.get("text:withdraw")).getValue() : "")) {
-			{
-				Entity _ent = entity;
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective("basecash");
-				if (_so == null)
-					_so = _sc.addObjective("basecash", ObjectiveCriteria.DUMMY, Component.literal("basecash"), ObjectiveCriteria.RenderType.INTEGER);
-				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore((int) (new Object() {
-					public int getScore(String score, Entity _ent) {
-						Scoreboard _sc = _ent.getLevel().getScoreboard();
-						Objective _so = _sc.getObjective(score);
-						if (_so != null)
-							return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
-						return 0;
-					}
-				}.getScore("basecash", entity) - new Object() {
+		if ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new EconomyModVariables.PlayerVariables())).baseCash >= new Object() {
 					double convert(String s) {
 						try {
 							return Double.parseDouble(s.trim());
@@ -64,7 +35,32 @@ public class WithdrawBaseCashProcedure {
 						}
 						return 0;
 					}
-				}.convert(guistate.containsKey("text:withdraw") ? ((EditBox) guistate.get("text:withdraw")).getValue() : "")));
+				}.convert(guistate.containsKey("text:withdraw") ? ((EditBox) guistate.get("text:withdraw")).getValue() : "")) {
+			{
+				double _setval = (entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new EconomyModVariables.PlayerVariables())).baseCash - new Object() {
+							double convert(String s) {
+								try {
+									return Double.parseDouble(s.trim());
+								} catch (Exception e) {
+								}
+								return 0;
+							}
+						}.convert(guistate.containsKey("text:withdraw") ? ((EditBox) guistate.get("text:withdraw")).getValue() : "");
+				entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.baseCash = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				Entity _ent = entity;
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective("basecash");
+				if (_so == null)
+					_so = _sc.addObjective("basecash", ObjectiveCriteria.DUMMY, Component.literal("basecash"), ObjectiveCriteria.RenderType.INTEGER);
+				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so)
+						.setScore((int) (entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new EconomyModVariables.PlayerVariables())).baseCash);
 			}
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
