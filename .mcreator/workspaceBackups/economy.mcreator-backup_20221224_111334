@@ -68,9 +68,6 @@
       "locked_code": false,
       "registry_name": "buy_diamond",
       "metadata": {
-<<<<<<< Updated upstream
-        "dependencies": []
-=======
         "dependencies": [
           {
             "name": "entity",
@@ -81,7 +78,6 @@
             "type": "world"
           }
         ]
->>>>>>> Stashed changes
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
@@ -406,27 +402,6 @@
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
-      "name": "BuyDiamondPreview",
-      "type": "procedure",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "buy_diamond_preview",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI Procedures/Ore Trader/Diamond"
-    },
-    {
       "name": "SetDiamondCost",
       "type": "procedure",
       "sortid": 49,
@@ -447,12 +422,54 @@
       }
     },
     {
-      "name": "DiamondBuffer",
+      "name": "DiamondSellBuffer",
       "type": "procedure",
-      "sortid": 50,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "diamond_buffer",
+      "registry_name": "diamond_sell_buffer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "BuyDiamondPreview",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_diamond_preview",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "DiamondBuyBuffer",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_buy_buffer",
       "metadata": {
         "dependencies": [
           {
@@ -530,7 +547,7 @@
       "value": "0.0"
     },
     {
-      "name": "Buffer",
+      "name": "Charge",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -540,18 +557,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091742
-=======
     },
     {
       "name": "ItemNum",
       "type": "number",
       "scope": "map",
       "value": "0"
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092842
-=======
->>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],

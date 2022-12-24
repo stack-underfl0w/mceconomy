@@ -17,18 +17,17 @@ public class BuyDiamondPreviewProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		double SellGold = 0;
-		double SellSilver = 0;
-		double SellBronze = 0;
-		double Test = 0;
-		double Value = 0;
-		double DiamondProjected = 0;
-		double DiamondZ = 0;
-		double DiamondNum = 0;
+		double GoldNum = 0;
+		double SilverNum = 0;
+		double BronzeNum = 0;
 		double DiamondA = 0;
 		double DiamondB = 0;
-		double Charge = 0;
-		SellGold = new Object() {
+		double DiamondX = 0;
+		double Projected = 0;
+		double DiamondNum = 0;
+		double Cost = 0;
+		double Value = 0;
+		GoldNum = new Object() {
 			public int getAmount(int sltid) {
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
@@ -39,7 +38,7 @@ public class BuyDiamondPreviewProcedure {
 				return 0;
 			}
 		}.getAmount(0);
-		SellSilver = new Object() {
+		SilverNum = new Object() {
 			public int getAmount(int sltid) {
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
@@ -50,7 +49,7 @@ public class BuyDiamondPreviewProcedure {
 				return 0;
 			}
 		}.getAmount(4);
-		SellBronze = new Object() {
+		BronzeNum = new Object() {
 			public int getAmount(int sltid) {
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
@@ -61,30 +60,30 @@ public class BuyDiamondPreviewProcedure {
 				return 0;
 			}
 		}.getAmount(5);
-		Value = SellGold * 4096 + SellSilver * 64 + SellBronze;
-		DiamondProjected = EconomyModVariables.MapVariables.get(world).DiamondCost;
+		Value = BronzeNum + SilverNum * 64 + GoldNum * 4096;
 		DiamondA = 4096;
 		DiamondB = 0.015625;
-		DiamondZ = EconomyModVariables.MapVariables.get(world).DiamondX;
+		DiamondX = EconomyModVariables.MapVariables.get(world).DiamondX;
+		Projected = EconomyModVariables.MapVariables.get(world).DiamondCost;
 		DiamondNum = 0;
-		Charge = 0;
-		while (DiamondProjected <= Value) {
-			Value = Value - DiamondProjected;
-			Charge = Charge + DiamondProjected;
+		Cost = 0;
+		while (Projected <= Value) {
+			Value = Value - Projected;
+			Cost = Cost + Projected;
 			DiamondNum = DiamondNum + 1;
-			DiamondProjected = DiamondA * Math.pow(Math.E, (-1) * DiamondB * DiamondZ);
-			DiamondZ = DiamondZ - 1;
+			Projected = DiamondA * Math.pow(Math.E, (-1) * DiamondB * DiamondX);
+			DiamondX = DiamondX - 1;
 		}
 		EconomyModVariables.MapVariables.get(world).buy = "" + DiamondNum;
 		EconomyModVariables.MapVariables.get(world).syncData(world);
 		if ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new EconomyModVariables.PlayerVariables())).BuyBoolean) {
-			EconomyModVariables.MapVariables.get(world).DiamondX = DiamondZ;
+			EconomyModVariables.MapVariables.get(world).DiamondCost = Projected;
 			EconomyModVariables.MapVariables.get(world).syncData(world);
-			EconomyModVariables.MapVariables.get(world).DiamondCost = DiamondProjected;
+			EconomyModVariables.MapVariables.get(world).DiamondX = DiamondX;
 			EconomyModVariables.MapVariables.get(world).syncData(world);
 			{
-				double _setval = Charge;
+				double _setval = Cost;
 				entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Charge = _setval;
 					capability.syncPlayerVariables(entity);

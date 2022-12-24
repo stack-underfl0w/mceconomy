@@ -402,27 +402,6 @@
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
-      "name": "BuyDiamondPreview",
-      "type": "procedure",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "buy_diamond_preview",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI Procedures/Ore Trader/Diamond"
-    },
-    {
       "name": "SetDiamondCost",
       "type": "procedure",
       "sortid": 49,
@@ -443,36 +422,54 @@
       }
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093759
-=======
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095530
->>>>>>> Stashed changes
       "name": "DiamondSellBuffer",
-=======
-      "name": "DiamondBuffer",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
-=======
-      "name": "DiamondBuffer",
->>>>>>> Stashed changes
       "type": "procedure",
-      "sortid": 50,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093759
-=======
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095530
->>>>>>> Stashed changes
       "registry_name": "diamond_sell_buffer",
-=======
-      "registry_name": "diamond_buffer",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
-=======
-      "registry_name": "diamond_buffer",
->>>>>>> Stashed changes
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "BuyDiamondPreview",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_diamond_preview",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "DiamondBuyBuffer",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_buy_buffer",
       "metadata": {
         "dependencies": [
           {
@@ -550,24 +547,7 @@
       "value": "0.0"
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093759
-=======
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095530
->>>>>>> Stashed changes
-      "name": "SellBoolean",
-      "type": "logic",
-      "scope": "map",
-=======
-      "name": "Buffer",
-=======
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093942
       "name": "Charge",
-=======
-      "name": "Buffer",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
->>>>>>> Stashed changes
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -576,21 +556,13 @@
       "name": "BuyBoolean",
       "type": "logic",
       "scope": "player_persistent",
-<<<<<<< Updated upstream
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
       "value": "false"
-=======
-      "value": "false"
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093942
     },
     {
       "name": "ItemNum",
       "type": "number",
       "scope": "map",
       "value": "0"
-=======
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
->>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],

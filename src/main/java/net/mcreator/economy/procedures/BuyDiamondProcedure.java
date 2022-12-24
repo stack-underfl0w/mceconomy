@@ -32,6 +32,7 @@ public class BuyDiamondProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		BuyDiamondPreviewProcedure.execute(world, entity);
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			ItemStack _setstack = new ItemStack(Items.DIAMOND);
 			_setstack.setCount((int) (EconomyModVariables.MapVariables.get(world).ItemNum + new Object() {
@@ -82,14 +83,15 @@ public class BuyDiamondProcedure {
 			}
 		}.getAmount(5);
 		Spent = BronzeNum + SilverNum * 64 + GoldNum * 4096;
-		Change = Spent - GoldNum;
+		Change = Spent - (entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new EconomyModVariables.PlayerVariables())).Charge;
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
-			_setstack.setCount((int) (Change / 4096 - Change % 4096));
-			((Slot) _slots.get(0)).set(_setstack);
+			ItemStack _setstack = new ItemStack(EconomyModItems.BRONZE_COIN.get());
+			_setstack.setCount((int) (Change % 64));
+			((Slot) _slots.get(5)).set(_setstack);
 			_player.containerMenu.broadcastChanges();
 		}
-		Change = Change - EconomyModVariables.MapVariables.get(world).DiamondCost * new Object() {
+		Change = Change - new Object() {
 			public int getAmount(int sltid) {
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
@@ -99,14 +101,14 @@ public class BuyDiamondProcedure {
 				}
 				return 0;
 			}
-		}.getAmount(0);
+		}.getAmount(5);
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			ItemStack _setstack = new ItemStack(EconomyModItems.SILVER_COIN.get());
-			_setstack.setCount((int) (Change / 64 - Change % 64));
+			_setstack.setCount((int) ((Change % 4096) / 64));
 			((Slot) _slots.get(4)).set(_setstack);
 			_player.containerMenu.broadcastChanges();
 		}
-		Change = Change - EconomyModVariables.MapVariables.get(world).DiamondCost * new Object() {
+		Change = Change - new Object() {
 			public int getAmount(int sltid) {
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
@@ -116,11 +118,11 @@ public class BuyDiamondProcedure {
 				}
 				return 0;
 			}
-		}.getAmount(4);
+		}.getAmount(4) * 64;
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			ItemStack _setstack = new ItemStack(EconomyModItems.BRONZE_COIN.get());
-			_setstack.setCount((int) Change);
-			((Slot) _slots.get(5)).set(_setstack);
+			ItemStack _setstack = new ItemStack(EconomyModItems.GOLD_COIN.get());
+			_setstack.setCount((int) (Change / 4096));
+			((Slot) _slots.get(0)).set(_setstack);
 			_player.containerMenu.broadcastChanges();
 		}
 	}

@@ -33,13 +33,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "DiamondBuffer"
+            "name": "DiamondBuyBuffer"
           },
           "onTakenFromSlot": {
-            "name": "DiamondBuffer"
+            "name": "DiamondBuyBuffer"
           },
           "onStackTransfer": {
-            "name": "DiamondBuffer"
+            "name": "DiamondBuyBuffer"
           },
           "name": "Slot #0",
           "x": 132,
@@ -155,13 +155,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "DiamondBuffer"
+            "name": "DiamondBuyBuffer"
           },
           "onTakenFromSlot": {
-            "name": "DiamondBuffer"
+            "name": "DiamondBuyBuffer"
           },
           "onStackTransfer": {
-            "name": "DiamondBuffer"
+            "name": "DiamondBuyBuffer"
           },
           "name": "Slot #4",
           "x": 150,
@@ -178,13 +178,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "DiamondBuffer"
+            "name": "DiamondBuyBuffer"
           },
           "onTakenFromSlot": {
-            "name": "DiamondBuffer"
+            "name": "DiamondBuyBuffer"
           },
           "onStackTransfer": {
-            "name": "DiamondBuffer"
+            "name": "DiamondBuyBuffer"
           },
           "name": "Slot #5",
           "x": 168,

@@ -89,7 +89,16 @@
       "locked_code": false,
       "registry_name": "sell_diamond",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
@@ -375,30 +384,9 @@
       "name": "SellDiamondPreview",
       "type": "procedure",
       "sortid": 47,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "sell_diamond_preview",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI Procedures/Ore Trader/Diamond"
-    },
-    {
-      "name": "BuyDiamondPreview",
-      "type": "procedure",
-      "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "buy_diamond_preview",
+      "registry_name": "sell_diamond_preview",
       "metadata": {
         "dependencies": [
           {
@@ -434,12 +422,54 @@
       }
     },
     {
-      "name": "DiamondBuffer",
+      "name": "DiamondSellBuffer",
       "type": "procedure",
-      "sortid": 50,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "diamond_buffer",
+      "registry_name": "diamond_sell_buffer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "BuyDiamondPreview",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_diamond_preview",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "DiamondBuyBuffer",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_buy_buffer",
       "metadata": {
         "dependencies": [
           {
