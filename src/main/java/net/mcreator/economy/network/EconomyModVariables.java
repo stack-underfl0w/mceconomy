@@ -160,11 +160,7 @@ public class EconomyModVariables {
 		public double DiamondX = 0.0;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 		public boolean SellBoolean = false;
-=======
-		public double ItemNum = 0;
->>>>>>> Stashed changes
 =======
 		public double ItemNum = 0;
 >>>>>>> Stashed changes
@@ -187,11 +183,7 @@ public class EconomyModVariables {
 			DiamondX = nbt.getDouble("DiamondX");
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 			SellBoolean = nbt.getBoolean("SellBoolean");
-=======
-			ItemNum = nbt.getDouble("ItemNum");
->>>>>>> Stashed changes
 =======
 			ItemNum = nbt.getDouble("ItemNum");
 >>>>>>> Stashed changes
@@ -210,11 +202,7 @@ public class EconomyModVariables {
 			nbt.putDouble("DiamondX", DiamondX);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 			nbt.putBoolean("SellBoolean", SellBoolean);
-=======
-			nbt.putDouble("ItemNum", ItemNum);
->>>>>>> Stashed changes
 =======
 			nbt.putDouble("ItemNum", ItemNum);
 >>>>>>> Stashed changes

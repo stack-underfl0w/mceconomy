@@ -444,7 +444,6 @@
     },
     {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093759
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095530
@@ -453,14 +452,10 @@
 =======
       "name": "DiamondBuffer",
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
-=======
-      "name": "DiamondBuffer",
->>>>>>> Stashed changes
       "type": "procedure",
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093759
 =======
@@ -470,9 +465,6 @@
 =======
       "registry_name": "diamond_buffer",
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
-=======
-      "registry_name": "diamond_buffer",
->>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -551,7 +543,6 @@
     },
     {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093759
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095530
@@ -561,13 +552,6 @@
       "scope": "map",
 =======
       "name": "Buffer",
-=======
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093942
-      "name": "Charge",
-=======
-      "name": "Buffer",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
->>>>>>> Stashed changes
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -576,21 +560,8 @@
       "name": "BuyBoolean",
       "type": "logic",
       "scope": "player_persistent",
-<<<<<<< Updated upstream
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
       "value": "false"
-=======
-      "value": "false"
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093942
-    },
-    {
-      "name": "ItemNum",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-=======
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_090342
->>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],

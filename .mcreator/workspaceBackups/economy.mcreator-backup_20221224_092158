@@ -68,7 +68,16 @@
       "locked_code": false,
       "registry_name": "buy_diamond",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
@@ -434,20 +443,12 @@
       }
     },
     {
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092158
       "name": "DiamondSellBuffer",
-=======
-      "name": "DiamondBuffer",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092812
       "type": "procedure",
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092158
       "registry_name": "diamond_sell_buffer",
-=======
-      "registry_name": "diamond_buffer",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092812
       "metadata": {
         "dependencies": [
           {
@@ -460,11 +461,7 @@
           }
         ]
       },
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092158
       "path": "~/Trader Entities/TraderGUIs/Ore Trader"
-=======
-      "path": "~/GUI Procedures/Ore Trader/Diamond"
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092812
     }
   ],
   "variable_elements": [
@@ -529,21 +526,9 @@
       "value": "0.0"
     },
     {
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092158
       "name": "SellBoolean",
       "type": "logic",
       "scope": "map",
-=======
-      "name": "Buffer",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "BuyBoolean",
-      "type": "logic",
-      "scope": "player_persistent",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092812
       "value": "false"
     }
   ],

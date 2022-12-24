@@ -83,17 +83,11 @@
         "dependencies": [
           {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 =======
-=======
->>>>>>> Stashed changes
             "name": "entity",
             "type": "entity"
           },
           {
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
             "name": "world",
             "type": "world"
@@ -444,7 +438,6 @@
     },
     {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093259
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095359
@@ -453,14 +446,10 @@
 =======
       "name": "DiamondBuffer",
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092842
-=======
-      "name": "DiamondBuffer",
->>>>>>> Stashed changes
       "type": "procedure",
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093259
 =======
@@ -470,9 +459,6 @@
 =======
       "registry_name": "diamond_buffer",
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092842
-=======
-      "registry_name": "diamond_buffer",
->>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -551,7 +537,6 @@
     },
     {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_093259
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_095359
@@ -561,8 +546,6 @@
       "scope": "map",
       "value": "false"
 =======
-=======
->>>>>>> Stashed changes
       "name": "Buffer",
       "type": "number",
       "scope": "player_persistent",
@@ -573,11 +556,6 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091742
-=======
->>>>>>> Stashed changes
     },
     {
       "name": "ItemNum",

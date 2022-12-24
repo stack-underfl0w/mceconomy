@@ -68,9 +68,6 @@
       "locked_code": false,
       "registry_name": "buy_diamond",
       "metadata": {
-<<<<<<< Updated upstream
-        "dependencies": []
-=======
         "dependencies": [
           {
             "name": "entity",
@@ -81,7 +78,6 @@
             "type": "world"
           }
         ]
->>>>>>> Stashed changes
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
@@ -540,18 +536,6 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_091742
-=======
-    },
-    {
-      "name": "ItemNum",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221224_092842
-=======
->>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],
