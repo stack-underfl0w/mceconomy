@@ -12,7 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
-import net.mcreator.economy.procedures.SellDiamondPreviewProcedure;
+import net.mcreator.economy.procedures.DiamondSellBufferProcedure;
 import net.mcreator.economy.procedures.BuyDiamondPreviewProcedure;
 import net.mcreator.economy.EconomyMod;
 
@@ -86,16 +86,16 @@ public class DiamondShopSlotMessage {
 		}
 		if (slotID == 1 && changeType == 0) {
 
-			SellDiamondPreviewProcedure.execute(world, entity);
+			DiamondSellBufferProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 1) {
 
-			SellDiamondPreviewProcedure.execute(world, entity);
+			DiamondSellBufferProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 2) {
 			int amount = meta;
 
-			SellDiamondPreviewProcedure.execute(world, entity);
+			DiamondSellBufferProcedure.execute(world, entity);
 		}
 		if (slotID == 4 && changeType == 0) {
 

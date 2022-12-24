@@ -156,6 +156,7 @@ public class EconomyModVariables {
 		public String sell = "\"\"";
 		public String buy = "\"\"";
 		public double DiamondX = 0.0;
+		public boolean SellBoolean = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -170,6 +171,7 @@ public class EconomyModVariables {
 			sell = nbt.getString("sell");
 			buy = nbt.getString("buy");
 			DiamondX = nbt.getDouble("DiamondX");
+			SellBoolean = nbt.getBoolean("SellBoolean");
 		}
 
 		@Override
@@ -180,6 +182,7 @@ public class EconomyModVariables {
 			nbt.putString("sell", sell);
 			nbt.putString("buy", buy);
 			nbt.putDouble("DiamondX", DiamondX);
+			nbt.putBoolean("SellBoolean", SellBoolean);
 			return nbt;
 		}
 

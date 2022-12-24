@@ -76,7 +76,7 @@ public class DiamondShopScreen extends AbstractContainerScreen<DiamondShopMenu> 
 		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).buy) + "", 111, 28, -12829636);
 		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).sell) + "", 27, 60, -12829636);
 		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).DiamondCost) + "", 109, 3, -12829636);
-		this.font.draw(poseStack, "" + (int) (EconomyModVariables.MapVariables.get(world).DiamondX) + "", -2, 3, -12829636);
+		this.font.draw(poseStack, "" + (int) (EconomyModVariables.MapVariables.get(world).DiamondX) + "", 10, 7, -12829636);
 	}
 
 	@Override
@@ -95,7 +95,7 @@ public class DiamondShopScreen extends AbstractContainerScreen<DiamondShopMenu> 
 				DiamondShopButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 64, this.topPos + 54, 46, 20, Component.literal("Sell"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 65, this.topPos + 54, 46, 20, Component.literal("Sell"), e -> {
 			if (true) {
 				EconomyMod.PACKET_HANDLER.sendToServer(new DiamondShopButtonMessage(1, x, y, z));
 				DiamondShopButtonMessage.handleButtonAction(entity, 1, x, y, z);

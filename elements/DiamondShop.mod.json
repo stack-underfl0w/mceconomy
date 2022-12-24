@@ -70,13 +70,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "SellDiamondPreview"
+            "name": "DiamondSellBuffer"
           },
           "onTakenFromSlot": {
-            "name": "SellDiamondPreview"
+            "name": "DiamondSellBuffer"
           },
           "onStackTransfer": {
-            "name": "SellDiamondPreview"
+            "name": "DiamondSellBuffer"
           },
           "name": "Slot #1",
           "x": 132,
@@ -93,7 +93,7 @@
           "width": 46,
           "height": 20,
           "name": "Sell",
-          "x": 190,
+          "x": 191,
           "y": 91
         }
       },
@@ -235,8 +235,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:DiamondX>",
-          "x": 123,
-          "y": 40
+          "x": 136,
+          "y": 44
         }
       }
     ],
