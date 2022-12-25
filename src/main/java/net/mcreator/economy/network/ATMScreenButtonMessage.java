@@ -66,15 +66,15 @@ public class ATMScreenButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			GoldConvertProcedure.execute(entity);
+			GoldConvertProcedure.execute(world, entity);
 		}
 		if (buttonID == 1) {
 
-			SilverConvertProcedure.execute(entity);
+			SilverConvertProcedure.execute(world, entity);
 		}
 		if (buttonID == 2) {
 
-			BronzeConvertProcedure.execute(entity);
+			BronzeConvertProcedure.execute(world, entity);
 		}
 	}
 

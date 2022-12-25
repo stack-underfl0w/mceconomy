@@ -27,27 +27,45 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:GoldCoin"
+            "value": ""
           },
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onTakenFromSlot": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onStackTransfer": {
+            "name": "ConverterUpdateCoinChecker"
+          },
           "name": "Slot #0",
-          "x": 150,
-          "y": 56
+          "x": 153,
+          "y": 55
         }
       },
       {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:SilverCoin"
+            "value": ""
           },
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onTakenFromSlot": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onStackTransfer": {
+            "name": "ConverterUpdateCoinChecker"
+          },
           "name": "Slot #1",
-          "x": 150,
+          "x": 153,
           "y": 77
         }
       },
@@ -55,13 +73,22 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:BronzeCoin"
+            "value": ""
           },
           "id": 2,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onTakenFromSlot": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onStackTransfer": {
+            "name": "ConverterUpdateCoinChecker"
+          },
           "name": "Slot #2",
-          "x": 150,
+          "x": 153,
           "y": 98
         }
       },
@@ -137,6 +164,75 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #5",
           "x": 258,
+          "y": 98
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onTakenFromSlot": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onStackTransfer": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "name": "Slot #6",
+          "x": 131,
+          "y": 55
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onTakenFromSlot": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onStackTransfer": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "name": "Slot #7",
+          "x": 131,
+          "y": 77
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onTakenFromSlot": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "onStackTransfer": {
+            "name": "ConverterUpdateCoinChecker"
+          },
+          "name": "Slot #8",
+          "x": 131,
           "y": 98
         }
       }

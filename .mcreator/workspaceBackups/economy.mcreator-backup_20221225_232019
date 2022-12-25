@@ -344,9 +344,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Converter"
     },
     {
       "name": "SilverConvert",
@@ -360,9 +365,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Converter"
     },
     {
       "name": "BronzeConvert",
@@ -376,9 +386,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Converter"
     },
     {
       "name": "SellDiamondPreview",
@@ -483,6 +498,27 @@
         ]
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "ConverterUpdateCoinChecker",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "converter_update_coin_checker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Converter"
     }
   ],
   "variable_elements": [
@@ -569,6 +605,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "CashInATM",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -645,6 +687,10 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Converter",
+        "children": []
       }
     ]
   },

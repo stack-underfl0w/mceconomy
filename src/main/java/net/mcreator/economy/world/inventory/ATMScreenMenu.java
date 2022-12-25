@@ -18,8 +18,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.economy.network.ATMScreenSlotMessage;
 import net.mcreator.economy.init.EconomyModMenus;
-import net.mcreator.economy.init.EconomyModItems;
+import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -38,7 +39,7 @@ public class ATMScreenMenu extends AbstractContainerMenu implements Supplier<Map
 		super(EconomyModMenus.ATM_SCREEN.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(6);
+		this.internal = new ItemStackHandler(9);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -76,22 +77,61 @@ public class ATMScreenMenu extends AbstractContainerMenu implements Supplier<Map
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 20) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 28, 19) {
 			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return (EconomyModItems.GOLD_COIN.get() == stack.getItem());
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(0, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(0, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(0, 2, b.getCount() - a.getCount());
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 41) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 28, 41) {
 			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return (EconomyModItems.SILVER_COIN.get() == stack.getItem());
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(1, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(1, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(1, 2, b.getCount() - a.getCount());
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 25, 62) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 28, 62) {
 			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return (EconomyModItems.BRONZE_COIN.get() == stack.getItem());
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(2, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(2, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(2, 2, b.getCount() - a.getCount());
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 20) {
@@ -110,6 +150,63 @@ public class ATMScreenMenu extends AbstractContainerMenu implements Supplier<Map
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
+			}
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 6, 19) {
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(6, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(6, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(6, 2, b.getCount() - a.getCount());
+			}
+		}));
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 6, 41) {
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(7, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(7, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(7, 2, b.getCount() - a.getCount());
+			}
+		}));
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 6, 62) {
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(8, 0, 0);
+			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(8, 1, 0);
+			}
+
+			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(8, 2, b.getCount() - a.getCount());
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
@@ -131,16 +228,16 @@ public class ATMScreenMenu extends AbstractContainerMenu implements Supplier<Map
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 6) {
-				if (!this.moveItemStackTo(itemstack1, 6, this.slots.size(), true))
+			if (index < 9) {
+				if (!this.moveItemStackTo(itemstack1, 9, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 6, false)) {
-				if (index < 6 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 6 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 9, false)) {
+				if (index < 9 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 9 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 6, 6 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 9, 9 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -245,6 +342,13 @@ public class ATMScreenMenu extends AbstractContainerMenu implements Supplier<Map
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			EconomyMod.PACKET_HANDLER.sendToServer(new ATMScreenSlotMessage(slotid, x, y, z, ctype, meta));
+			ATMScreenSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 
