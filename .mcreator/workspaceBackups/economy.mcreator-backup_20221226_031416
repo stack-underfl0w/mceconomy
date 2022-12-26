@@ -543,6 +543,10 @@
       "registry_name": "atm_value",
       "metadata": {
         "dependencies": [
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+>>>>>>> Stashed changes
           {
             "name": "entity",
             "type": "entity"
@@ -557,7 +561,11 @@
       "sortid": 55,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "compiles": false,
+=======
+      "compiles": true,
+>>>>>>> Stashed changes
 =======
       "compiles": true,
 >>>>>>> Stashed changes
@@ -568,6 +576,7 @@
       "registry_name": "daily_tax",
       "metadata": {
         "dependencies": [
+<<<<<<< Updated upstream
           {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -626,6 +635,17 @@
       },
       "path": "~/Converter"
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023546
+>>>>>>> Stashed changes
+=======
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_031416
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Storage"
 >>>>>>> Stashed changes
     }
   ],
@@ -718,12 +738,18 @@
       "name": "CashInATM",
       "type": "number",
       "scope": "player_persistent",
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+=======
+>>>>>>> Stashed changes
       "value": "0"
     },
     {
       "name": "iteration",
       "type": "number",
       "scope": "player_persistent",
+<<<<<<< Updated upstream
       "value": "0"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -742,12 +768,25 @@
       "value": "0"
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_031416
+      "value": "0"
+>>>>>>> Stashed changes
     },
     {
       "name": "iteration",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+    },
+    {
+      "name": "TaxIsRunning",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
 >>>>>>> Stashed changes
     }
   ],

@@ -516,6 +516,10 @@
         ]
       },
       "path": "~/Converter"
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014419
+>>>>>>> Stashed changes
     },
     {
       "name": "BronzeConvertFixed",
@@ -551,11 +555,15 @@
       },
       "path": "~/Converter"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
     },
     {
       "name": "DailyTax",
       "type": "procedure",
       "sortid": 55,
+<<<<<<< Updated upstream
       "compiles": true,
       "locked_code": false,
       "registry_name": "daily_tax",
@@ -564,10 +572,50 @@
           {
             "name": "world",
             "type": "world"
+=======
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "daily_tax",
+=======
+    },
+    {
+      "name": "BronzeConvertFixed",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_convert_fixed",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "AtmValue",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_value",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+>>>>>>> Stashed changes
           }
         ]
       },
       "path": "~/Storage"
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     }
@@ -670,6 +718,7 @@
       "value": "0"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     },
     {
@@ -677,6 +726,8 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

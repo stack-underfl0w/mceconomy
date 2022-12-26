@@ -543,6 +543,7 @@
       "registry_name": "atm_value",
       "metadata": {
         "dependencies": [
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
           {
             "name": "entity",
             "type": "entity"
@@ -560,9 +561,11 @@
       "registry_name": "daily_tax",
       "metadata": {
         "dependencies": [
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_031416
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -658,6 +661,15 @@
       "name": "CashInATM",
       "type": "number",
       "scope": "player_persistent",
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+=======
+      "value": "0"
+    },
+    {
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_031416
       "value": "0"
     },
     {
