@@ -535,16 +535,11 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "world",
             "type": "world"
           }
         ]
-      },
-      "path": "~/Storage"
+      }
     }
   ],
   "variable_elements": [
@@ -634,6 +629,18 @@
     },
     {
       "name": "CashInATM",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "TaxIsRunning",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "TotalCurrencyMinted",
       "type": "number",
       "scope": "map",
       "value": "0"

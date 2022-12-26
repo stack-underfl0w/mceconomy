@@ -161,6 +161,8 @@ public class EconomyModVariables {
 		public double DiamondX = 0.0;
 		public double ItemNum = 0;
 		public double CashInATM = 0;
+		public boolean TaxIsRunning = false;
+		public double TotalCurrencyMinted = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -177,6 +179,8 @@ public class EconomyModVariables {
 			DiamondX = nbt.getDouble("DiamondX");
 			ItemNum = nbt.getDouble("ItemNum");
 			CashInATM = nbt.getDouble("CashInATM");
+			TaxIsRunning = nbt.getBoolean("TaxIsRunning");
+			TotalCurrencyMinted = nbt.getDouble("TotalCurrencyMinted");
 		}
 
 		@Override
@@ -189,6 +193,8 @@ public class EconomyModVariables {
 			nbt.putDouble("DiamondX", DiamondX);
 			nbt.putDouble("ItemNum", ItemNum);
 			nbt.putDouble("CashInATM", CashInATM);
+			nbt.putBoolean("TaxIsRunning", TaxIsRunning);
+			nbt.putDouble("TotalCurrencyMinted", TotalCurrencyMinted);
 			return nbt;
 		}
 
