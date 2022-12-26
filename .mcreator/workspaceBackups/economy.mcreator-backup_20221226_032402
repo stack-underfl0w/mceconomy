@@ -490,6 +490,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "gold_convert_fixed",
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_032402
       "metadata": {
         "dependencies": [
           {
@@ -558,18 +559,34 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "daily_tax",
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_031416
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
+      "path": "~/Converter"
+    },
+    {
+      "name": "SilverConvertFixed",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_convert_fixed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_032402
       "path": "~/Storage"
     },
     {
@@ -591,15 +608,39 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "convert_checker",
+=======
+      "path": "~/Converter"
+    },
+    {
+      "name": "BronzeConvertFixed",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_convert_fixed",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_031416
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "AtmValue",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_value",
+      "metadata": {
+        "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -701,12 +742,15 @@
       "name": "iteration",
       "type": "number",
       "scope": "player_persistent",
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_032402
       "value": "0"
     },
     {
       "name": "iteration",
       "type": "number",
       "scope": "player_persistent",
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_031416
       "value": "0"
     }
   ],

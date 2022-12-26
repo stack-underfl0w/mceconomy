@@ -340,6 +340,7 @@
     {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "name": "SellDiamondPreview",
       "type": "procedure",
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025316
@@ -354,6 +355,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "name": "GoldConvert",
       "type": "procedure",
       "sortid": 44,
@@ -361,6 +364,9 @@
       "locked_code": false,
       "registry_name": "gold_convert",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -376,6 +382,7 @@
           }
         ]
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "path": "~/GUI Procedures/Ore Trader/Diamond"
@@ -395,6 +402,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "path": "~/Converter"
     },
     {
@@ -405,6 +414,9 @@
       "locked_code": false,
       "registry_name": "silver_convert",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -419,6 +431,7 @@
             "type": "world"
           }
         ]
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
       }
@@ -438,6 +451,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       },
       "path": "~/Converter"
     },
@@ -449,6 +464,9 @@
       "locked_code": false,
       "registry_name": "bronze_convert",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -464,6 +482,7 @@
           }
         ]
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "path": "~/GUI Procedures/Ore Trader/Diamond"
@@ -478,6 +497,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "path": "~/Converter"
     },
     {
@@ -488,6 +509,9 @@
       "locked_code": false,
       "registry_name": "sell_diamond_preview",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -508,6 +532,7 @@
     {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "name": "DiamondBuyBuffer",
       "type": "procedure",
       "sortid": 53,
@@ -517,6 +542,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "name": "SetDiamondCost",
       "type": "procedure",
       "sortid": 49,
@@ -524,6 +551,9 @@
       "locked_code": false,
       "registry_name": "set_diamond_cost",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -538,6 +568,7 @@
             "type": "world"
           }
         ]
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
       },
@@ -553,6 +584,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       }
     },
     {
@@ -563,6 +596,9 @@
       "locked_code": false,
       "registry_name": "diamond_sell_buffer",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -578,6 +614,7 @@
           }
         ]
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "path": "~/Storage"
@@ -592,6 +629,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
@@ -602,6 +641,9 @@
       "locked_code": false,
       "registry_name": "buy_diamond_preview",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -619,6 +661,7 @@
       },
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "path": "~/Converter"
     },
     {
@@ -631,6 +674,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
@@ -641,6 +686,9 @@
       "locked_code": false,
       "registry_name": "diamond_buy_buffer",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -649,6 +697,7 @@
           {
             "name": "entity",
             "type": "entity"
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
           }
@@ -688,6 +737,8 @@
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
           },
           {
             "name": "world",
@@ -704,6 +755,7 @@
       "compiles": false,
       "locked_code": false,
       "registry_name": "converter_update_coin_checker",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
       "metadata": {
@@ -726,13 +778,18 @@
       "registry_name": "atm_value",
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
           },
@@ -740,6 +797,9 @@
             "name": "world",
             "type": "world"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

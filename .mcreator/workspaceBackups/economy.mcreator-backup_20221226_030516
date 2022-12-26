@@ -338,12 +338,26 @@
       "path": "~/Items"
     },
     {
+<<<<<<< Updated upstream
+      "name": "SellDiamondPreview",
+      "type": "procedure",
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030516
+      "sortid": 44,
+      "compiles": false,
+=======
+      "sortid": 47,
+      "compiles": true,
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
+      "locked_code": false,
+      "registry_name": "sell_diamond_preview",
+=======
       "name": "GoldConvert",
       "type": "procedure",
       "sortid": 44,
       "compiles": false,
       "locked_code": false,
       "registry_name": "gold_convert",
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -356,6 +370,22 @@
           }
         ]
       },
+<<<<<<< Updated upstream
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "SetDiamondCost",
+      "type": "procedure",
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030516
+      "sortid": 45,
+      "compiles": false,
+=======
+      "sortid": 49,
+      "compiles": true,
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
+      "locked_code": false,
+      "registry_name": "set_diamond_cost",
+=======
       "path": "~/Converter"
     },
     {
@@ -365,6 +395,7 @@
       "compiles": false,
       "locked_code": false,
       "registry_name": "silver_convert",
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -376,6 +407,22 @@
             "type": "world"
           }
         ]
+<<<<<<< Updated upstream
+      }
+    },
+    {
+      "name": "DiamondSellBuffer",
+      "type": "procedure",
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030516
+      "sortid": 46,
+      "compiles": false,
+=======
+      "sortid": 51,
+      "compiles": true,
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
+      "locked_code": false,
+      "registry_name": "diamond_sell_buffer",
+=======
       },
       "path": "~/Converter"
     },
@@ -386,6 +433,7 @@
       "compiles": false,
       "locked_code": false,
       "registry_name": "bronze_convert",
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -398,68 +446,7 @@
           }
         ]
       },
-      "path": "~/Converter"
-    },
-    {
-      "name": "SellDiamondPreview",
-      "type": "procedure",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sell_diamond_preview",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI Procedures/Ore Trader/Diamond"
-    },
-    {
-      "name": "SetDiamondCost",
-      "type": "procedure",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_diamond_cost",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "DiamondSellBuffer",
-      "type": "procedure",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_sell_buffer",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
+<<<<<<< Updated upstream
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
@@ -469,6 +456,17 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "buy_diamond_preview",
+=======
+      "path": "~/Converter"
+    },
+    {
+      "name": "SellDiamondPreview",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_diamond_preview",
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -484,17 +482,161 @@
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
+<<<<<<< Updated upstream
       "name": "DiamondBuyBuffer",
       "type": "procedure",
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_buy_buffer",
+=======
+      "name": "SetDiamondCost",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_diamond_cost",
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+<<<<<<< Updated upstream
+      },
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "DailyTax",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daily_tax",
+=======
+      }
+    },
+    {
+      "name": "DiamondSellBuffer",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_sell_buffer",
+>>>>>>> Stashed changes
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+<<<<<<< Updated upstream
+      "path": "~/Storage"
+    },
+    {
+      "name": "ConvertChecker",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_checker",
+=======
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "BuyDiamondPreview",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_diamond_preview",
+>>>>>>> Stashed changes
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+<<<<<<< Updated upstream
+      "path": "~/Converter"
+    },
+    {
+      "name": "GoldConvertFixed",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_convert_fixed",
+=======
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
+    },
+    {
+      "name": "DiamondBuyBuffer",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_buy_buffer",
+>>>>>>> Stashed changes
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+<<<<<<< Updated upstream
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "SilverConvertFixed",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_convert_fixed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "BronzeConvertFixed",
+      "type": "procedure",
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030516
+      "sortid": 54,
+      "compiles": false,
+=======
+      "sortid": 60,
+      "compiles": true,
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
+      "locked_code": false,
+      "registry_name": "bronze_convert_fixed",
+=======
           },
           {
             "name": "world",
@@ -511,15 +653,36 @@
       "compiles": false,
       "locked_code": false,
       "registry_name": "converter_update_coin_checker",
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+<<<<<<< Updated upstream
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "AtmValue",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_value",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+=======
           },
           {
             "name": "world",
             "type": "world"
+>>>>>>> Stashed changes
           }
         ]
       },
