@@ -162,30 +162,7 @@ public class EconomyModVariables {
 		public String buy = "\"\"";
 		public double DiamondX = 0.0;
 		public double ItemNum = 0;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-		public double CashInATM = 0;
-		public boolean TaxIsRunning = false;
-		public double TotalCurrencyMinted = 0;
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+		public double NewCurrencyMinted = 16.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -201,30 +178,7 @@ public class EconomyModVariables {
 			buy = nbt.getString("buy");
 			DiamondX = nbt.getDouble("DiamondX");
 			ItemNum = nbt.getDouble("ItemNum");
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-			CashInATM = nbt.getDouble("CashInATM");
-			TaxIsRunning = nbt.getBoolean("TaxIsRunning");
-			TotalCurrencyMinted = nbt.getDouble("TotalCurrencyMinted");
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+			NewCurrencyMinted = nbt.getDouble("NewCurrencyMinted");
 		}
 
 		@Override
@@ -236,30 +190,7 @@ public class EconomyModVariables {
 			nbt.putString("buy", buy);
 			nbt.putDouble("DiamondX", DiamondX);
 			nbt.putDouble("ItemNum", ItemNum);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-			nbt.putDouble("CashInATM", CashInATM);
-			nbt.putBoolean("TaxIsRunning", TaxIsRunning);
-			nbt.putDouble("TotalCurrencyMinted", TotalCurrencyMinted);
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+			nbt.putDouble("NewCurrencyMinted", NewCurrencyMinted);
 			return nbt;
 		}
 

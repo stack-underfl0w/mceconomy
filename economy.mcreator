@@ -442,27 +442,6 @@
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
-      "name": "DailyTax",
-      "type": "procedure",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daily_tax",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Storage"
-    },
-    {
       "name": "ConvertChecker",
       "type": "procedure",
       "sortid": 57,
@@ -562,6 +541,22 @@
         "dependencies": []
       },
       "path": "~/Converter"
+    },
+    {
+      "name": "CommitTaxation",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commit_taxation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -660,6 +655,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "NewCurrencyMinted",
+      "type": "number",
+      "scope": "map",
+      "value": "16.0"
     }
   ],
   "sound_elements": [],
