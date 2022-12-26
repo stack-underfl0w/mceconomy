@@ -535,16 +535,30 @@
       "metadata": {
         "dependencies": [
           {
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_015049
+=======
+>>>>>>> Stashed changes
             "name": "entity",
             "type": "entity"
           },
           {
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
             "name": "world",
             "type": "world"
           }
         ]
       },
       "path": "~/Storage"
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_015049
+=======
+>>>>>>> Stashed changes
     },
     {
       "name": "ConvertFixed",
@@ -578,6 +592,10 @@
         ]
       },
       "path": "~/Converter"
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [
@@ -672,10 +690,23 @@
       "value": "0"
     },
     {
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_015049
+      "name": "TaxIsRunning",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+=======
+>>>>>>> Stashed changes
       "name": "iteration",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],

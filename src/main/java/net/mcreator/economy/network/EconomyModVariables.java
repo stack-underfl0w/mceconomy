@@ -163,9 +163,12 @@ public class EconomyModVariables {
 		public double DiamondX = 0.0;
 		public double ItemNum = 0;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		public double CashInATM = 0;
 		public boolean TaxIsRunning = false;
 		public double TotalCurrencyMinted = 0;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -184,9 +187,12 @@ public class EconomyModVariables {
 			DiamondX = nbt.getDouble("DiamondX");
 			ItemNum = nbt.getDouble("ItemNum");
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 			CashInATM = nbt.getDouble("CashInATM");
 			TaxIsRunning = nbt.getBoolean("TaxIsRunning");
 			TotalCurrencyMinted = nbt.getDouble("TotalCurrencyMinted");
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 		}
@@ -201,9 +207,12 @@ public class EconomyModVariables {
 			nbt.putDouble("DiamondX", DiamondX);
 			nbt.putDouble("ItemNum", ItemNum);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 			nbt.putDouble("CashInATM", CashInATM);
 			nbt.putBoolean("TaxIsRunning", TaxIsRunning);
 			nbt.putDouble("TotalCurrencyMinted", TotalCurrencyMinted);
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 			return nbt;

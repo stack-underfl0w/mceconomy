@@ -545,6 +545,11 @@
         ]
       },
       "path": "~/Storage"
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014119
+=======
+>>>>>>> Stashed changes
     },
     {
       "name": "ConvertFixed",
@@ -578,6 +583,10 @@
         ]
       },
       "path": "~/Converter"
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023546
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [

@@ -665,6 +665,15 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "name": "TaxIsRunning",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+>>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],

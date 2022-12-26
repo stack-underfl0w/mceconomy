@@ -512,6 +512,7 @@
           {
             "name": "entity",
             "type": "entity"
+<<<<<<< Updated upstream
           }
         ]
       },
@@ -530,12 +531,42 @@
 <<<<<<< Updated upstream
             "name": "world",
             "type": "world"
+=======
+>>>>>>> Stashed changes
           }
         ]
       }
 =======
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+<<<<<<< Updated upstream
+      "name": "AtmValue",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_value",
+=======
+      "name": "BronzeConvertFixed",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_convert_fixed",
+>>>>>>> Stashed changes
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+<<<<<<< Updated upstream
+=======
           }
         ]
       },
@@ -553,10 +584,14 @@
           {
             "name": "entity",
             "type": "entity"
+>>>>>>> Stashed changes
           }
         ]
       },
       "path": "~/Converter"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
   ],
@@ -655,6 +690,7 @@
       "name": "iteration",
       "type": "number",
       "scope": "player_persistent",
+<<<<<<< Updated upstream
       "value": "0"
     },
     {
@@ -667,6 +703,8 @@
       "name": "TotalCurrencyMinted",
       "type": "number",
       "scope": "map",
+=======
+>>>>>>> Stashed changes
       "value": "0"
     }
   ],

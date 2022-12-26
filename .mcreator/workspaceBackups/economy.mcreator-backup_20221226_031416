@@ -555,16 +555,23 @@
       "name": "DailyTax",
       "type": "procedure",
       "sortid": 55,
+<<<<<<< Updated upstream
       "compiles": false,
+=======
+      "compiles": true,
+>>>>>>> Stashed changes
       "locked_code": false,
       "registry_name": "daily_tax",
       "metadata": {
         "dependencies": [
           {
+<<<<<<< Updated upstream
             "name": "entity",
             "type": "entity"
           },
           {
+=======
+>>>>>>> Stashed changes
             "name": "world",
             "type": "world"
           }
@@ -669,6 +676,21 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "name": "TaxIsRunning",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "TotalCurrencyMinted",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+>>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],
