@@ -535,12 +535,55 @@
       "metadata": {
         "dependencies": [
           {
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024723
+=======
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023546
             "name": "world",
             "type": "world"
           }
         ]
       },
       "path": "~/Storage"
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024723
+=======
+    },
+    {
+      "name": "ConvertFixed",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_fixed",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "ConvertChecker",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_checker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Converter"
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023546
     }
   ],
   "variable_elements": [
@@ -635,6 +678,7 @@
       "value": "0"
     },
     {
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024723
       "name": "TaxIsRunning",
       "type": "logic",
       "scope": "map",
@@ -644,6 +688,11 @@
       "name": "TotalCurrencyMinted",
       "type": "number",
       "scope": "map",
+=======
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023546
       "value": "0"
     }
   ],

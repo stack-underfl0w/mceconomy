@@ -550,6 +550,7 @@
         ]
       },
       "path": "~/Converter"
+<<<<<<< Updated upstream
     },
     {
       "name": "DailyTax",
@@ -567,6 +568,8 @@
         ]
       },
       "path": "~/Storage"
+=======
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [
@@ -666,6 +669,7 @@
       "scope": "player_persistent",
       "value": "0"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     },
     {
@@ -673,6 +677,8 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
   ],

@@ -536,8 +536,13 @@
         "dependencies": [
           {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_015049
+=======
+>>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
 =======
 >>>>>>> Stashed changes
             "name": "entity",
@@ -545,6 +550,10 @@
           },
           {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
 >>>>>>> Stashed changes
@@ -555,8 +564,13 @@
       },
       "path": "~/Storage"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_015049
+=======
+>>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
 =======
 >>>>>>> Stashed changes
     },
@@ -593,6 +607,10 @@
       },
       "path": "~/Converter"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
 >>>>>>> Stashed changes
@@ -691,12 +709,17 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_015049
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
+>>>>>>> Stashed changes
       "name": "TaxIsRunning",
       "type": "logic",
       "scope": "map",
       "value": "false"
+<<<<<<< Updated upstream
 =======
 >>>>>>> Stashed changes
       "name": "iteration",
@@ -706,6 +729,19 @@
 <<<<<<< Updated upstream
 =======
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
+=======
+    },
+    {
+      "name": "TotalCurrencyMinted",
+      "type": "number",
+      "scope": "map",
+=======
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+      "value": "0"
 >>>>>>> Stashed changes
     }
   ],

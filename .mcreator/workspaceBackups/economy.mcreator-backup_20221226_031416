@@ -556,7 +556,11 @@
       "type": "procedure",
       "sortid": 55,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "compiles": false,
+=======
+      "compiles": true,
+>>>>>>> Stashed changes
 =======
       "compiles": true,
 >>>>>>> Stashed changes
@@ -566,10 +570,16 @@
         "dependencies": [
           {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
             "name": "entity",
             "type": "entity"
           },
           {
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
             "name": "world",
@@ -578,6 +588,45 @@
         ]
       },
       "path": "~/Storage"
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014119
+=======
+    },
+    {
+      "name": "ConvertFixed",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_fixed",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "ConvertChecker",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_checker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Converter"
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023546
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [
@@ -677,6 +726,7 @@
       "scope": "player_persistent",
       "value": "0"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     },
     {
@@ -689,6 +739,14 @@
       "name": "TotalCurrencyMinted",
       "type": "number",
       "scope": "map",
+      "value": "0"
+>>>>>>> Stashed changes
+=======
+    },
+    {
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
 >>>>>>> Stashed changes
     }
