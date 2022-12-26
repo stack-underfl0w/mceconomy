@@ -1,0 +1,60 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.DIAMOND"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 204,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Enter item to unlock:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Enter item to unlock:",
+          "x": 159,
+          "y": 52
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Unlock",
+          "width": 56,
+          "height": 20,
+          "name": "Unlock",
+          "x": 185,
+          "y": 93
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

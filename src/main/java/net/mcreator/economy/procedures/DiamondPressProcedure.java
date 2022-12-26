@@ -13,7 +13,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.economy.world.inventory.DiamondUnlockMenu;
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
+import net.mcreator.economy.network.EconomyModVariables;
 
 import io.netty.buffer.Unpooled;
 
@@ -21,20 +23,40 @@ public class DiamondPressProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			if (entity instanceof ServerPlayer _ent) {
-				BlockPos _bpos = new BlockPos(x, y, z);
-				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
-						return Component.literal("DiamondShop");
-					}
+		if ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new EconomyModVariables.PlayerVariables())).DiamondUnlock) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("DiamondShop");
+						}
 
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new DiamondShopMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-					}
-				}, _bpos);
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new DiamondShopMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		} else {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("DiamondUnlock");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new DiamondUnlockMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
 			}
 		}
 	}

@@ -338,69 +338,6 @@
       "path": "~/Items"
     },
     {
-      "name": "GoldConvert",
-      "type": "procedure",
-      "sortid": 44,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "gold_convert",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
-      "name": "SilverConvert",
-      "type": "procedure",
-      "sortid": 45,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "silver_convert",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
-      "name": "BronzeConvert",
-      "type": "procedure",
-      "sortid": 46,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "bronze_convert",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
       "name": "SellDiamondPreview",
       "type": "procedure",
       "sortid": 47,
@@ -505,31 +442,10 @@
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
-      "name": "ConverterUpdateCoinChecker",
-      "type": "procedure",
-      "sortid": 54,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "converter_update_coin_checker",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
       "name": "DailyTax",
       "type": "procedure",
       "sortid": 55,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "daily_tax",
       "metadata": {
@@ -547,10 +463,6 @@
       "path": "~/Storage"
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030116
-=======
->>>>>>> Stashed changes
       "name": "ConvertChecker",
       "type": "procedure",
       "sortid": 57,
@@ -578,27 +490,17 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "gold_convert_fixed",
-<<<<<<< Updated upstream
-=======
-      "name": "ConvertFixed",
-      "type": "procedure",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "convert_fixed",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023546
-=======
->>>>>>> Stashed changes
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Converter"
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030116
-=======
->>>>>>> Stashed changes
       "name": "SilverConvertFixed",
       "type": "procedure",
       "sortid": 59,
@@ -606,7 +508,12 @@
       "locked_code": false,
       "registry_name": "silver_convert_fixed",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Converter"
     },
@@ -617,26 +524,11 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bronze_convert_fixed",
-<<<<<<< Updated upstream
-=======
-      "name": "ConvertChecker",
-      "type": "procedure",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "convert_checker",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023546
-=======
->>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030116
-=======
->>>>>>> Stashed changes
           }
         ]
       },
@@ -654,19 +546,31 @@
           {
             "name": "entity",
             "type": "entity"
-<<<<<<< Updated upstream
-=======
-          },
-          {
-            "name": "world",
-            "type": "world"
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023546
-=======
->>>>>>> Stashed changes
           }
         ]
       },
       "path": "~/Converter"
+    },
+    {
+      "name": "ConvertFixed",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_fixed",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "DiamondUnlock",
+      "type": "gui",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_unlock",
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
     }
   ],
   "variable_elements": [
@@ -765,15 +669,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
-<<<<<<< Updated upstream
     },
     {
-      "name": "iteration",
-      "type": "number",
+      "name": "DiamondUnlock",
+      "type": "logic",
       "scope": "player_persistent",
-      "value": "0"
-=======
->>>>>>> Stashed changes
+      "value": "false"
     }
   ],
   "sound_elements": [],

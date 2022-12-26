@@ -445,7 +445,7 @@
       "name": "DailyTax",
       "type": "procedure",
       "sortid": 55,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "daily_tax",
       "metadata": {
@@ -552,47 +552,6 @@
       "path": "~/Converter"
     },
     {
-      "name": "DailyTax",
-      "type": "procedure",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daily_tax",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014819
-      "path": "~/Storage"
-=======
-      "path": "~/Converter"
-    },
-    {
-      "name": "DailyTax",
-      "type": "procedure",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daily_tax",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Storage"
-    },
-    {
       "name": "ConvertFixed",
       "type": "procedure",
       "sortid": 56,
@@ -605,12 +564,21 @@
       "path": "~/Converter"
     },
     {
-      "name": "ConvertChecker",
-      "type": "procedure",
-      "sortid": 57,
+      "name": "DiamondUnlock",
+      "type": "gui",
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "convert_checker",
+      "registry_name": "diamond_unlock",
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "DiamondUnlockRefresh",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_unlock_refresh",
       "metadata": {
         "dependencies": [
           {
@@ -623,8 +591,7 @@
           }
         ]
       },
-      "path": "~/Converter"
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+      "path": "~/GUI Procedures/Ore Trader/Diamond"
     }
   ],
   "variable_elements": [
@@ -725,10 +692,10 @@
       "value": "0"
     },
     {
-      "name": "iteration",
-      "type": "number",
+      "name": "DiamondUnlock",
+      "type": "logic",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "false"
     }
   ],
   "sound_elements": [],
