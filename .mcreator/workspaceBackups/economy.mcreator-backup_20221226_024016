@@ -339,12 +339,20 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "name": "GoldConvert",
       "type": "procedure",
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gold_convert",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "name": "SellDiamondPreview",
       "type": "procedure",
@@ -352,6 +360,10 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sell_diamond_preview",
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
@@ -366,6 +378,12 @@
         ]
       },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "path": "~/Converter"
     },
     {
@@ -375,6 +393,8 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "silver_convert",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
@@ -386,6 +406,10 @@
       "locked_code": false,
       "registry_name": "set_diamond_cost",
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -398,6 +422,12 @@
           }
         ]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       },
       "path": "~/Converter"
     },
@@ -408,6 +438,8 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bronze_convert",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       }
     },
@@ -418,6 +450,10 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_sell_buffer",
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
@@ -432,6 +468,12 @@
         ]
       },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "path": "~/Converter"
     },
     {
@@ -441,6 +483,8 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sell_diamond_preview",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
@@ -452,6 +496,10 @@
       "locked_code": false,
       "registry_name": "buy_diamond_preview",
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -468,12 +516,20 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "name": "SetDiamondCost",
       "type": "procedure",
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "set_diamond_cost",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "name": "DiamondBuyBuffer",
       "type": "procedure",
@@ -481,6 +537,10 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_buy_buffer",
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
@@ -494,6 +554,12 @@
           }
         ]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       }
     },
     {
@@ -503,6 +569,8 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_sell_buffer",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       },
       "path": "~/GUI Procedures/Ore Trader/Diamond"
@@ -515,6 +583,10 @@
       "locked_code": false,
       "registry_name": "daily_tax",
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -528,6 +600,12 @@
         ]
       },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
@@ -537,6 +615,8 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "buy_diamond_preview",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "path": "~/Storage"
     },
@@ -548,6 +628,10 @@
       "locked_code": false,
       "registry_name": "convert_checker",
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
@@ -561,6 +645,12 @@
         ]
       },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
@@ -570,6 +660,8 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_buy_buffer",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
       "path": "~/Converter"
     },
@@ -581,12 +673,22 @@
       "locked_code": false,
       "registry_name": "gold_convert_fixed",
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
           },
           {
             "name": "world",
@@ -603,6 +705,8 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "converter_update_coin_checker",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
           }
         ]
@@ -616,17 +720,36 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "silver_convert_fixed",
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+          },
+          {
+            "name": "world",
+            "type": "world"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
           }
         ]
       },
       "path": "~/Converter"
     },
     {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "name": "BronzeConvertFixed",
       "type": "procedure",
       "sortid": 60,
@@ -634,11 +757,23 @@
       "locked_code": false,
       "registry_name": "bronze_convert_fixed",
 >>>>>>> Stashed changes
+=======
+=======
+>>>>>>> Stashed changes
+      "name": "DailyTax",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daily_tax",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           },
 =======
@@ -661,10 +796,33 @@
             "type": "entity"
           }
         ]
+=======
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Storage"
+    },
+    {
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024646
+=======
+      "name": "ConvertFixed",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_fixed",
+      "metadata": {
+        "dependencies": []
+>>>>>>> Stashed changes
       },
       "path": "~/Converter"
     },
     {
+<<<<<<< Updated upstream
       "name": "DailyTax",
       "type": "procedure",
       "sortid": 55,
@@ -674,12 +832,28 @@
       "metadata": {
         "dependencies": [
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+      "name": "ConvertChecker",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_checker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+>>>>>>> Stashed changes
           {
             "name": "world",
             "type": "world"
           }
         ]
       },
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014819
@@ -726,12 +900,31 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+      "metadata": {
+        "dependencies": [
+          {
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
+=======
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
             "name": "world",
             "type": "world"
           }
         ]
       },
       "path": "~/Storage"
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -745,6 +938,13 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
+=======
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
     },
     {
       "name": "ConvertFixed",
@@ -753,12 +953,43 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "convert_fixed",
+<<<<<<< Updated upstream
+=======
+      "path": "~/Converter"
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024646
+    },
+    {
+      "name": "GoldConvertFixed",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_convert_fixed",
+=======
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": []
       },
       "path": "~/Converter"
     },
     {
+<<<<<<< Updated upstream
+      "name": "SilverConvertFixed",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_convert_fixed",
+>>>>>>> Stashed changes
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Converter"
+    },
+    {
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
       "name": "ConvertChecker",
       "type": "procedure",
       "sortid": 57,
@@ -781,12 +1012,33 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
+=======
+      "name": "BronzeConvertFixed",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_convert_fixed",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Converter"
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
 =======
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
 >>>>>>> Stashed changes
@@ -881,10 +1133,15 @@
       "name": "CashInATM",
       "type": "number",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
       "scope": "map",
       "value": "0"
     },
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
@@ -892,10 +1149,15 @@
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
 >>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_025753
+>>>>>>> Stashed changes
       "name": "TaxIsRunning",
       "type": "logic",
       "scope": "map",
       "value": "false"
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
 >>>>>>> Stashed changes
@@ -915,6 +1177,8 @@
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
     },
     {
       "name": "TotalCurrencyMinted",
@@ -925,14 +1189,36 @@
       "type": "number",
       "scope": "player_persistent",
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+<<<<<<< Updated upstream
       "value": "0"
 >>>>>>> Stashed changes
 =======
+=======
+      "scope": "player_persistent",
+      "value": "0"
     },
     {
       "name": "iteration",
       "type": "number",
       "scope": "player_persistent",
+      "value": "0"
+>>>>>>> Stashed changes
+    },
+    {
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+=======
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
       "value": "0"
 >>>>>>> Stashed changes
     }

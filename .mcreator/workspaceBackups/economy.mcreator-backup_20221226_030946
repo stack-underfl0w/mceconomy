@@ -517,8 +517,14 @@
       },
       "path": "~/Converter"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014419
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     },
     {
@@ -547,6 +553,13 @@
       "registry_name": "atm_value",
       "metadata": {
         "dependencies": [
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
+>>>>>>> Stashed changes
           {
             "name": "entity",
             "type": "entity"
@@ -556,6 +569,12 @@
       "path": "~/Converter"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     },
@@ -564,12 +583,20 @@
       "type": "procedure",
       "sortid": 55,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "compiles": true,
       "locked_code": false,
       "registry_name": "daily_tax",
       "metadata": {
         "dependencies": [
+<<<<<<< Updated upstream
           {
+<<<<<<< Updated upstream
             "name": "world",
             "type": "world"
 =======
@@ -588,26 +615,68 @@
 >>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
       "metadata": {
         "dependencies": [
+=======
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_031416
+>>>>>>> Stashed changes
           {
             "name": "entity",
             "type": "entity"
           }
         ]
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_015049
+=======
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Storage"
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_015049
+=======
+    },
+    {
+      "name": "ConvertFixed",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_fixed",
+      "metadata": {
+        "dependencies": []
+>>>>>>> Stashed changes
       },
       "path": "~/Converter"
     },
     {
+<<<<<<< Updated upstream
       "name": "AtmValue",
       "type": "procedure",
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "atm_value",
+=======
+      "name": "ConvertChecker",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_checker",
+>>>>>>> Stashed changes
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
           }
         ]
@@ -617,6 +686,21 @@
 =======
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Converter"
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
+=======
+      },
+      "path": "~/Storage"
 >>>>>>> Stashed changes
     }
   ],
@@ -709,16 +793,65 @@
       "name": "CashInATM",
       "type": "number",
       "scope": "player_persistent",
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+=======
+=======
+>>>>>>> Stashed changes
       "value": "0"
     },
     {
       "name": "iteration",
       "type": "number",
       "scope": "player_persistent",
+<<<<<<< Updated upstream
       "value": "0"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    },
+    {
+=======
+    },
+    {
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_015049
+>>>>>>> Stashed changes
+      "name": "TaxIsRunning",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+=======
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
+      "value": "0"
+    },
+    {
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_031416
+      "value": "0"
+    },
+    {
+>>>>>>> Stashed changes
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+>>>>>>> Stashed changes
 =======
     },
     {
@@ -726,10 +859,6 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
     }
   ],

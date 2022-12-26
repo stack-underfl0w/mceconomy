@@ -544,6 +544,9 @@
       "metadata": {
         "dependencies": [
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
           {
             "name": "entity",
             "type": "entity"
@@ -662,7 +665,16 @@
       "type": "number",
       "scope": "player_persistent",
 <<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_023323
 =======
+=======
+      "value": "0"
+    },
+    {
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
       "value": "0"
     },
     {

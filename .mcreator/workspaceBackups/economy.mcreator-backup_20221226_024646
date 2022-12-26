@@ -547,6 +547,27 @@
       "path": "~/Storage"
     },
     {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024646
+=======
+      "name": "ConvertFixed",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_fixed",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Converter"
+    },
+    {
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       "name": "ConvertChecker",
       "type": "procedure",
       "sortid": 57,
@@ -566,6 +587,13 @@
         ]
       },
       "path": "~/Converter"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024646
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     },
     {
       "name": "GoldConvertFixed",
@@ -602,6 +630,14 @@
         "dependencies": []
       },
       "path": "~/Converter"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [
@@ -700,6 +736,18 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    },
+    {
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     }
   ],
   "sound_elements": [],
