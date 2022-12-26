@@ -154,7 +154,8 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coinstorage"
+      "registry_name": "coinstorage",
+      "path": "~/Storage"
     },
     {
       "name": "OpenCoinStorage",
@@ -186,7 +187,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Storage"
     },
     {
       "name": "StoreBaseCash",
@@ -206,7 +208,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Storage"
     },
     {
       "name": "WithdrawBaseCash",
@@ -226,7 +229,8 @@
             "type": "map"
           }
         ]
-      }
+      },
+      "path": "~/Storage"
     },
     {
       "name": "Deathdrop",
@@ -297,7 +301,8 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "atm_screen"
+      "registry_name": "atm_screen",
+      "path": "~/Converter"
     },
     {
       "name": "OpenATM",
@@ -519,6 +524,27 @@
         ]
       },
       "path": "~/Converter"
+    },
+    {
+      "name": "DailyTax",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daily_tax",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Storage"
     }
   ],
   "variable_elements": [
@@ -690,6 +716,10 @@
       },
       {
         "name": "Converter",
+        "children": []
+      },
+      {
+        "name": "Storage",
         "children": []
       }
     ]
