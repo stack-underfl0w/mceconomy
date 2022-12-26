@@ -338,69 +338,6 @@
       "path": "~/Items"
     },
     {
-      "name": "GoldConvert",
-      "type": "procedure",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gold_convert",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
-      "name": "SilverConvert",
-      "type": "procedure",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "silver_convert",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
-      "name": "BronzeConvert",
-      "type": "procedure",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bronze_convert",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
       "name": "SellDiamondPreview",
       "type": "procedure",
       "sortid": 47,
@@ -505,72 +442,6 @@
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
-      "name": "ConverterUpdateCoinChecker",
-      "type": "procedure",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "converter_update_coin_checker",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
-      "name": "DailyTax",
-      "type": "procedure",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daily_tax",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Storage"
-    },
-    {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024646
-=======
-      "name": "ConvertFixed",
-      "type": "procedure",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "convert_fixed",
-      "metadata": {
-        "dependencies": []
-      },
-      "path": "~/Converter"
-    },
-    {
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       "name": "ConvertChecker",
       "type": "procedure",
       "sortid": 57,
@@ -590,16 +461,6 @@
         ]
       },
       "path": "~/Converter"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024646
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     },
     {
       "name": "GoldConvertFixed",
@@ -609,7 +470,12 @@
       "locked_code": false,
       "registry_name": "gold_convert_fixed",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Converter"
     },
@@ -621,7 +487,12 @@
       "locked_code": false,
       "registry_name": "silver_convert_fixed",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Converter"
     },
@@ -633,20 +504,59 @@
       "locked_code": false,
       "registry_name": "bronze_convert_fixed",
       "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "AtmValue",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_value",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "ConvertFixed",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_fixed",
+      "metadata": {
         "dependencies": []
       },
       "path": "~/Converter"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    },
+    {
+      "name": "CommitTaxation",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commit_taxation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -745,21 +655,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     },
     {
-      "name": "iteration",
+      "name": "NewCurrencyMinted",
       "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+      "scope": "map",
+      "value": "16.0"
     }
   ],
   "sound_elements": [],

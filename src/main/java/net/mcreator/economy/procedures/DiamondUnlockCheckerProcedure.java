@@ -1,15 +1,8 @@
 package net.mcreator.economy.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.economy.network.EconomyModVariables;
-
-import java.util.function.Supplier;
-import java.util.Map;
+import javax.annotation.Nullable;
 
 public class DiamondUnlockCheckerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

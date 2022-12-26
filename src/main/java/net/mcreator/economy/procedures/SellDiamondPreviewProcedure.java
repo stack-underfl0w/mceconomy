@@ -45,6 +45,7 @@ public class SellDiamondPreviewProcedure {
 			DiamondZ = DiamondZ + 1;
 			DiamondCost = DiamondA * Math.pow(Math.E, (-1) * DiamondB * DiamondZ);
 		}
+		DiamondCost = DiamondA * Math.pow(Math.E, (-1) * DiamondB * DiamondZ);
 		Bronze = Value % 64;
 		Value = Value - Bronze;
 		Silver = (Value % 4096) / 64;

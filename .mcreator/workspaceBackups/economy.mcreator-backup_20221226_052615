@@ -442,27 +442,6 @@
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
-      "name": "DailyTax",
-      "type": "procedure",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daily_tax",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Storage"
-    },
-    {
       "name": "ConvertChecker",
       "type": "procedure",
       "sortid": 57,
@@ -516,7 +495,6 @@
         ]
       },
       "path": "~/Converter"
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014419
     },
     {
       "name": "BronzeConvertFixed",
@@ -551,68 +529,6 @@
         ]
       },
       "path": "~/Converter"
-    },
-    {
-      "name": "DailyTax",
-      "type": "procedure",
-      "sortid": 55,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "daily_tax",
-=======
-    },
-    {
-      "name": "BronzeConvertFixed",
-      "type": "procedure",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bronze_convert_fixed",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_030946
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014419
-      "name": "AtmValue",
-      "type": "procedure",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "atm_value",
-=======
-      "name": "DailyTax",
-      "type": "procedure",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daily_tax",
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014419
-=======
-          },
-          {
-            "name": "world",
-            "type": "world"
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
-          }
-        ]
-      },
-      "path": "~/Storage"
-<<<<<<< Updated upstream:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_014419
-=======
     },
     {
       "name": "ConvertFixed",
@@ -627,26 +543,20 @@
       "path": "~/Converter"
     },
     {
-      "name": "ConvertChecker",
+      "name": "CommitTaxation",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "convert_checker",
+      "registry_name": "commit_taxation",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "world",
             "type": "world"
           }
         ]
-      },
-      "path": "~/Converter"
->>>>>>> Stashed changes:.mcreator/workspaceBackups/economy.mcreator-backup_20221226_024016
+      }
     }
   ],
   "variable_elements": [
@@ -747,10 +657,10 @@
       "value": "0"
     },
     {
-      "name": "iteration",
+      "name": "NewCurrencyMinted",
       "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
+      "scope": "map",
+      "value": "16.0"
     }
   ],
   "sound_elements": [],

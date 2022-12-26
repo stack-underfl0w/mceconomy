@@ -543,69 +543,6 @@
       "path": "~/Converter"
     },
     {
-      "name": "DiamondUnlockChecker",
-      "type": "procedure",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_unlock_checker",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI Procedures/Ore Trader/Diamond"
-    },
-    {
-      "name": "DiamondUnlock",
-      "type": "gui",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_unlock",
-      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
-    },
-    {
-      "name": "DiamondUnlockRefresh",
-      "type": "procedure",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_unlock_refresh",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GUI Procedures/Ore Trader/Diamond"
-    },
-    {
       "name": "CommitTaxation",
       "type": "procedure",
       "sortid": 62,
@@ -720,12 +657,6 @@
       "value": "0"
     },
     {
-      "name": "DiamondUnlock",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
       "name": "NewCurrencyMinted",
       "type": "number",
       "scope": "map",
@@ -748,16 +679,12 @@
     "name": "~",
     "children": [
       {
-        "name": "Items",
-        "children": []
-      },
-      {
-        "name": "Storage",
-        "children": []
-      },
-      {
         "name": "Trader Entities",
         "children": [
+          {
+            "name": "Traders",
+            "children": []
+          },
           {
             "name": "TraderGUIs",
             "children": [
@@ -766,12 +693,12 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "Traders",
-            "children": []
           }
         ]
+      },
+      {
+        "name": "Items",
+        "children": []
       },
       {
         "name": "GUI Procedures",
@@ -780,11 +707,11 @@
             "name": "Ore Trader",
             "children": [
               {
-                "name": "Iron",
+                "name": "Copper",
                 "children": []
               },
               {
-                "name": "Redstone",
+                "name": "Iron",
                 "children": []
               },
               {
@@ -792,19 +719,19 @@
                 "children": []
               },
               {
-                "name": "Copper",
-                "children": []
-              },
-              {
-                "name": "Lapis",
-                "children": []
-              },
-              {
                 "name": "Gold",
                 "children": []
               },
               {
+                "name": "Redstone",
+                "children": []
+              },
+              {
                 "name": "Coal",
+                "children": []
+              },
+              {
+                "name": "Lapis",
                 "children": []
               }
             ]
@@ -813,6 +740,10 @@
       },
       {
         "name": "Converter",
+        "children": []
+      },
+      {
+        "name": "Storage",
         "children": []
       }
     ]
