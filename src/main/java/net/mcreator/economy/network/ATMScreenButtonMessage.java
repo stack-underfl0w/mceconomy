@@ -12,9 +12,9 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.ATMScreenMenu;
-import net.mcreator.economy.procedures.SilverConvertProcedure;
-import net.mcreator.economy.procedures.GoldConvertProcedure;
-import net.mcreator.economy.procedures.BronzeConvertProcedure;
+import net.mcreator.economy.procedures.SilverConvertFixedProcedure;
+import net.mcreator.economy.procedures.GoldConvertFixedProcedure;
+import net.mcreator.economy.procedures.BronzeConvertFixedProcedure;
 import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
@@ -66,15 +66,15 @@ public class ATMScreenButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			GoldConvertProcedure.execute(world, entity);
+			GoldConvertFixedProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
-			SilverConvertProcedure.execute(world, entity);
+			SilverConvertFixedProcedure.execute(entity);
 		}
 		if (buttonID == 2) {
 
-			BronzeConvertProcedure.execute(world, entity);
+			BronzeConvertFixedProcedure.execute(entity);
 		}
 	}
 

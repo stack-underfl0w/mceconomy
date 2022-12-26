@@ -33,13 +33,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onTakenFromSlot": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onStackTransfer": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "name": "Slot #0",
           "x": 153,
@@ -56,13 +56,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onTakenFromSlot": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onStackTransfer": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "name": "Slot #1",
           "x": 153,
@@ -79,13 +79,13 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onTakenFromSlot": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onStackTransfer": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "name": "Slot #2",
           "x": 153,
@@ -97,7 +97,7 @@
         "data": {
           "text": "To Gold",
           "onClick": {
-            "name": "GoldConvert"
+            "name": "GoldConvertFixed"
           },
           "width": 61,
           "height": 20,
@@ -111,7 +111,7 @@
         "data": {
           "text": "To Silver",
           "onClick": {
-            "name": "SilverConvert"
+            "name": "SilverConvertFixed"
           },
           "width": 72,
           "height": 20,
@@ -125,7 +125,7 @@
         "data": {
           "text": "To Bronze",
           "onClick": {
-            "name": "BronzeConvert"
+            "name": "BronzeConvertFixed"
           },
           "width": 72,
           "height": 20,
@@ -137,10 +137,10 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 3,
+          "id": 6,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
-          "name": "Slot #3",
+          "name": "Slot #6",
           "x": 258,
           "y": 56
         }
@@ -148,10 +148,10 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 4,
+          "id": 7,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
-          "name": "Slot #4",
+          "name": "Slot #7",
           "x": 258,
           "y": 77
         }
@@ -159,10 +159,10 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 5,
+          "id": 8,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
-          "name": "Slot #5",
+          "name": "Slot #8",
           "x": 258,
           "y": 98
         }
@@ -173,19 +173,19 @@
           "inputLimit": {
             "value": ""
           },
-          "id": 6,
+          "id": 3,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onTakenFromSlot": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onStackTransfer": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
-          "name": "Slot #6",
+          "name": "Slot #3",
           "x": 131,
           "y": 55
         }
@@ -196,19 +196,19 @@
           "inputLimit": {
             "value": ""
           },
-          "id": 7,
+          "id": 4,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onTakenFromSlot": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onStackTransfer": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
-          "name": "Slot #7",
+          "name": "Slot #4",
           "x": 131,
           "y": 77
         }
@@ -219,19 +219,19 @@
           "inputLimit": {
             "value": ""
           },
-          "id": 8,
+          "id": 5,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onTakenFromSlot": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
           "onStackTransfer": {
-            "name": "ConverterUpdateCoinChecker"
+            "name": "ConvertChecker"
           },
-          "name": "Slot #8",
+          "name": "Slot #5",
           "x": 131,
           "y": 98
         }

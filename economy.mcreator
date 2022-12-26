@@ -338,69 +338,6 @@
       "path": "~/Items"
     },
     {
-      "name": "GoldConvert",
-      "type": "procedure",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gold_convert",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
-      "name": "SilverConvert",
-      "type": "procedure",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "silver_convert",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
-      "name": "BronzeConvert",
-      "type": "procedure",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bronze_convert",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Converter"
-    },
-    {
       "name": "SellDiamondPreview",
       "type": "procedure",
       "sortid": 47,
@@ -505,12 +442,33 @@
       "path": "~/GUI Procedures/Ore Trader/Diamond"
     },
     {
-      "name": "ConverterUpdateCoinChecker",
+      "name": "DailyTax",
       "type": "procedure",
-      "sortid": 54,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "converter_update_coin_checker",
+      "registry_name": "daily_tax",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Storage"
+    },
+    {
+      "name": "ConvertChecker",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_checker",
       "metadata": {
         "dependencies": [
           {
@@ -526,20 +484,80 @@
       "path": "~/Converter"
     },
     {
-      "name": "DailyTax",
+      "name": "GoldConvertFixed",
       "type": "procedure",
-      "sortid": 55,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "daily_tax",
+      "registry_name": "gold_convert_fixed",
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "SilverConvertFixed",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_convert_fixed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "BronzeConvertFixed",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_convert_fixed",
+      "metadata": {
+        "dependencies": [
+          {
+<<<<<<< Updated upstream
             "name": "world",
             "type": "world"
           }
         ]
       }
+=======
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Converter"
+    },
+    {
+      "name": "AtmValue",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_value",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Converter"
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [
@@ -630,7 +648,13 @@
     {
       "name": "CashInATM",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "iteration",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     },
     {

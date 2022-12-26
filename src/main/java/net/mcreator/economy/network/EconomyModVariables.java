@@ -87,6 +87,8 @@ public class EconomyModVariables {
 			clone.SellBronze = original.SellBronze;
 			clone.Charge = original.Charge;
 			clone.BuyBoolean = original.BuyBoolean;
+			clone.CashInATM = original.CashInATM;
+			clone.iteration = original.iteration;
 			if (!event.isWasDeath()) {
 				clone.baseCash = original.baseCash;
 			}
@@ -160,9 +162,12 @@ public class EconomyModVariables {
 		public String buy = "\"\"";
 		public double DiamondX = 0.0;
 		public double ItemNum = 0;
+<<<<<<< Updated upstream
 		public double CashInATM = 0;
 		public boolean TaxIsRunning = false;
 		public double TotalCurrencyMinted = 0;
+=======
+>>>>>>> Stashed changes
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -178,9 +183,12 @@ public class EconomyModVariables {
 			buy = nbt.getString("buy");
 			DiamondX = nbt.getDouble("DiamondX");
 			ItemNum = nbt.getDouble("ItemNum");
+<<<<<<< Updated upstream
 			CashInATM = nbt.getDouble("CashInATM");
 			TaxIsRunning = nbt.getBoolean("TaxIsRunning");
 			TotalCurrencyMinted = nbt.getDouble("TotalCurrencyMinted");
+=======
+>>>>>>> Stashed changes
 		}
 
 		@Override
@@ -192,9 +200,12 @@ public class EconomyModVariables {
 			nbt.putString("buy", buy);
 			nbt.putDouble("DiamondX", DiamondX);
 			nbt.putDouble("ItemNum", ItemNum);
+<<<<<<< Updated upstream
 			nbt.putDouble("CashInATM", CashInATM);
 			nbt.putBoolean("TaxIsRunning", TaxIsRunning);
 			nbt.putDouble("TotalCurrencyMinted", TotalCurrencyMinted);
+=======
+>>>>>>> Stashed changes
 			return nbt;
 		}
 
@@ -291,6 +302,8 @@ public class EconomyModVariables {
 		public double Charge = 0;
 		public boolean BuyBoolean = false;
 		public double baseCash = 0;
+		public double CashInATM = 0;
+		public double iteration = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -306,6 +319,8 @@ public class EconomyModVariables {
 			nbt.putDouble("Charge", Charge);
 			nbt.putBoolean("BuyBoolean", BuyBoolean);
 			nbt.putDouble("baseCash", baseCash);
+			nbt.putDouble("CashInATM", CashInATM);
+			nbt.putDouble("iteration", iteration);
 			return nbt;
 		}
 
@@ -318,6 +333,8 @@ public class EconomyModVariables {
 			Charge = nbt.getDouble("Charge");
 			BuyBoolean = nbt.getBoolean("BuyBoolean");
 			baseCash = nbt.getDouble("baseCash");
+			CashInATM = nbt.getDouble("CashInATM");
+			iteration = nbt.getDouble("iteration");
 		}
 	}
 
@@ -350,6 +367,8 @@ public class EconomyModVariables {
 					variables.Charge = message.data.Charge;
 					variables.BuyBoolean = message.data.BuyBoolean;
 					variables.baseCash = message.data.baseCash;
+					variables.CashInATM = message.data.CashInATM;
+					variables.iteration = message.data.iteration;
 				}
 			});
 			context.setPacketHandled(true);

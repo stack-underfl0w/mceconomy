@@ -12,7 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.ATMScreenMenu;
-import net.mcreator.economy.procedures.ConverterUpdateCoinCheckerProcedure;
+import net.mcreator.economy.procedures.ConvertCheckerProcedure;
 import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
@@ -72,81 +72,81 @@ public class ATMScreenSlotMessage {
 			return;
 		if (slotID == 0 && changeType == 0) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
 		if (slotID == 0 && changeType == 1) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
 		if (slotID == 0 && changeType == 2) {
 			int amount = meta;
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 0) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 1) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
 		if (slotID == 1 && changeType == 2) {
 			int amount = meta;
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
 		if (slotID == 2 && changeType == 0) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
 		if (slotID == 2 && changeType == 1) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
 		if (slotID == 2 && changeType == 2) {
 			int amount = meta;
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
-		if (slotID == 6 && changeType == 0) {
+		if (slotID == 3 && changeType == 0) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
-		if (slotID == 6 && changeType == 1) {
+		if (slotID == 3 && changeType == 1) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
-		if (slotID == 6 && changeType == 2) {
+		if (slotID == 3 && changeType == 2) {
 			int amount = meta;
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
-		if (slotID == 7 && changeType == 0) {
+		if (slotID == 4 && changeType == 0) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
-		if (slotID == 7 && changeType == 1) {
+		if (slotID == 4 && changeType == 1) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
-		if (slotID == 7 && changeType == 2) {
+		if (slotID == 4 && changeType == 2) {
 			int amount = meta;
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
-		if (slotID == 8 && changeType == 0) {
+		if (slotID == 5 && changeType == 0) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
-		if (slotID == 8 && changeType == 1) {
+		if (slotID == 5 && changeType == 1) {
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
-		if (slotID == 8 && changeType == 2) {
+		if (slotID == 5 && changeType == 2) {
 			int amount = meta;
 
-			ConverterUpdateCoinCheckerProcedure.execute(world, entity);
+			ConvertCheckerProcedure.execute(world, entity);
 		}
 	}
 

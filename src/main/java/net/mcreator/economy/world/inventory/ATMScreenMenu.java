@@ -134,79 +134,79 @@ public class ATMScreenMenu extends AbstractContainerMenu implements Supplier<Map
 				slotChanged(2, 2, b.getCount() - a.getCount());
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 20) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 133, 20) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 133, 41) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 41) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 133, 62) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 133, 62) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 6, 19) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 6, 19) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
-				slotChanged(6, 0, 0);
+				slotChanged(3, 0, 0);
 			}
 
 			@Override
 			public void onTake(Player entity, ItemStack stack) {
 				super.onTake(entity, stack);
-				slotChanged(6, 1, 0);
+				slotChanged(3, 1, 0);
 			}
 
 			@Override
 			public void onQuickCraft(ItemStack a, ItemStack b) {
 				super.onQuickCraft(a, b);
-				slotChanged(6, 2, b.getCount() - a.getCount());
+				slotChanged(3, 2, b.getCount() - a.getCount());
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 6, 41) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 6, 41) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
-				slotChanged(7, 0, 0);
+				slotChanged(4, 0, 0);
 			}
 
 			@Override
 			public void onTake(Player entity, ItemStack stack) {
 				super.onTake(entity, stack);
-				slotChanged(7, 1, 0);
+				slotChanged(4, 1, 0);
 			}
 
 			@Override
 			public void onQuickCraft(ItemStack a, ItemStack b) {
 				super.onQuickCraft(a, b);
-				slotChanged(7, 2, b.getCount() - a.getCount());
+				slotChanged(4, 2, b.getCount() - a.getCount());
 			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 6, 62) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 6, 62) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
-				slotChanged(8, 0, 0);
+				slotChanged(5, 0, 0);
 			}
 
 			@Override
 			public void onTake(Player entity, ItemStack stack) {
 				super.onTake(entity, stack);
-				slotChanged(8, 1, 0);
+				slotChanged(5, 1, 0);
 			}
 
 			@Override
 			public void onQuickCraft(ItemStack a, ItemStack b) {
 				super.onQuickCraft(a, b);
-				slotChanged(8, 2, b.getCount() - a.getCount());
+				slotChanged(5, 2, b.getCount() - a.getCount());
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
