@@ -71,8 +71,8 @@ public class BuyDiamondPreviewProcedure {
 			Value = Value - Projected;
 			Cost = Cost + Projected;
 			DiamondNum = DiamondNum + 1;
-			Projected = DiamondA * Math.pow(Math.E, (-1) * DiamondB * DiamondX);
 			DiamondX = DiamondX - 1;
+			Projected = DiamondA * Math.pow(Math.E, (-1) * DiamondB * DiamondX);
 		}
 		EconomyModVariables.MapVariables.get(world).buy = "" + DiamondNum;
 		EconomyModVariables.MapVariables.get(world).syncData(world);
