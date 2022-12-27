@@ -1,0 +1,47 @@
+{
+  "vineboom": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "economy:tomp3.cc-dramatic-vineinstagram-boom-sound-effect-hd",
+        "stream": false
+      }
+    ]
+  },
+  "lacrimosa": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "economy:tomp3.cc-mozart-lacrimosa",
+        "stream": false
+      }
+    ]
+  },
+  "lacrimosaaaaaa": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "economy:ergreg",
+        "stream": false
+      }
+    ]
+  },
+  "evaed": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "economy:tomp3.cc_-_neon_genesis_evangelion__fly_me_to_the_moon__claire_ed_ending_full_nge_ost_soundtrack_lyrics",
+        "stream": false
+      }
+    ]
+  },
+  "beep": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "economy:tomp3.cc-checkout-beep-sound-effect",
+        "stream": false
+      }
+    ]
+  }
+}

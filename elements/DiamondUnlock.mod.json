@@ -19,6 +19,15 @@
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "DiamondUnlockRefresh"
+          },
+          "onTakenFromSlot": {
+            "name": "DiamondUnlockRefresh"
+          },
+          "onStackTransfer": {
+            "name": "DiamondUnlockRefresh"
+          },
           "name": "Slot #0",
           "x": 204,
           "y": 68
@@ -41,6 +50,9 @@
         "type": "button",
         "data": {
           "text": "Unlock",
+          "onClick": {
+            "name": "DiamondUnlockChecker"
+          },
           "width": 56,
           "height": 20,
           "name": "Unlock",

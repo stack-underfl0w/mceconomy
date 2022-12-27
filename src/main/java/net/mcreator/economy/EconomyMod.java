@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.economy.init.EconomyModSounds;
 import net.mcreator.economy.init.EconomyModMenus;
 import net.mcreator.economy.init.EconomyModItems;
 import net.mcreator.economy.init.EconomyModEntities;
@@ -50,7 +51,7 @@ public class EconomyMod {
 		MinecraftForge.EVENT_BUS.register(this);
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		EconomyModSounds.REGISTRY.register(bus);
 		EconomyModBlocks.REGISTRY.register(bus);
 		EconomyModItems.REGISTRY.register(bus);
 		EconomyModEntities.REGISTRY.register(bus);

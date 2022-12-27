@@ -1,9 +1,14 @@
 {
   "item.economy.ore_trader_spawn_egg": "Ore Trader Spawn Egg",
   "block.economy.atm": "ATM",
+  "item.economy.bronze_coin": "Bronze Coin",
+  "subtitles.lacrimosaaaaaa": "",
+  "subtitles.evaed": "",
+  "subtitles.vineboom": "",
+  "subtitles.beep": "",
   "entity.economy.ore_trader": "Ore Trader",
   "block.economy.basechest": "Basechest",
-  "item.economy.bronze_coin": "Bronze Coin",
   "item.economy.gold_coin": "Gold Coin",
-  "item.economy.silver_coin": "Silver Coin"
+  "item.economy.silver_coin": "Silver Coin",
+  "subtitles.lacrimosa": ""
 }

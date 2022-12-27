@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.OreTraderGUIMenu;
 import net.mcreator.economy.procedures.DiamondPressProcedure;
+import net.mcreator.economy.procedures.DasdasProcedure;
 import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
@@ -65,6 +66,10 @@ public class OreTraderGUIButtonMessage {
 		if (buttonID == 0) {
 
 			DiamondPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			DasdasProcedure.execute(world, entity);
 		}
 	}
 

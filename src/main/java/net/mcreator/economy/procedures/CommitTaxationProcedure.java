@@ -1,8 +1,24 @@
 package net.mcreator.economy.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+
+import net.minecraft.world.scores.criteria.ObjectiveCriteria;
+import net.minecraft.world.scores.Scoreboard;
+import net.minecraft.world.scores.Objective;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.economy.network.EconomyModVariables;
 
 import javax.annotation.Nullable;
+
+import java.util.List;
+import java.util.ArrayList;
 
 @Mod.EventBusSubscriber
 public class CommitTaxationProcedure {

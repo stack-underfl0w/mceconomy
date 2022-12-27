@@ -65,11 +65,11 @@ public class DiamondShopButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			BuyDiamondProcedure.execute(world, entity);
+			BuyDiamondProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			SellDiamondProcedure.execute(world, entity);
+			SellDiamondProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

@@ -74,6 +74,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -93,6 +105,18 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -531,18 +555,6 @@
       "path": "~/Converter"
     },
     {
-      "name": "ConvertFixed",
-      "type": "procedure",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "convert_fixed",
-      "metadata": {
-        "dependencies": []
-      },
-      "path": "~/Converter"
-    },
-    {
       "name": "DiamondUnlockChecker",
       "type": "procedure",
       "sortid": 63,
@@ -620,6 +632,27 @@
           }
         ]
       }
+    },
+    {
+      "name": "Dasdas",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dasdas",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
     }
   ],
   "variable_elements": [
@@ -704,7 +737,7 @@
     {
       "name": "baseCash",
       "type": "number",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
@@ -732,16 +765,62 @@
       "value": "16.0"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "vineboom",
+      "files": [
+        "tomp3.cc-dramatic-vineinstagram-boom-sound-effect-hd"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "lacrimosa",
+      "files": [
+        "tomp3.cc-mozart-lacrimosa"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "lacrimosaaaaaa",
+      "files": [
+        "ergreg"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "evaed",
+      "files": [
+        "tomp3.cc_-_neon_genesis_evangelion__fly_me_to_the_moon__claire_ed_ending_full_nge_ost_soundtrack_lyrics"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "beep",
+      "files": [
+        "tomp3.cc-checkout-beep-sound-effect"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.economy.ore_trader_spawn_egg": "Ore Trader Spawn Egg",
       "block.economy.atm": "ATM",
+      "item.economy.bronze_coin": "Bronze Coin",
+      "subtitles.lacrimosaaaaaa": "",
+      "subtitles.evaed": "",
+      "subtitles.vineboom": "",
+      "subtitles.beep": "",
       "entity.economy.ore_trader": "Ore Trader",
       "block.economy.basechest": "Basechest",
-      "item.economy.bronze_coin": "Bronze Coin",
       "item.economy.gold_coin": "Gold Coin",
-      "item.economy.silver_coin": "Silver Coin"
+      "item.economy.silver_coin": "Silver Coin",
+      "subtitles.lacrimosa": ""
     }
   },
   "foldersRoot": {

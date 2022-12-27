@@ -87,11 +87,11 @@ public class EconomyModVariables {
 			clone.SellBronze = original.SellBronze;
 			clone.Charge = original.Charge;
 			clone.BuyBoolean = original.BuyBoolean;
+			clone.baseCash = original.baseCash;
 			clone.CashInATM = original.CashInATM;
 			clone.iteration = original.iteration;
 			clone.DiamondUnlock = original.DiamondUnlock;
 			if (!event.isWasDeath()) {
-				clone.baseCash = original.baseCash;
 			}
 		}
 

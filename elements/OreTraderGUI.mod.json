@@ -41,6 +41,9 @@
         "type": "button",
         "data": {
           "text": "Iron",
+          "onClick": {
+            "name": "Dasdas"
+          },
           "width": 66,
           "height": 20,
           "name": "Iron",

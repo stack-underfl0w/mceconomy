@@ -1,8 +1,19 @@
 package net.mcreator.economy.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.items.ItemHandlerHelper;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
+
+import net.mcreator.economy.EconomyMod;
+
+import java.util.function.Supplier;
+import java.util.Map;
 
 public class DiamondUnlockRefreshProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
