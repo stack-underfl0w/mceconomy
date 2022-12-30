@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bronze",
+    "texture": "the_bronze_64x64",
     "customModelName": "Normal",
     "name": "Bronze Coin",
     "rarity": "COMMON",

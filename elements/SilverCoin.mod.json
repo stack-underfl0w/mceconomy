@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "silver",
+    "texture": "le_silver_bigsmall",
     "customModelName": "Normal",
     "name": "Silver Coin",
     "rarity": "COMMON",

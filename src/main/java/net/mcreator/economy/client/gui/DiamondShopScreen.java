@@ -33,8 +33,8 @@ public class DiamondShopScreen extends AbstractContainerScreen<DiamondShopMenu> 
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 182;
+		this.imageHeight = 184;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("economy:textures/screens/diamond_shop.png");
@@ -72,11 +72,11 @@ public class DiamondShopScreen extends AbstractContainerScreen<DiamondShopMenu> 
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Diamonds", 67, 6, -12829636);
-		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).buy) + "", 111, 28, -12829636);
-		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).sell) + "", 27, 60, -12829636);
-		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).DiamondCost) + "", 109, 3, -12829636);
-		this.font.draw(poseStack, "" + (int) (EconomyModVariables.MapVariables.get(world).DiamondX) + "", 10, 7, -12829636);
+		this.font.draw(poseStack, "Diamonds", 71, 12, -12829636);
+		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).buy) + "", 114, 37, -12829636);
+		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).sell) + "", 30, 69, -12829636);
+		this.font.draw(poseStack, "" + (EconomyModVariables.MapVariables.get(world).DiamondCost) + "", 48, 52, -12829636);
+		this.font.draw(poseStack, "" + (int) (EconomyModVariables.MapVariables.get(world).DiamondX) + "", 119, 12, -12829636);
 	}
 
 	@Override
@@ -89,17 +89,19 @@ public class DiamondShopScreen extends AbstractContainerScreen<DiamondShopMenu> 
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 67, this.topPos + 22, 40, 20, Component.literal("Buy"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 71, this.topPos + 31, 40, 20, Component.literal("Buy"), e -> {
 			if (true) {
 				EconomyMod.PACKET_HANDLER.sendToServer(new DiamondShopButtonMessage(0, x, y, z));
 				DiamondShopButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 65, this.topPos + 54, 46, 20, Component.literal("Sell"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 68, this.topPos + 63, 46, 20, Component.literal("Sell"), e -> {
 			if (true) {
 				EconomyMod.PACKET_HANDLER.sendToServer(new DiamondShopButtonMessage(1, x, y, z));
 				DiamondShopButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 8, this.topPos + 7, 56, 20, Component.literal("Custom"), e -> {
 		}));
 	}
 }

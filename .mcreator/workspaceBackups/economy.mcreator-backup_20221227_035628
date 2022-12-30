@@ -653,15 +653,6 @@
         ]
       },
       "path": "~/Trader Entities/TraderGUIs/Ore Trader"
-    },
-    {
-      "name": "DiamondCustom",
-      "type": "gui",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_custom",
-      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
     }
   ],
   "variable_elements": [

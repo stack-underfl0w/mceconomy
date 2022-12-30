@@ -79,7 +79,7 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 24) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 10, 33) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -103,7 +103,7 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 				return (EconomyModItems.GOLD_COIN.get() == stack.getItem());
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 7, 56) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 10, 65) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -127,19 +127,19 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 				return (Items.DIAMOND == stack.getItem());
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 151, 24) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 154, 33) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 115, 56) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 118, 65) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 25, 24) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 28, 33) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -163,7 +163,7 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 				return (EconomyModItems.SILVER_COIN.get() == stack.getItem());
 			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 43, 24) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 46, 33) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -187,13 +187,13 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 				return (EconomyModItems.BRONZE_COIN.get() == stack.getItem());
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 151, 56) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 154, 65) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 56) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 136, 65) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
@@ -201,9 +201,9 @@ public class DiamondShopMenu extends AbstractContainerMenu implements Supplier<M
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 3 + 8 + sj * 18, 9 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 3 + 8 + si * 18, 9 + 142));
 	}
 
 	@Override
