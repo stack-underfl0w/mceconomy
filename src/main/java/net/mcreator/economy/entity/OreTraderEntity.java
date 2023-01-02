@@ -41,7 +41,7 @@ import net.minecraft.nbt.Tag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 
-import net.mcreator.economy.world.inventory.OreTraderGUIMenu;
+import net.mcreator.economy.world.inventory.NewOreTraderGUIMenu;
 import net.mcreator.economy.init.EconomyModEntities;
 
 import javax.annotation.Nullable;
@@ -174,7 +174,7 @@ public class OreTraderEntity extends PathfinderMob {
 					packetBuffer.writeBlockPos(sourceentity.blockPosition());
 					packetBuffer.writeByte(0);
 					packetBuffer.writeVarInt(OreTraderEntity.this.getId());
-					return new OreTraderGUIMenu(id, inventory, packetBuffer);
+					return new NewOreTraderGUIMenu(id, inventory, packetBuffer);
 				}
 			}, buf -> {
 				buf.writeBlockPos(sourceentity.blockPosition());

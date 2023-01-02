@@ -12,8 +12,18 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.OreTraderGUIMenu;
+import net.mcreator.economy.procedures.RedstonePressProcedure;
+import net.mcreator.economy.procedures.QuartzPressProcedure;
+import net.mcreator.economy.procedures.ObsidianPressProcedure;
+import net.mcreator.economy.procedures.LapisPressProcedure;
+import net.mcreator.economy.procedures.IronPressProcedure;
+import net.mcreator.economy.procedures.GoldPressProcedure;
+import net.mcreator.economy.procedures.EmeraldPressProcedure;
 import net.mcreator.economy.procedures.DiamondPressProcedure;
-import net.mcreator.economy.procedures.DasdasProcedure;
+import net.mcreator.economy.procedures.CopperPressProcedure;
+import net.mcreator.economy.procedures.CoalPressProcedure;
+import net.mcreator.economy.procedures.AncientDebrisPressProcedure;
+import net.mcreator.economy.procedures.AmethystPressProcedure;
 import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
@@ -69,7 +79,47 @@ public class OreTraderGUIButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			DasdasProcedure.execute(world, entity);
+			IronPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			CoalPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 3) {
+
+			RedstonePressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 4) {
+
+			LapisPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 5) {
+
+			AncientDebrisPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 6) {
+
+			ObsidianPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 7) {
+
+			GoldPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 8) {
+
+			AmethystPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 9) {
+
+			EmeraldPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 10) {
+
+			QuartzPressProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 11) {
+
+			CopperPressProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

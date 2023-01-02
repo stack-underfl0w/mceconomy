@@ -1,0 +1,325 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 300,
+    "height": 170,
+    "inventoryOffsetX": -256,
+    "inventoryOffsetY": 128,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Diamond",
+          "onClick": {
+            "name": "DiamondPress"
+          },
+          "width": 82,
+          "height": 20,
+          "name": "Diamond",
+          "x": 258,
+          "y": 41
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Iron",
+          "onClick": {
+            "name": "IronPress"
+          },
+          "width": 66,
+          "height": 20,
+          "name": "Iron",
+          "x": 259,
+          "y": 64
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Coal",
+          "onClick": {
+            "name": "CoalPress"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Coal",
+          "x": 98,
+          "y": 66
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Redstone",
+          "onClick": {
+            "name": "RedstonePress"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Redstone",
+          "x": 260,
+          "y": 111
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Lapis",
+          "onClick": {
+            "name": "LapisPress"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Lapis",
+          "x": 265,
+          "y": 159
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 0,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 171,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #1",
+          "x": 193,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #2",
+          "x": 215,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #3",
+          "x": 237,
+          "y": 84
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #4",
+          "x": 171,
+          "y": 105
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #5",
+          "x": 193,
+          "y": 105
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #6",
+          "x": 215,
+          "y": 105
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 7,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #7",
+          "x": 237,
+          "y": 105
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 8,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #8",
+          "x": 171,
+          "y": 126
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 9,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #9",
+          "x": 193,
+          "y": 126
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #10",
+          "x": 215,
+          "y": 126
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 11,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #11",
+          "x": 237,
+          "y": 126
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Ancient Debris",
+          "onClick": {
+            "name": "AncientDebrisPress"
+          },
+          "width": 98,
+          "height": 20,
+          "name": "Ancient Debris",
+          "x": 259,
+          "y": 88
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Obsidian",
+          "onClick": {
+            "name": "ObsidianPress"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Obsidian",
+          "x": 102,
+          "y": 43
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Gold",
+          "onClick": {
+            "name": "GoldPress"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Gold",
+          "x": 97,
+          "y": 90
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Amethyst",
+          "onClick": {
+            "name": "AmethystPress"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Amethyst",
+          "x": 91,
+          "y": 114
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Emerald",
+          "onClick": {
+            "name": "EmeraldPress"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Emerald",
+          "x": 97,
+          "y": 135
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Quartz",
+          "onClick": {
+            "name": "QuartzPress"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Quartz",
+          "x": 263,
+          "y": 133
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Copper",
+          "onClick": {
+            "name": "CopperPress"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Copper",
+          "x": 103,
+          "y": 157
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "OnOreShopOpen"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

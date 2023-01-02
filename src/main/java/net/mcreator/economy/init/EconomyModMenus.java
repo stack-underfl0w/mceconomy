@@ -11,7 +11,11 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.economy.world.inventory.TestGUIMenu;
+import net.mcreator.economy.world.inventory.TestGUI2Menu;
+import net.mcreator.economy.world.inventory.OreTraderGUITemplateMenu;
 import net.mcreator.economy.world.inventory.OreTraderGUIMenu;
+import net.mcreator.economy.world.inventory.NewOreTraderGUIMenu;
 import net.mcreator.economy.world.inventory.DiamondUnlockMenu;
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
 import net.mcreator.economy.world.inventory.DiamondCustomMenu;
@@ -33,4 +37,11 @@ public class EconomyModMenus {
 			() -> IForgeMenuType.create(DiamondUnlockMenu::new));
 	public static final RegistryObject<MenuType<DiamondCustomMenu>> DIAMOND_CUSTOM = REGISTRY.register("diamond_custom",
 			() -> IForgeMenuType.create(DiamondCustomMenu::new));
+	public static final RegistryObject<MenuType<TestGUIMenu>> TEST_GUI = REGISTRY.register("test_gui", () -> IForgeMenuType.create(TestGUIMenu::new));
+	public static final RegistryObject<MenuType<TestGUI2Menu>> TEST_GUI_2 = REGISTRY.register("test_gui_2",
+			() -> IForgeMenuType.create(TestGUI2Menu::new));
+	public static final RegistryObject<MenuType<OreTraderGUITemplateMenu>> ORE_TRADER_GUI_TEMPLATE = REGISTRY.register("ore_trader_gui_template",
+			() -> IForgeMenuType.create(OreTraderGUITemplateMenu::new));
+	public static final RegistryObject<MenuType<NewOreTraderGUIMenu>> NEW_ORE_TRADER_GUI = REGISTRY.register("new_ore_trader_gui",
+			() -> IForgeMenuType.create(NewOreTraderGUIMenu::new));
 }

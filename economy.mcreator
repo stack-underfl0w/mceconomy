@@ -14,7 +14,7 @@
       "type": "gui",
       "sortid": 10,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ore_trader_gui",
       "path": "~/Trader Entities/TraderGUIs/Ore Trader"
     },
@@ -662,6 +662,476 @@
       "locked_code": false,
       "registry_name": "diamond_custom",
       "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "TestGUI",
+      "type": "gui",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "test_gui",
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "Opentest",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opentest",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "TestGUI2",
+      "type": "gui",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "test_gui_2",
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "OreTraderGUITemplate",
+      "type": "gui",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_trader_gui_template",
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "GoldPress",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Gold"
+    },
+    {
+      "name": "EmeraldPress",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Emerald"
+    },
+    {
+      "name": "AmethystPress",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Amethyst"
+    },
+    {
+      "name": "IronPress",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Iron"
+    },
+    {
+      "name": "CoalPress",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Coal"
+    },
+    {
+      "name": "ObsidianPress",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Obsidian"
+    },
+    {
+      "name": "CopperPress",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Copper"
+    },
+    {
+      "name": "LapisPress",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Lapis"
+    },
+    {
+      "name": "AncientDebrisPress",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_debris_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Ancient Debris"
+    },
+    {
+      "name": "QuartzPress",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Quartz"
+    },
+    {
+      "name": "RedstonePress",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures/Ore Trader/Redstone"
+    },
+    {
+      "name": "OnOreShopOpen",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_ore_shop_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "NewOreTraderGUI",
+      "type": "gui",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "new_ore_trader_gui",
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
+    },
+    {
+      "name": "Buffer",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buffer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Trader Entities/TraderGUIs/Ore Trader"
     }
   ],
   "variable_elements": [
@@ -823,8 +1293,8 @@
       "item.economy.bronze_coin": "Bronze Coin",
       "subtitles.lacrimosaaaaaa": "",
       "subtitles.evaed": "",
-      "subtitles.beep": "",
       "subtitles.vineboom": "",
+      "subtitles.beep": "",
       "entity.economy.ore_trader": "Ore Trader",
       "block.economy.basechest": "Basechest",
       "item.economy.gold_coin": "Gold Coin",
@@ -893,6 +1363,26 @@
               },
               {
                 "name": "Coal",
+                "children": []
+              },
+              {
+                "name": "Quartz",
+                "children": []
+              },
+              {
+                "name": "Amethyst",
+                "children": []
+              },
+              {
+                "name": "Emerald",
+                "children": []
+              },
+              {
+                "name": "Obsidian",
+                "children": []
+              },
+              {
+                "name": "Ancient Debris",
                 "children": []
               }
             ]

@@ -19,6 +19,8 @@ import java.util.HashMap;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
+import net.minecraft.client.gui.components.ImageButton;
+
 public class OreTraderGUIScreen extends AbstractContainerScreen<OreTraderGUIMenu> {
 	private final static HashMap<String, Object> guistate = OreTraderGUIMenu.guistate;
 	private final Level world;
@@ -37,6 +39,7 @@ public class OreTraderGUIScreen extends AbstractContainerScreen<OreTraderGUIMenu
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("economy:textures/screens/ore_trader_gui.png");
+	private static final ResourceLocation MYIMAGE = new ResourceLocation("economy:textures/iconmap.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -71,7 +74,7 @@ public class OreTraderGUIScreen extends AbstractContainerScreen<OreTraderGUIMenu
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Mined Resources", 49, 5, -12829636);
+		this.font.draw(poseStack, "Ore Shop", 67, 33, -12829636);
 	}
 
 	@Override
@@ -84,23 +87,185 @@ public class OreTraderGUIScreen extends AbstractContainerScreen<OreTraderGUIMenu
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 8, this.topPos + 21, 82, 20, Component.literal("Diamond"), e -> {
+		/*this.addRenderableWidget(new Button(this.leftPos + 132, this.topPos + 4, 82, 20, Component.literal("Diamond"), e -> {
 			if (true) {
 				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(0, x, y, z));
 				OreTraderGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 96, this.topPos + 21, 66, 20, Component.literal("Iron"), e -> {
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 46, this.topPos + 48, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(0, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 46, this.topPos + 48);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + 133, this.topPos + 27, 66, 20, Component.literal("Iron"), e -> {
 			if (true) {
 				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(1, x, y, z));
 				OreTraderGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 9, this.topPos + 47, 46, 20, Component.literal("Coal"), e -> {
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 61, this.topPos + 47, 67, 20, Component.literal("Redstone"), e -> {
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 9, this.topPos + 73, 51, 20, Component.literal("Lapis"), e -> {
-		}));
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 68, this.topPos + 48, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(1, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 68, this.topPos + 48);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + -27, this.topPos + 29, 46, 20, Component.literal("Coal"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(2, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 112, this.topPos + 48, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(2, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 112, this.topPos + 48);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + 134, this.topPos + 74, 67, 20, Component.literal("Redstone"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(3, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 46, this.topPos + 69, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(3, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 46, this.topPos + 69);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + 139, this.topPos + 122, 51, 20, Component.literal("Lapis"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(4, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 68, this.topPos + 69, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(4, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 68, this.topPos + 69);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + 133, this.topPos + 51, 98, 20, Component.literal("Ancient Debris"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(5, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 112, this.topPos + 69, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(5, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 112, this.topPos + 69);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + -23, this.topPos + 6, 67, 20, Component.literal("Obsidian"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(6, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 6, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 90, this.topPos + 90, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(5, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 90, this.topPos + 90);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + -28, this.topPos + 53, 46, 20, Component.literal("Gold"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(7, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 7, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 90, this.topPos + 48, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(7, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 7, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 90, this.topPos + 48);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + -34, this.topPos + 77, 67, 20, Component.literal("Amethyst"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(8, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 8, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 112, this.topPos + 90, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(8, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 8, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 112, this.topPos + 90);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + -28, this.topPos + 98, 61, 20, Component.literal("Emerald"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(9, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 9, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 90, this.topPos + 69, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(9, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 9, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 90, this.topPos + 69);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + 137, this.topPos + 96, 56, 20, Component.literal("Quartz"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(10, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 10, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 46, this.topPos + 90, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(10, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 10, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 46, this.topPos + 90);
+      	}));
+		
+		/*this.addRenderableWidget(new Button(this.leftPos + -22, this.topPos + 120, 56, 20, Component.literal("Copper"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(11, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 11, x, y, z);
+			}
+		}));*/
+
+		this.addRenderableWidget(new ImageButton(this.leftPos + 68, this.topPos + 90, 16, 16, 30, 30, 0, MYIMAGE, e -> {
+        	if (true) {
+            	EconomyMod.PACKET_HANDLER.sendToServer(new OreTraderGUIButtonMessage(11, x, y, z));
+				OreTraderGUIButtonMessage.handleButtonAction(entity, 11, x, y, z);
+            }
+        ((ImageButton)e).setPosition(this.leftPos + 68, this.topPos + 90);
+      	}));
+		
 	}
 }

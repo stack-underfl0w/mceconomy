@@ -1,0 +1,75 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Diamond",
+          "onClick": {
+            "name": "DiamondPress"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Diamond",
+          "x": 141,
+          "y": 58
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Iron",
+          "width": 46,
+          "height": 20,
+          "name": "Iron",
+          "x": 141,
+          "y": 91
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Gold",
+          "onClick": {
+            "name": "DiamondPress"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Gold",
+          "x": 220,
+          "y": 58
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 222,
+          "y": 102
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
