@@ -1,0 +1,11 @@
+{
+  "parent": "economy:custom/vault",
+  "textures": {
+    "all": "economy:blocks/door",
+    "particle": "economy:blocks/door",
+    "0": "economy:blocks/hinge",
+    "1": "economy:blocks/spinplate",
+    "2": "economy:blocks/door1"
+  },
+  "render_type": "solid"
+}

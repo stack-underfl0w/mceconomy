@@ -43,5 +43,32 @@
         "stream": false
       }
     ]
+  },
+  "drilling": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "economy:tomp3.cc_-_drill_sound_effect-audiotrimmer.com_1",
+        "stream": false
+      }
+    ]
+  },
+  "pipes": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "economy:metal_pipe_falling_sound_effect_but_its_more_violent-youtubeconvert.cc",
+        "stream": false
+      }
+    ]
+  },
+  "pipesnew": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "economy:pipesnew",
+        "stream": false
+      }
+    ]
   }
 }

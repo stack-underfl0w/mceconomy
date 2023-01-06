@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "economy:blocks/money_pile_big",
+    "up": "economy:blocks/money_pile_big",
+    "north": "economy:blocks/money_pile_big",
+    "east": "economy:blocks/money_pile_big",
+    "south": "economy:blocks/money_pile_big",
+    "west": "economy:blocks/money_pile_big",
+    "particle": "economy:blocks/money_pile_big"
+  },
+  "render_type": "solid"
+}

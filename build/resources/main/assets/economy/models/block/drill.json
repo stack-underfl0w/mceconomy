@@ -1,0 +1,10 @@
+{
+  "parent": "economy:custom/drill",
+  "textures": {
+    "all": "economy:blocks/texture",
+    "particle": "economy:blocks/texture",
+    "0": "economy:blocks/red",
+    "1": "economy:blocks/spinplate"
+  },
+  "render_type": "solid"
+}

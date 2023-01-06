@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "hinge",
+        "1": "spinplate",
+        "2": "door1"
+      },
+      "name": "default"
+    }
+  }
+}

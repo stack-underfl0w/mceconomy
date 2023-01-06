@@ -23,4 +23,9 @@ public class EconomyModSounds {
 			() -> new SoundEvent(new ResourceLocation("economy", "lacrimosaaaaaa")));
 	public static final RegistryObject<SoundEvent> EVAED = REGISTRY.register("evaed", () -> new SoundEvent(new ResourceLocation("economy", "evaed")));
 	public static final RegistryObject<SoundEvent> BEEP = REGISTRY.register("beep", () -> new SoundEvent(new ResourceLocation("economy", "beep")));
+	public static final RegistryObject<SoundEvent> DRILLING = REGISTRY.register("drilling",
+			() -> new SoundEvent(new ResourceLocation("economy", "drilling")));
+	public static final RegistryObject<SoundEvent> PIPES = REGISTRY.register("pipes", () -> new SoundEvent(new ResourceLocation("economy", "pipes")));
+	public static final RegistryObject<SoundEvent> PIPESNEW = REGISTRY.register("pipesnew",
+			() -> new SoundEvent(new ResourceLocation("economy", "pipesnew")));
 }

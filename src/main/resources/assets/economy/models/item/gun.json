@@ -1,0 +1,15 @@
+{
+  "parent": "economy:custom/deagle",
+  "textures": {
+    "55": "economy:blocks/1",
+    "57": "economy:blocks/2",
+    "46": "economy:blocks/3",
+    "58": "economy:blocks/4",
+    "59": "economy:blocks/5",
+    "48": "economy:blocks/6",
+    "60": "economy:blocks/7",
+    "61": "economy:blocks/8",
+    "62": "economy:blocks/10",
+    "particle": "economy:items/10"
+  }
+}

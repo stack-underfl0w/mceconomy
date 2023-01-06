@@ -15,6 +15,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.economy.item.SilverCoinItem;
+import net.mcreator.economy.item.GunItem;
 import net.mcreator.economy.item.GoldCoinItem;
 import net.mcreator.economy.item.BronzeCoinItem;
 import net.mcreator.economy.EconomyMod;
@@ -28,6 +29,12 @@ public class EconomyModItems {
 	public static final RegistryObject<Item> SILVER_COIN = REGISTRY.register("silver_coin", () -> new SilverCoinItem());
 	public static final RegistryObject<Item> BRONZE_COIN = REGISTRY.register("bronze_coin", () -> new BronzeCoinItem());
 	public static final RegistryObject<Item> ATM = block(EconomyModBlocks.ATM, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BANK_VAULT = block(EconomyModBlocks.BANK_VAULT, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> DRILL = block(EconomyModBlocks.DRILL, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> LOOT = block(EconomyModBlocks.LOOT, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> POLICE = REGISTRY.register("police_spawn_egg",
+			() -> new ForgeSpawnEggItem(EconomyModEntities.POLICE, -16776961, -65485, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> GUN = REGISTRY.register("gun", () -> new GunItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
