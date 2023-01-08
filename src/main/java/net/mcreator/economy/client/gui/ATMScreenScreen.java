@@ -102,5 +102,11 @@ public class ATMScreenScreen extends AbstractContainerScreen<ATMScreenMenu> {
 				ATMScreenButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}));
+		this.addRenderableWidget(new Button(this.leftPos + 151, this.topPos + 49, 61, 20, Component.literal("MineBay"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new ATMScreenButtonMessage(3, x, y, z));
+				ATMScreenButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
+		}));
 	}
 }

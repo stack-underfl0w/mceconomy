@@ -21,6 +21,7 @@ import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
@@ -91,6 +92,19 @@ public class EconomyModVariables {
 			clone.CashInATM = original.CashInATM;
 			clone.iteration = original.iteration;
 			clone.DiamondUnlock = original.DiamondUnlock;
+			clone.TradeOffer10 = original.TradeOffer10;
+			clone.TradeOffer11 = original.TradeOffer11;
+			clone.TradeOffer12 = original.TradeOffer12;
+			clone.TradeOffer13 = original.TradeOffer13;
+			clone.TradeOffer14 = original.TradeOffer14;
+			clone.TradeOffer15 = original.TradeOffer15;
+			clone.TradeOffer10Num = original.TradeOffer10Num;
+			clone.TradeOffer11Num = original.TradeOffer11Num;
+			clone.TradeOffer12Num = original.TradeOffer12Num;
+			clone.TradeOffer13Num = original.TradeOffer13Num;
+			clone.TradeOffer14Num = original.TradeOffer14Num;
+			clone.TradeOffer15Num = original.TradeOffer15Num;
+			clone.TradeCost1 = original.TradeCost1;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -291,6 +305,19 @@ public class EconomyModVariables {
 		public double CashInATM = 0;
 		public double iteration = 0;
 		public boolean DiamondUnlock = false;
+		public ItemStack TradeOffer10 = ItemStack.EMPTY;
+		public ItemStack TradeOffer11 = ItemStack.EMPTY;
+		public ItemStack TradeOffer12 = ItemStack.EMPTY;
+		public ItemStack TradeOffer13 = ItemStack.EMPTY;
+		public ItemStack TradeOffer14 = ItemStack.EMPTY;
+		public ItemStack TradeOffer15 = ItemStack.EMPTY;
+		public double TradeOffer10Num = 0;
+		public double TradeOffer11Num = 0;
+		public double TradeOffer12Num = 0;
+		public double TradeOffer13Num = 0;
+		public double TradeOffer14Num = 0;
+		public double TradeOffer15Num = 0;
+		public double TradeCost1 = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -309,6 +336,19 @@ public class EconomyModVariables {
 			nbt.putDouble("CashInATM", CashInATM);
 			nbt.putDouble("iteration", iteration);
 			nbt.putBoolean("DiamondUnlock", DiamondUnlock);
+			nbt.put("TradeOffer10", TradeOffer10.save(new CompoundTag()));
+			nbt.put("TradeOffer11", TradeOffer11.save(new CompoundTag()));
+			nbt.put("TradeOffer12", TradeOffer12.save(new CompoundTag()));
+			nbt.put("TradeOffer13", TradeOffer13.save(new CompoundTag()));
+			nbt.put("TradeOffer14", TradeOffer14.save(new CompoundTag()));
+			nbt.put("TradeOffer15", TradeOffer15.save(new CompoundTag()));
+			nbt.putDouble("TradeOffer10Num", TradeOffer10Num);
+			nbt.putDouble("TradeOffer11Num", TradeOffer11Num);
+			nbt.putDouble("TradeOffer12Num", TradeOffer12Num);
+			nbt.putDouble("TradeOffer13Num", TradeOffer13Num);
+			nbt.putDouble("TradeOffer14Num", TradeOffer14Num);
+			nbt.putDouble("TradeOffer15Num", TradeOffer15Num);
+			nbt.putDouble("TradeCost1", TradeCost1);
 			return nbt;
 		}
 
@@ -324,6 +364,19 @@ public class EconomyModVariables {
 			CashInATM = nbt.getDouble("CashInATM");
 			iteration = nbt.getDouble("iteration");
 			DiamondUnlock = nbt.getBoolean("DiamondUnlock");
+			TradeOffer10 = ItemStack.of(nbt.getCompound("TradeOffer10"));
+			TradeOffer11 = ItemStack.of(nbt.getCompound("TradeOffer11"));
+			TradeOffer12 = ItemStack.of(nbt.getCompound("TradeOffer12"));
+			TradeOffer13 = ItemStack.of(nbt.getCompound("TradeOffer13"));
+			TradeOffer14 = ItemStack.of(nbt.getCompound("TradeOffer14"));
+			TradeOffer15 = ItemStack.of(nbt.getCompound("TradeOffer15"));
+			TradeOffer10Num = nbt.getDouble("TradeOffer10Num");
+			TradeOffer11Num = nbt.getDouble("TradeOffer11Num");
+			TradeOffer12Num = nbt.getDouble("TradeOffer12Num");
+			TradeOffer13Num = nbt.getDouble("TradeOffer13Num");
+			TradeOffer14Num = nbt.getDouble("TradeOffer14Num");
+			TradeOffer15Num = nbt.getDouble("TradeOffer15Num");
+			TradeCost1 = nbt.getDouble("TradeCost1");
 		}
 	}
 
@@ -359,6 +412,19 @@ public class EconomyModVariables {
 					variables.CashInATM = message.data.CashInATM;
 					variables.iteration = message.data.iteration;
 					variables.DiamondUnlock = message.data.DiamondUnlock;
+					variables.TradeOffer10 = message.data.TradeOffer10;
+					variables.TradeOffer11 = message.data.TradeOffer11;
+					variables.TradeOffer12 = message.data.TradeOffer12;
+					variables.TradeOffer13 = message.data.TradeOffer13;
+					variables.TradeOffer14 = message.data.TradeOffer14;
+					variables.TradeOffer15 = message.data.TradeOffer15;
+					variables.TradeOffer10Num = message.data.TradeOffer10Num;
+					variables.TradeOffer11Num = message.data.TradeOffer11Num;
+					variables.TradeOffer12Num = message.data.TradeOffer12Num;
+					variables.TradeOffer13Num = message.data.TradeOffer13Num;
+					variables.TradeOffer14Num = message.data.TradeOffer14Num;
+					variables.TradeOffer15Num = message.data.TradeOffer15Num;
+					variables.TradeCost1 = message.data.TradeCost1;
 				}
 			});
 			context.setPacketHandled(true);

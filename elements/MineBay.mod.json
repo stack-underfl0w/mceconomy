@@ -1,0 +1,50 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "List Items",
+          "onClick": {
+            "name": "OpenSellItemPage"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "List Items",
+          "x": 178,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "View Listings",
+          "onClick": {
+            "name": "OpenListings"
+          },
+          "width": 93,
+          "height": 20,
+          "name": "View Listings",
+          "x": 169,
+          "y": 125
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

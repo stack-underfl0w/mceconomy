@@ -2,11 +2,15 @@ package net.mcreator.economy.procedures;
 
 import org.objectweb.asm.tree.analysis.Value;
 
+import net.minecraftforge.server.ServerLifecycleHooks;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.economy.network.EconomyModVariables;
 import net.mcreator.economy.init.EconomyModItems;
@@ -133,6 +137,11 @@ public class SellDiamondPreviewProcedure {
 			}
 			EconomyModVariables.MapVariables.get(world).DiamondCost = DiamondCost;
 			EconomyModVariables.MapVariables.get(world).syncData(world);
+			if (!world.isClientSide()) {
+				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
+				if (_mcserv != null)
+					_mcserv.getPlayerList().broadcastSystemMessage(Component.literal((entity.getDisplayName().getString())), false);
+			}
 		}
 	}
 }

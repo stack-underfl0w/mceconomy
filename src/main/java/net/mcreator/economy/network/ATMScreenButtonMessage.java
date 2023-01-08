@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.ATMScreenMenu;
 import net.mcreator.economy.procedures.SilverConvertFixedProcedure;
+import net.mcreator.economy.procedures.OpenMineBayProcedure;
 import net.mcreator.economy.procedures.GoldConvertFixedProcedure;
 import net.mcreator.economy.procedures.BronzeConvertFixedProcedure;
 import net.mcreator.economy.EconomyMod;
@@ -75,6 +76,10 @@ public class ATMScreenButtonMessage {
 		if (buttonID == 2) {
 
 			BronzeConvertFixedProcedure.execute(entity);
+		}
+		if (buttonID == 3) {
+
+			OpenMineBayProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

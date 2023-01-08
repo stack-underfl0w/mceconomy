@@ -235,6 +235,20 @@
           "x": 131,
           "y": 98
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "MineBay",
+          "onClick": {
+            "name": "OpenMineBay"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "MineBay",
+          "x": 277,
+          "y": 86
+        }
       }
     ],
     "gridSettings": {
