@@ -11,7 +11,9 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.economy.world.inventory.JamesOfferMenu;
+import net.mcreator.economy.network.JamesOfferButtonMessage;
 import net.mcreator.economy.network.EconomyModVariables;
+import net.mcreator.economy.EconomyMod;
 
 import java.util.HashMap;
 
@@ -75,18 +77,6 @@ public class JamesOfferScreen extends AbstractContainerScreen<JamesOfferMenu> {
 		this.font.draw(poseStack, "MineBay Listings", 79, 9, -12829636);
 		this.font.draw(poseStack, "Player:", 8, 28, -12829636);
 		this.font.draw(poseStack, "" + ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new EconomyModVariables.PlayerVariables())).TradeOffer10) + "", 57, 39, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new EconomyModVariables.PlayerVariables())).TradeOffer11) + "", 60, 49, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new EconomyModVariables.PlayerVariables())).TradeOffer12) + "", 57, 57, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new EconomyModVariables.PlayerVariables())).TradeOffer13) + "", 58, 67, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new EconomyModVariables.PlayerVariables())).TradeOffer14) + "", 57, 76, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new EconomyModVariables.PlayerVariables())).TradeOffer15) + "", 58, 84, -12829636);
-		this.font.draw(poseStack, "" + ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new EconomyModVariables.PlayerVariables())).TradeCost1) + "", 163, 59, -12829636);
 		this.font.draw(poseStack, "" + ((entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new EconomyModVariables.PlayerVariables())).TradeOffer10Num) + "", 110, 39, -12829636);
@@ -117,6 +107,10 @@ public class JamesOfferScreen extends AbstractContainerScreen<JamesOfferMenu> {
 		this.addRenderableWidget(new Button(this.leftPos + 40, this.topPos + 138, 30, 20, Component.literal("<"), e -> {
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 188, this.topPos + 39, 40, 20, Component.literal("Buy"), e -> {
+			if (true) {
+				EconomyMod.PACKET_HANDLER.sendToServer(new JamesOfferButtonMessage(2, x, y, z));
+				JamesOfferButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
 	}
 }

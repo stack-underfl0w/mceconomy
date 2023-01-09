@@ -1549,39 +1549,39 @@
     },
     {
       "name": "TradeOffer10",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer11",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer12",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer13",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer14",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer15",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer10Num",

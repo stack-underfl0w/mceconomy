@@ -1299,6 +1299,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
           }
         ]
       },
@@ -1341,6 +1345,72 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_mine_bay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MineBay"
+    },
+    {
+      "name": "OpenListings",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_listings",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MineBay"
+    },
+    {
+      "name": "OpenSellItemPage",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_sell_item_page",
       "metadata": {
         "dependencies": [
           {
@@ -1479,39 +1549,39 @@
     },
     {
       "name": "TradeOffer10",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer11",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer12",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer13",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer14",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer15",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer10Num",

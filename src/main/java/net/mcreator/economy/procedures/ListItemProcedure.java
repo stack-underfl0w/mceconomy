@@ -2,6 +2,7 @@ package net.mcreator.economy.procedures;
 
 import org.checkerframework.checker.units.qual.s;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.Entity;
@@ -19,8 +20,7 @@ public class ListItemProcedure {
 		if (entity == null || guistate == null)
 			return;
 		{
-			ItemStack _setval = (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
+			String _setval = new ItemStack(Blocks.BIRCH_WOOD).getDisplayName().getString();
 			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.TradeOffer10 = _setval;
 				capability.syncPlayerVariables(entity);
@@ -44,14 +44,6 @@ public class ListItemProcedure {
 			});
 		}
 		{
-			ItemStack _setval = (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY);
-			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer11 = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
@@ -64,15 +56,7 @@ public class ListItemProcedure {
 				}
 			}.getAmount(1);
 			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer10Num = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			ItemStack _setval = (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY);
-			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer12 = _setval;
+				capability.TradeOffer11Num = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -89,15 +73,7 @@ public class ListItemProcedure {
 				}
 			}.getAmount(2);
 			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer10Num = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			ItemStack _setval = (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY);
-			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer13 = _setval;
+				capability.TradeOffer12Num = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -114,15 +90,7 @@ public class ListItemProcedure {
 				}
 			}.getAmount(3);
 			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer10Num = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			ItemStack _setval = (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY);
-			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer14 = _setval;
+				capability.TradeOffer13Num = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -139,15 +107,7 @@ public class ListItemProcedure {
 				}
 			}.getAmount(4);
 			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer10Num = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			ItemStack _setval = (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY);
-			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer15 = _setval;
+				capability.TradeOffer14Num = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -164,7 +124,7 @@ public class ListItemProcedure {
 				}
 			}.getAmount(5);
 			entity.getCapability(EconomyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.TradeOffer10Num = _setval;
+				capability.TradeOffer15Num = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -200,6 +160,30 @@ public class ListItemProcedure {
 				capability.TradeCost1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
+		}
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(0)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(1)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(2)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(3)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(4)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(5)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
 		}
 	}
 }

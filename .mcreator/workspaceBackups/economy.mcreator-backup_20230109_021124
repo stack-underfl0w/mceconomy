@@ -1270,13 +1270,187 @@
       "path": "~/DLC/Bank Heist/Items"
     },
     {
-      "name": "PoliceTest",
-      "type": "livingentity",
+      "name": "AddOffer",
+      "type": "gui",
       "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "police_test",
-      "path": "~/DLC/Bank Heist/Items"
+      "registry_name": "add_offer",
+      "path": "~/MineBay"
+    },
+    {
+      "name": "JamesOffer",
+      "type": "gui",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "james_offer",
+      "path": "~/MineBay"
+    },
+    {
+      "name": "ListItem",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "list_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/MineBay"
+    },
+    {
+      "name": "BuyItem",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_item",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/MineBay"
+    },
+    {
+      "name": "MineBay",
+      "type": "gui",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mine_bay",
+      "path": "~/MineBay"
+    },
+    {
+      "name": "OpenMineBay",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_mine_bay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MineBay"
+    },
+    {
+      "name": "OpenListings",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_listings",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MineBay"
+    },
+    {
+      "name": "OpenSellItemPage",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_sell_item_page",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MineBay"
+    },
+    {
+      "name": "CancelListing",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cancel_listing",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/MineBay"
+    },
+    {
+      "name": "CloseListing",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_listing",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/MineBay"
     }
   ],
   "variable_elements": [
@@ -1387,6 +1561,84 @@
       "type": "number",
       "scope": "map",
       "value": "16.0"
+    },
+    {
+      "name": "TradeOffer10",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "TradeOffer11",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "TradeOffer12",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "TradeOffer13",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "TradeOffer14",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "TradeOffer15",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "TradeOffer10Num",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TradeOffer11Num",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TradeOffer12Num",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TradeOffer13Num",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TradeOffer14Num",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TradeOffer15Num",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TradeCost1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -1459,9 +1711,7 @@
     "en_us": {
       "item.economy.ore_trader_spawn_egg": "Ore Trader Spawn Egg",
       "block.economy.atm": "ATM",
-      "entity.economy.police_test": "Police",
       "block.economy.bank_vault": "Bank Vault",
-      "item.economy.police_test_spawn_egg": "Police Spawn Egg",
       "entity.economy.police": "Police",
       "item.economy.bronze_coin": "Bronze Coin",
       "subtitles.lacrimosaaaaaa": "",
@@ -1473,12 +1723,12 @@
       "subtitles.drilling": "",
       "subtitles.pipes": "",
       "entity.economy.ore_trader": "Ore Trader",
-      "block.economy.basechest": "Basechest",
       "block.economy.loot": "Loot",
+      "block.economy.basechest": "Basechest",
       "item.economy.gold_coin": "Gold Coin",
       "item.economy.silver_coin": "Silver Coin",
-      "subtitles.lacrimosa": "",
       "block.economy.drill": "Drill",
+      "subtitles.lacrimosa": "",
       "subtitles.pipesnew": ""
     }
   },
@@ -1590,6 +1840,10 @@
             ]
           }
         ]
+      },
+      {
+        "name": "MineBay",
+        "children": []
       }
     ]
   },

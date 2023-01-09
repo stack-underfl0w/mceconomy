@@ -75,6 +75,9 @@
         "type": "button",
         "data": {
           "text": "Buy",
+          "onClick": {
+            "name": "BuyItem"
+          },
           "width": 40,
           "height": 20,
           "name": "Buy",
@@ -93,84 +96,6 @@
           "name": "Player:",
           "x": 102,
           "y": 65
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:TradeOffer10>",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "<VAR:TradeOffer10>",
-          "x": 151,
-          "y": 76
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:TradeOffer11>",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "<VAR:TradeOffer11>",
-          "x": 154,
-          "y": 86
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:TradeOffer12>",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "<VAR:TradeOffer12>",
-          "x": 151,
-          "y": 94
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:TradeOffer13>",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "<VAR:TradeOffer13>",
-          "x": 152,
-          "y": 104
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:TradeOffer14>",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "<VAR:TradeOffer14>",
-          "x": 151,
-          "y": 113
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:TradeOffer15>",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "<VAR:TradeOffer15>",
-          "x": 152,
-          "y": 121
         }
       },
       {

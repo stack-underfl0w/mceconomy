@@ -1436,6 +1436,30 @@
         ]
       },
       "path": "~/MineBay"
+    },
+    {
+      "name": "CancelListing",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cancel_listing",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/MineBay"
+    },
+    {
+      "name": "CloseListing",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_listing",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/MineBay"
     }
   ],
   "variable_elements": [
@@ -1549,39 +1573,39 @@
     },
     {
       "name": "TradeOffer10",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer11",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer12",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer13",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer14",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer15",
-      "type": "itemstack",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
+      "value": ""
     },
     {
       "name": "TradeOffer10Num",
