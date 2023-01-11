@@ -12,8 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.economy.world.inventory.MineBayMenu;
-import net.mcreator.economy.procedures.OpenSellItemPageProcedure;
-import net.mcreator.economy.procedures.OpenListingsProcedure;
+import net.mcreator.economy.procedures.OpenCreateListingProcedure;
 import net.mcreator.economy.EconomyMod;
 
 import java.util.function.Supplier;
@@ -65,11 +64,7 @@ public class MineBayButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			OpenSellItemPageProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 1) {
-
-			OpenListingsProcedure.execute(world, x, y, z, entity);
+			OpenCreateListingProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

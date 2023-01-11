@@ -1,0 +1,163 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 184,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 15,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Create Listing",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Create Listing",
+          "x": 177,
+          "y": 29
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Title",
+          "width": 120,
+          "height": 20,
+          "name": "ListingName",
+          "x": 153,
+          "y": 42
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Description",
+          "width": 120,
+          "height": 20,
+          "name": "ListingDesc",
+          "x": 153,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 154,
+          "y": 87
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 172,
+          "y": 87
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 190,
+          "y": 87
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 154,
+          "y": 105
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 172,
+          "y": 105
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 190,
+          "y": 105
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Cost",
+          "width": 60,
+          "height": 20,
+          "name": "ListingPrice",
+          "x": 213,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "List",
+          "width": 46,
+          "height": 20,
+          "name": "List",
+          "x": 220,
+          "y": 104
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

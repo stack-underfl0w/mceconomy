@@ -1270,66 +1270,6 @@
       "path": "~/DLC/Bank Heist/Items"
     },
     {
-      "name": "AddOffer",
-      "type": "gui",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "add_offer",
-      "path": "~/MineBay"
-    },
-    {
-      "name": "JamesOffer",
-      "type": "gui",
-      "sortid": 94,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "james_offer",
-      "path": "~/MineBay"
-    },
-    {
-      "name": "ListItem",
-      "type": "procedure",
-      "sortid": 95,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "list_item",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
-          }
-        ]
-      },
-      "path": "~/MineBay"
-    },
-    {
-      "name": "BuyItem",
-      "type": "procedure",
-      "sortid": 96,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "buy_item",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/MineBay"
-    },
-    {
       "name": "MineBay",
       "type": "gui",
       "sortid": 97,
@@ -1372,45 +1312,231 @@
       "path": "~/MineBay"
     },
     {
-      "name": "OpenListings",
-      "type": "procedure",
+      "name": "Phone",
+      "type": "item",
       "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "open_listings",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/MineBay"
+      "registry_name": "phone",
+      "path": "~/Items"
     },
     {
-      "name": "OpenSellItemPage",
+      "name": "OpenPhone",
       "type": "procedure",
       "sortid": 99,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "open_sell_item_page",
+      "registry_name": "open_phone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Phone"
+    },
+    {
+      "name": "PhoneScreen",
+      "type": "gui",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "phone_screen",
+      "path": "~/Phone"
+    },
+    {
+      "name": "PhoneScreen2",
+      "type": "gui",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone_screen_2",
+      "path": "~/Phone"
+    },
+    {
+      "name": "App1",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "app_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Phone"
+    },
+    {
+      "name": "App2",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "app_2",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Phone"
+    },
+    {
+      "name": "App3",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "app_3",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Phone"
+    },
+    {
+      "name": "App4",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "app_4",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Phone"
+    },
+    {
+      "name": "PhoneScreenTemplate",
+      "type": "gui",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone_screen_template",
+      "path": "~/Phone"
+    },
+    {
+      "name": "CreateListingScreen",
+      "type": "gui",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "create_listing_screen",
+      "path": "~/MineBay"
+    },
+    {
+      "name": "Listing1Checker",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "listing_1_checker",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MineBay/Checkers"
+    },
+    {
+      "name": "Listing2Checker",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "listing_2_checker",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MineBay/Checkers"
+    },
+    {
+      "name": "Listing3Checker",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "listing_3_checker",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MineBay/Checkers"
+    },
+    {
+      "name": "Listing4Checker",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "listing_4_checker",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MineBay/Checkers"
+    },
+    {
+      "name": "OpenCreateListing",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_create_listing",
       "metadata": {
         "dependencies": [
           {
@@ -1438,24 +1564,12 @@
       "path": "~/MineBay"
     },
     {
-      "name": "CancelListing",
+      "name": "CreateListing",
       "type": "procedure",
-      "sortid": 100,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cancel_listing",
-      "metadata": {
-        "dependencies": []
-      },
-      "path": "~/MineBay"
-    },
-    {
-      "name": "CloseListing",
-      "type": "procedure",
-      "sortid": 101,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "close_listing",
+      "registry_name": "create_listing",
       "metadata": {
         "dependencies": []
       },
@@ -1648,6 +1762,30 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "Listing1",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "Listing2",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "Listing3",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "Listing4",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
     }
   ],
   "sound_elements": [
@@ -1731,6 +1869,7 @@
       "item.economy.police_spawn_egg": "Police Spawn Egg",
       "subtitles.drilling": "",
       "subtitles.pipes": "",
+      "item.economy.phone": "Phone",
       "entity.economy.ore_trader": "Ore Trader",
       "block.economy.loot": "Loot",
       "block.economy.basechest": "Basechest",
@@ -1852,6 +1991,15 @@
       },
       {
         "name": "MineBay",
+        "children": [
+          {
+            "name": "Checkers",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Phone",
         "children": []
       }
     ]

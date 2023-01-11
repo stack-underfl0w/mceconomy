@@ -15,27 +15,191 @@
         "data": {
           "text": "List Items",
           "onClick": {
-            "name": "OpenSellItemPage"
+            "name": "OpenCreateListing"
           },
           "width": 72,
           "height": 20,
           "name": "List Items",
-          "x": 178,
-          "y": 71
+          "x": 221,
+          "y": 177
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bg2.png",
+          "use1Xscale": false,
+          "name": "bg2.png",
+          "x": 85,
+          "y": -9
         }
       },
       {
         "type": "button",
         "data": {
-          "text": "View Listings",
-          "onClick": {
-            "name": "OpenListings"
-          },
-          "width": 93,
+          "text": "<",
+          "width": 30,
           "height": 20,
-          "name": "View Listings",
-          "x": 169,
-          "y": 125
+          "name": "<",
+          "x": 133,
+          "y": 177
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 168,
+          "y": 177
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 207,
+          "y": 181
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "MinEbay",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "MinEbay",
+          "x": 192,
+          "y": 48
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "displayCondition": {
+            "name": "Listing2Checker"
+          },
+          "width": 154,
+          "height": 20,
+          "name": " ",
+          "x": 136,
+          "y": 97
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "displayCondition": {
+            "name": "Listing1Checker"
+          },
+          "width": 154,
+          "height": 20,
+          "name": " ",
+          "x": 136,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "displayCondition": {
+            "name": "Listing3Checker"
+          },
+          "width": 154,
+          "height": 20,
+          "name": " ",
+          "x": 136,
+          "y": 122
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "displayCondition": {
+            "name": "Listing4Checker"
+          },
+          "width": 154,
+          "height": 20,
+          "name": " ",
+          "x": 136,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Listing1>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Listing1Checker"
+          },
+          "name": "<VAR:Listing1>",
+          "x": 141,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Listing2>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Listing2Checker"
+          },
+          "name": "<VAR:Listing2>",
+          "x": 141,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Listing3>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Listing3Checker"
+          },
+          "name": "<VAR:Listing3>",
+          "x": 142,
+          "y": 127
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Listing4>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Listing4Checker"
+          },
+          "name": "<VAR:Listing4>",
+          "x": 143,
+          "y": 152
         }
       }
     ],

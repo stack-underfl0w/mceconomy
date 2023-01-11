@@ -15,6 +15,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.economy.item.SilverCoinItem;
+import net.mcreator.economy.item.PhoneItem;
 import net.mcreator.economy.item.GunItem;
 import net.mcreator.economy.item.GoldCoinItem;
 import net.mcreator.economy.item.BronzeCoinItem;
@@ -35,6 +36,7 @@ public class EconomyModItems {
 	public static final RegistryObject<Item> POLICE = REGISTRY.register("police_spawn_egg",
 			() -> new ForgeSpawnEggItem(EconomyModEntities.POLICE, -16776961, -65485, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> GUN = REGISTRY.register("gun", () -> new GunItem());
+	public static final RegistryObject<Item> PHONE = REGISTRY.register("phone", () -> new PhoneItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -177,6 +177,10 @@ public class EconomyModVariables {
 		public double DiamondX = 0.0;
 		public double ItemNum = 0;
 		public double NewCurrencyMinted = 16.0;
+		public String Listing1 = "\"\"";
+		public String Listing2 = "\"\"";
+		public String Listing3 = "\"\"";
+		public String Listing4 = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -193,6 +197,10 @@ public class EconomyModVariables {
 			DiamondX = nbt.getDouble("DiamondX");
 			ItemNum = nbt.getDouble("ItemNum");
 			NewCurrencyMinted = nbt.getDouble("NewCurrencyMinted");
+			Listing1 = nbt.getString("Listing1");
+			Listing2 = nbt.getString("Listing2");
+			Listing3 = nbt.getString("Listing3");
+			Listing4 = nbt.getString("Listing4");
 		}
 
 		@Override
@@ -205,6 +213,10 @@ public class EconomyModVariables {
 			nbt.putDouble("DiamondX", DiamondX);
 			nbt.putDouble("ItemNum", ItemNum);
 			nbt.putDouble("NewCurrencyMinted", NewCurrencyMinted);
+			nbt.putString("Listing1", Listing1);
+			nbt.putString("Listing2", Listing2);
+			nbt.putString("Listing3", Listing3);
+			nbt.putString("Listing4", Listing4);
 			return nbt;
 		}
 

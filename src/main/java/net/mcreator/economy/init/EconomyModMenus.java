@@ -13,16 +13,18 @@ import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.economy.world.inventory.TestGUIMenu;
 import net.mcreator.economy.world.inventory.TestGUI2Menu;
+import net.mcreator.economy.world.inventory.PhoneScreenTemplateMenu;
+import net.mcreator.economy.world.inventory.PhoneScreenMenu;
+import net.mcreator.economy.world.inventory.PhoneScreen2Menu;
 import net.mcreator.economy.world.inventory.OreTraderGUITemplateMenu;
 import net.mcreator.economy.world.inventory.OreTraderGUIMenu;
 import net.mcreator.economy.world.inventory.NewOreTraderGUIMenu;
 import net.mcreator.economy.world.inventory.MineBayMenu;
-import net.mcreator.economy.world.inventory.JamesOfferMenu;
 import net.mcreator.economy.world.inventory.DiamondUnlockMenu;
 import net.mcreator.economy.world.inventory.DiamondShopMenu;
 import net.mcreator.economy.world.inventory.DiamondCustomMenu;
+import net.mcreator.economy.world.inventory.CreateListingScreenMenu;
 import net.mcreator.economy.world.inventory.CoinstorageMenu;
-import net.mcreator.economy.world.inventory.AddOfferMenu;
 import net.mcreator.economy.world.inventory.ATMScreenMenu;
 import net.mcreator.economy.EconomyMod;
 
@@ -47,9 +49,13 @@ public class EconomyModMenus {
 			() -> IForgeMenuType.create(OreTraderGUITemplateMenu::new));
 	public static final RegistryObject<MenuType<NewOreTraderGUIMenu>> NEW_ORE_TRADER_GUI = REGISTRY.register("new_ore_trader_gui",
 			() -> IForgeMenuType.create(NewOreTraderGUIMenu::new));
-	public static final RegistryObject<MenuType<AddOfferMenu>> ADD_OFFER = REGISTRY.register("add_offer",
-			() -> IForgeMenuType.create(AddOfferMenu::new));
-	public static final RegistryObject<MenuType<JamesOfferMenu>> JAMES_OFFER = REGISTRY.register("james_offer",
-			() -> IForgeMenuType.create(JamesOfferMenu::new));
 	public static final RegistryObject<MenuType<MineBayMenu>> MINE_BAY = REGISTRY.register("mine_bay", () -> IForgeMenuType.create(MineBayMenu::new));
+	public static final RegistryObject<MenuType<PhoneScreenMenu>> PHONE_SCREEN = REGISTRY.register("phone_screen",
+			() -> IForgeMenuType.create(PhoneScreenMenu::new));
+	public static final RegistryObject<MenuType<PhoneScreen2Menu>> PHONE_SCREEN_2 = REGISTRY.register("phone_screen_2",
+			() -> IForgeMenuType.create(PhoneScreen2Menu::new));
+	public static final RegistryObject<MenuType<PhoneScreenTemplateMenu>> PHONE_SCREEN_TEMPLATE = REGISTRY.register("phone_screen_template",
+			() -> IForgeMenuType.create(PhoneScreenTemplateMenu::new));
+	public static final RegistryObject<MenuType<CreateListingScreenMenu>> CREATE_LISTING_SCREEN = REGISTRY.register("create_listing_screen",
+			() -> IForgeMenuType.create(CreateListingScreenMenu::new));
 }

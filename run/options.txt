@@ -1,5 +1,5 @@
 version:3120
-autoJump:false
+autoJump:true
 autoSuggestions:true
 chatColors:true
 chatLinks:true
@@ -26,7 +26,7 @@ screenEffectScale:1.0
 fovEffectScale:1.0
 darknessEffectScale:1.0
 gamma:0.5
-renderDistance:8
+renderDistance:5
 simulationDistance:12
 entityDistanceScaling:1.0
 guiScale:0
@@ -84,8 +84,8 @@ key_key.left:key.keyboard.a
 key_key.back:key.keyboard.s
 key_key.right:key.keyboard.d
 key_key.jump:key.keyboard.space
-key_key.sneak:key.keyboard.left.control
-key_key.sprint:key.keyboard.left.shift
+key_key.sneak:key.keyboard.left.shift
+key_key.sprint:key.keyboard.left.control
 key_key.drop:key.keyboard.q
 key_key.inventory:key.keyboard.e
 key_key.chat:key.keyboard.t
@@ -111,7 +111,7 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
-soundCategory_master:0.19337748
+soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
